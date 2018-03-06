@@ -1,0 +1,3 @@
+C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.Build.cs
+C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\Source\NPJ2018SeniorProject.Target.cs
+C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\Source\NPJ2018SeniorProjectEditor.Target.cs

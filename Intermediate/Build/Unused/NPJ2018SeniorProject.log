@@ -1,0 +1,8 @@
+﻿  Performing full C++ include scan (hot reloading a new target)
+  Compiling game modules for hot reload
+  Parsing headers for NPJ2018SeniorProjectEditor
+    Running UnrealHeaderTool "C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\DebugGame\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+LogCompile : error : #include found after .generated.h file - the .generated.h file should always be the last #include in a header
+LogCompile : error : No #include found for the .generated.h file - the .generated.h file should always be the last #include in a header
+EXEC : error : UnrealHeaderTool failed for target 'NPJ2018SeniorProjectEditor' (platform: Win64, module info: C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\DebugGame\NPJ2018SeniorProjectEditor.uhtmanifest, exit code: OtherCompilationError (5)).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MakeFile.Targets(41,5): error MSB3075: The command ""C:\Program Files\Epic Games\UE_4.17\Engine\Build\BatchFiles\Build.bat" NPJ2018SeniorProjectEditor Win64 DebugGame "C:\Users\Noah\Documents\Unreal Projects\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" -waitmutex" exited with code 5. Please verify that you have sufficient rights to run this command.

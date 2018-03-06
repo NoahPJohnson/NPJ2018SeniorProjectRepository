@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\NPJ2018SeniorProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{EE2BC2CB-7B33-4C5C-A954-9F306D7DF365}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\NPJ2018SeniorProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\NPJ2018SeniorProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{0FE27090-279E-4A31-9706-C9D018F095A0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\NPJ2018SeniorProject">
+      <UniqueIdentifier>{7E6127C2-EC3D-4C7E-970B-D4A2470A4644}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.Build.cs">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.cpp">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.h">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.cpp">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectGameMode.cpp">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectGameMode.h">
+      <Filter>Source\NPJ2018SeniorProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\Pickup.cpp">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\Pickup.h">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BatteryPickup.h">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.h">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BatteryPickup.cpp">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.cpp">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\NPJ2018SeniorProject\C++Classes">
+      <UniqueIdentifier>{F21273D4-AF69-44F5-9386-FF7616032021}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
