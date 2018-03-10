@@ -136,7 +136,7 @@ void ANPJ2018SeniorProjectGameMode::HandleNewState(EProjectPlayState NewState)
 			if (MyCharacter)
 			{
 				MyCharacter->GetMesh()->SetSimulatePhysics(true);
-				MyCharacter->GetMovementComponent()->MovementState.bCanJump;
+				MyCharacter->GetMovementComponent()->MovementState.bCanJump = false;
 			}
 		}
 		break;

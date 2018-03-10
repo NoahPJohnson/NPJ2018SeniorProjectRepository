@@ -15,6 +15,46 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NPJ2018SeniorProject_Source_NPJ2018SeniorProject_NPJ2018SeniorProjectCharacter_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execStopCrouch_Slide_Glide) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopCrouch_Slide_Glide(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouch_Slide_Glide) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Crouch_Slide_Glide(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStopFly) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopFly(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFly) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Fly(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSprint) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Sprint(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execCollectPickups) \
 	{ \
 		P_FINISH; \
@@ -50,6 +90,46 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define NPJ2018SeniorProject_Source_NPJ2018SeniorProject_NPJ2018SeniorProjectCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execStopCrouch_Slide_Glide) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopCrouch_Slide_Glide(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execCrouch_Slide_Glide) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Crouch_Slide_Glide(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execStopFly) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->StopFly(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execFly) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Fly(); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execSprint) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->Sprint(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execCollectPickups) \
 	{ \
@@ -136,8 +216,24 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANPJ2018SeniorProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__CollectionSphere() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, CollectionSphere); } \
 	FORCEINLINE static uint32 __PPO__initialPower() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, initialPower); } \
-	FORCEINLINE static uint32 __PPO__speedFactor() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, speedFactor); } \
 	FORCEINLINE static uint32 __PPO__baseSpeed() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, baseSpeed); } \
+	FORCEINLINE static uint32 __PPO__baseMinSpeed() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, baseMinSpeed); } \
+	FORCEINLINE static uint32 __PPO__sprintSpeedBonus() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, sprintSpeedBonus); } \
+	FORCEINLINE static uint32 __PPO__sprintBoostBonus() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, sprintBoostBonus); } \
+	FORCEINLINE static uint32 __PPO__sprintBoostBase() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, sprintBoostBase); } \
+	FORCEINLINE static uint32 __PPO__sprintBoostAcceleration() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, sprintBoostAcceleration); } \
+	FORCEINLINE static uint32 __PPO__sprintBoostLimit() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, sprintBoostLimit); } \
+	FORCEINLINE static uint32 __PPO__isSprinting() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isSprinting); } \
+	FORCEINLINE static uint32 __PPO__isFlying() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isFlying); } \
+	FORCEINLINE static uint32 __PPO__defaultAirControl() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, defaultAirControl); } \
+	FORCEINLINE static uint32 __PPO__flightSpeedBonus() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, flightSpeedBonus); } \
+	FORCEINLINE static uint32 __PPO__flightSpeedBonusAcceleration() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, flightSpeedBonusAcceleration); } \
+	FORCEINLINE static uint32 __PPO__flightSpeedLimit() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, flightSpeedLimit); } \
+	FORCEINLINE static uint32 __PPO__isCrouching() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isCrouching); } \
+	FORCEINLINE static uint32 __PPO__isSliding() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isSliding); } \
+	FORCEINLINE static uint32 __PPO__buildUpSpeed() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, buildUpSpeed); } \
+	FORCEINLINE static uint32 __PPO__buildUpSpeedIncrease() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, buildUpSpeedIncrease); } \
+	FORCEINLINE static uint32 __PPO__isGliding() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isGliding); } \
 	FORCEINLINE static uint32 __PPO__characterPower() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, characterPower); }
 
 

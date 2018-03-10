@@ -16,9 +16,14 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 // Cross Module References
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups();
 	NPJ2018SENIORPROJECT_API UClass* Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetCurrentPower();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetInitialPower();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_PowerChangeEffect();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Sprint();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopCrouch_Slide_Glide();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopFly();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_UpdateCharacterPower();
 	NPJ2018SENIORPROJECT_API UClass* Z_Construct_UClass_ANPJ2018SeniorProjectCharacter_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
@@ -37,8 +42,13 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 		UClass* Class = ANPJ2018SeniorProjectCharacter::StaticClass();
 		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
 			{ "CollectPickups", (Native)&ANPJ2018SeniorProjectCharacter::execCollectPickups },
+			{ "Crouch_Slide_Glide", (Native)&ANPJ2018SeniorProjectCharacter::execCrouch_Slide_Glide },
+			{ "Fly", (Native)&ANPJ2018SeniorProjectCharacter::execFly },
 			{ "GetCurrentPower", (Native)&ANPJ2018SeniorProjectCharacter::execGetCurrentPower },
 			{ "GetInitialPower", (Native)&ANPJ2018SeniorProjectCharacter::execGetInitialPower },
+			{ "Sprint", (Native)&ANPJ2018SeniorProjectCharacter::execSprint },
+			{ "StopCrouch_Slide_Glide", (Native)&ANPJ2018SeniorProjectCharacter::execStopCrouch_Slide_Glide },
+			{ "StopFly", (Native)&ANPJ2018SeniorProjectCharacter::execStopFly },
 			{ "UpdateCharacterPower", (Native)&ANPJ2018SeniorProjectCharacter::execUpdateCharacterPower },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, ARRAY_COUNT(AnsiFuncs));
@@ -57,6 +67,40 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Pickups"));
 			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 			MetaData->SetValue(ReturnFunction, TEXT("ToolTip"), TEXT("Called when we press a key to collect any pickups inside the CollectionSphere"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Crouch_Slide_Glide"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Special Movement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Fly"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Special Movement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 #endif
 		}
 		return ReturnFunction;
@@ -123,6 +167,57 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Sprint()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("Sprint"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Special Movement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopCrouch_Slide_Glide()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StopCrouch_Slide_Glide"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Special Movement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopFly()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("StopFly"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("Special Movement"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
+	}
 	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_UpdateCharacterPower()
 	{
 		struct NPJ2018SeniorProjectCharacter_eventUpdateCharacterPower_Parms
@@ -164,14 +259,40 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				OuterClass->ClassFlags |= (EClassFlags)0x20800080u;
 
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetCurrentPower());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetInitialPower());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_PowerChangeEffect());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Sprint());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopCrouch_Slide_Glide());
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopFly());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_UpdateCharacterPower());
 
 				UProperty* NewProp_characterPower = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("characterPower"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(characterPower, ANPJ2018SeniorProjectCharacter), 0x0040000000020001);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isGliding, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isGliding = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isGliding"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isGliding, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isGliding, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
+				UProperty* NewProp_buildUpSpeedIncrease = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("buildUpSpeedIncrease"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(buildUpSpeedIncrease, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_buildUpSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("buildUpSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(buildUpSpeed, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isSliding, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isSliding = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isSliding"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isSliding, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isSliding, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isCrouching, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isCrouching = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isCrouching"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isCrouching, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isCrouching, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
+				UProperty* NewProp_flightSpeedLimit = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("flightSpeedLimit"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(flightSpeedLimit, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_flightSpeedBonusAcceleration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("flightSpeedBonusAcceleration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(flightSpeedBonusAcceleration, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_flightSpeedBonus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("flightSpeedBonus"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(flightSpeedBonus, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_defaultAirControl = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("defaultAirControl"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(defaultAirControl, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isFlying, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isFlying = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isFlying"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isFlying, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isFlying, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isSprinting, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isSprinting = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isSprinting"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isSprinting, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isSprinting, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
+				UProperty* NewProp_sprintBoostLimit = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintBoostLimit"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintBoostLimit, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_sprintBoostAcceleration = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintBoostAcceleration"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintBoostAcceleration, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_sprintBoostBase = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintBoostBase"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintBoostBase, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_sprintBoostBonus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintBoostBonus"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintBoostBonus, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_sprintSpeedBonus = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("sprintSpeedBonus"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(sprintSpeedBonus, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
+				UProperty* NewProp_baseMinSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("baseMinSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(baseMinSpeed, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
 				UProperty* NewProp_baseSpeed = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("baseSpeed"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(baseSpeed, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
-				UProperty* NewProp_speedFactor = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("speedFactor"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(speedFactor, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
 				UProperty* NewProp_initialPower = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("initialPower"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(initialPower, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
 				UProperty* NewProp_BaseLookUpRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseLookUpRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseLookUpRate, ANPJ2018SeniorProjectCharacter), 0x0010000000020015);
 				UProperty* NewProp_BaseTurnRate = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("BaseTurnRate"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(BaseTurnRate, ANPJ2018SeniorProjectCharacter), 0x0010000000020015);
@@ -179,9 +300,14 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, ANPJ2018SeniorProjectCharacter), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, ANPJ2018SeniorProjectCharacter), 0x00400000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups(), "CollectPickups"); // 2624987453
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide(), "Crouch_Slide_Glide"); // 8471354
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly(), "Fly"); // 751838654
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetCurrentPower(), "GetCurrentPower"); // 2235971854
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetInitialPower(), "GetInitialPower"); // 2632555715
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_PowerChangeEffect(), "PowerChangeEffect"); // 3018423847
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Sprint(), "Sprint"); // 2951933983
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopCrouch_Slide_Glide(), "StopCrouch_Slide_Glide"); // 136357686
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_StopFly(), "StopFly"); // 1516874594
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_UpdateCharacterPower(), "UpdateCharacterPower"); // 3659131815
 				OuterClass->ClassConfigName = FName(TEXT("Game"));
 				static TCppClassTypeInfo<TCppClassTypeTraits<ANPJ2018SeniorProjectCharacter> > StaticCppClassTypeInfo;
@@ -195,14 +321,62 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				MetaData->SetValue(NewProp_characterPower, TEXT("Category"), TEXT("Power"));
 				MetaData->SetValue(NewProp_characterPower, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 				MetaData->SetValue(NewProp_characterPower, TEXT("ToolTip"), TEXT("Current power level of our character"));
+				MetaData->SetValue(NewProp_isGliding, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isGliding, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_isGliding, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_buildUpSpeedIncrease, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_buildUpSpeedIncrease, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_buildUpSpeedIncrease, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_buildUpSpeed, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_buildUpSpeed, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_buildUpSpeed, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_isSliding, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isSliding, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_isSliding, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_isCrouching, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isCrouching, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_isCrouching, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_flightSpeedLimit, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_flightSpeedLimit, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_flightSpeedLimit, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_flightSpeedBonusAcceleration, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_flightSpeedBonusAcceleration, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_flightSpeedBonusAcceleration, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_flightSpeedBonus, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_flightSpeedBonus, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_flightSpeedBonus, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_defaultAirControl, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_defaultAirControl, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_defaultAirControl, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_isFlying, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isFlying, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_isFlying, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_isSprinting, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isSprinting, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_isSprinting, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintBoostLimit, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_sprintBoostLimit, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_sprintBoostLimit, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintBoostAcceleration, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_sprintBoostAcceleration, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_sprintBoostAcceleration, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintBoostBase, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_sprintBoostBase, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_sprintBoostBase, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintBoostBonus, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_sprintBoostBonus, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_sprintBoostBonus, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintSpeedBonus, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_sprintSpeedBonus, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_sprintSpeedBonus, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_sprintSpeedBonus, TEXT("ToolTip"), TEXT("Speed when power level = 0"));
+				MetaData->SetValue(NewProp_baseMinSpeed, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_baseMinSpeed, TEXT("Category"), TEXT("Special Movement"));
+				MetaData->SetValue(NewProp_baseMinSpeed, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 				MetaData->SetValue(NewProp_baseSpeed, TEXT("BluePrintProtected"), TEXT("TRUE"));
-				MetaData->SetValue(NewProp_baseSpeed, TEXT("Category"), TEXT("Power"));
+				MetaData->SetValue(NewProp_baseSpeed, TEXT("Category"), TEXT("Special Movement"));
 				MetaData->SetValue(NewProp_baseSpeed, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
-				MetaData->SetValue(NewProp_baseSpeed, TEXT("ToolTip"), TEXT("Speed when power level = 0"));
-				MetaData->SetValue(NewProp_speedFactor, TEXT("BluePrintProtected"), TEXT("TRUE"));
-				MetaData->SetValue(NewProp_speedFactor, TEXT("Category"), TEXT("Power"));
-				MetaData->SetValue(NewProp_speedFactor, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
-				MetaData->SetValue(NewProp_speedFactor, TEXT("ToolTip"), TEXT("Multiplier for  character speed"));
+				MetaData->SetValue(NewProp_baseSpeed, TEXT("ToolTip"), TEXT("Multiplier for  character speed"));
 				MetaData->SetValue(NewProp_initialPower, TEXT("BluePrintProtected"), TEXT("TRUE"));
 				MetaData->SetValue(NewProp_initialPower, TEXT("Category"), TEXT("Power"));
 				MetaData->SetValue(NewProp_initialPower, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
@@ -234,7 +408,7 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANPJ2018SeniorProjectCharacter, 1426514873);
+	IMPLEMENT_CLASS(ANPJ2018SeniorProjectCharacter, 978559170);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ANPJ2018SeniorProjectCharacter(Z_Construct_UClass_ANPJ2018SeniorProjectCharacter, &ANPJ2018SeniorProjectCharacter::StaticClass, TEXT("/Script/NPJ2018SeniorProject"), TEXT("ANPJ2018SeniorProjectCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ANPJ2018SeniorProjectCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

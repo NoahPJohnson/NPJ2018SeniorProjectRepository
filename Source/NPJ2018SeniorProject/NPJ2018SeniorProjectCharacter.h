@@ -79,21 +79,92 @@ protected:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 	// End of APawn interface
 
+	virtual void Tick(float DeltaTime) override;
+
 	/**Called when we press a key to collect any pickups inside the CollectionSphere*/
 	UFUNCTION(BlueprintCallable, Category = "Pickups")
 	void CollectPickups();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void Sprint();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void Fly();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void StopFly();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void Crouch_Slide_Glide();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void StopCrouch_Slide_Glide();
 
 	/**The starting power level of our character*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Power", Meta = (BluePrintProtected = true))
 	float initialPower;
 
 	/**Multiplier for  character speed */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Power", Meta = (BluePrintProtected = true))
-	float speedFactor;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float baseSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float baseMinSpeed;
 
 	/**Speed when power level = 0 */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Power", Meta = (BluePrintProtected = true))
-	float baseSpeed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float sprintSpeedBonus;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float sprintBoostBonus;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float sprintBoostBase;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float sprintBoostAcceleration;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float sprintBoostLimit;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isSprinting;
+
+	
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isFlying;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float defaultAirControl;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float flightSpeedBonus;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float flightSpeedBonusAcceleration;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float flightSpeedLimit;
+
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isCrouching;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isSliding;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float buildUpSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float buildUpSpeedIncrease;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isGliding;
+
+
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Power")
 	void PowerChangeEffect();
@@ -102,6 +173,8 @@ private:
 	/**Current power level of our character */
 	UPROPERTY(VisibleAnywhere, Category = "Power")
 	float characterPower;
+
+	float timeToSprintBoost;
 
 public:
 	/** Returns CameraBoom subobject **/

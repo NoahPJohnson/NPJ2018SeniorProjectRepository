@@ -1,8 +1,8 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #include "NPJ2018SeniorProjectCharacter.h"
-#include "C++Classes/Pickup.h"
-#include "C++Classes/BatteryPickup.h"
+//#include "C++Classes/Pickup.h"
+//#include "C++Classes/BatteryPickup.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -11,6 +11,10 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+//#include "Vector.h"
+#include <cmath>
+#include "TimerManager.h"
+
 
 //////////////////////////////////////////////////////////////////////////
 // ANPJ2018SeniorProjectCharacter
@@ -57,9 +61,30 @@ ANPJ2018SeniorProjectCharacter::ANPJ2018SeniorProjectCharacter()
 	initialPower = 2000.f;
 	characterPower = initialPower;
 
-	//Set the dependence of the speed on power level
-	speedFactor = 0.75f;
-	baseSpeed = 10.0f;
+	//Sprinting stuff
+	baseSpeed = GetCharacterMovement()->MaxWalkSpeed;
+	sprintSpeedBonus = 800.0f;
+	sprintBoostLimit = GetCharacterMovement()->MaxWalkSpeed + sprintSpeedBonus;
+	sprintBoostAcceleration = 500.0f;
+	sprintBoostBonus = sprintBoostBase = -200.0f;
+	isSprinting = false;
+	GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+	baseMinSpeed = GetCharacterMovement()->MinAnalogWalkSpeed;
+	//GetCharacterMovement()->MaxWalkSpeed = 1400;
+
+	//Flying stuff
+	//defaultAirControl = GetCharacterMovement()->AirControl;
+	defaultAirControl = 0.5f;
+	GetCharacterMovement()->AirControl = defaultAirControl;
+	GetCharacterMovement()->MaxFlySpeed = 200;
+	flightSpeedLimit = 1400;
+	flightSpeedBonus = 200;
+	flightSpeedBonusAcceleration = 450;
+
+	//Crouching/Sliding/Gliding stuff
+	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true;
+	isCrouching = false;
+	buildUpSpeedIncrease = 550.0f;
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -70,9 +95,14 @@ void ANPJ2018SeniorProjectCharacter::SetupPlayerInputComponent(class UInputCompo
 	// Set up gameplay key bindings
 	check(PlayerInputComponent);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::Fly);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ANPJ2018SeniorProjectCharacter::StopFly);
 
 	PlayerInputComponent->BindAction("Collect", IE_Released, this, &ANPJ2018SeniorProjectCharacter::CollectPickups);
+	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::Sprint);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide);
+	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ANPJ2018SeniorProjectCharacter::StopCrouch_Slide_Glide);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANPJ2018SeniorProjectCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANPJ2018SeniorProjectCharacter::MoveRight);
@@ -131,30 +161,121 @@ void ANPJ2018SeniorProjectCharacter::MoveForward(float Value)
 
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		AddMovementInput(Direction, Value);
+		if (isSprinting == true)
+		{
+			AddMovementInput(Direction / 20, Value);
+		}
+		else
+		{
+			AddMovementInput(Direction, Value);
+		}
+		//GetInputAxisValue("MoveForward");
+		//UE_LOG(LogClass, Log, TEXT("left Y is %f"), GetInputAxisValue("MoveForward"));
 	}
 }
 
 void ANPJ2018SeniorProjectCharacter::MoveRight(float Value)
 {
-	if ( (Controller != NULL) && (Value != 0.0f) )
+	if ( (Controller != NULL) && (Value != 0.0f))
 	{
 		// find out which way is right
 		const FRotator Rotation = Controller->GetControlRotation();
+		
+		//float newYaw = Rotation.Yaw;;
+		//UE_LOG(LogClass, Log, TEXT("MyCharacter's rotation is %f"), newYaw);
+		//const FRotator YawRotation(0, newYaw, 0);
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 	
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
-		AddMovementInput(Direction, Value);
+		if (isSprinting == true)
+		{
+			AddMovementInput(Direction / 20, Value);
+		}
+		else
+		{
+			AddMovementInput(Direction, Value);
+		}
+		
+		
+		//UE_LOG(LogClass, Log, TEXT("LEFT X is %f"), GetInputAxisValue("MoveRight"));
 	}
+}
+
+void ANPJ2018SeniorProjectCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	
+	//Handle Sprint
+	if (abs(GetInputAxisValue("MoveForward")) < 0.2f && abs(GetInputAxisValue("MoveRight")) < 0.2f && isSprinting == true)
+	{
+		isSprinting = false;
+		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
+		sprintBoostBonus = sprintBoostBase;
+		//UE_LOG(LogClass, Log, TEXT("Stopped sprinting because inputs too shallow"));
+	}
+	if (isSprinting == true)
+	{
+		AddMovementInput(GetActorForwardVector(), 1.0f);
+		if (GetCharacterMovement()->MaxWalkSpeed < sprintBoostLimit)
+		{
+			sprintBoostBonus += sprintBoostAcceleration * DeltaTime;
+			GetCharacterMovement()->MaxWalkSpeed += sprintBoostBonus * DeltaTime;
+			GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxWalkSpeed, 0.0f, sprintBoostLimit);
+			//GetCharacterMovement()->MinAnalogWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+
+			//UE_LOG(LogClass, Log, TEXT("MyCharacter's sprint bonus is %f"), sprintBoostBonus);
+			//UE_LOG(LogClass, Log, TEXT("MyCharacter's max speed is %f"), GetCharacterMovement()->MaxWalkSpeed);
+			//UE_LOG(LogClass, Log, TEXT("MyCharacter's speed is %f"), GetVelocity().Size());
+		}
+	}
+
+
+	//Handle Flight
+	if (isFlying == true)
+	{
+		if (GetCharacterMovement()->MaxFlySpeed < flightSpeedLimit)
+		{
+			flightSpeedBonus += flightSpeedBonusAcceleration * DeltaTime;
+			GetCharacterMovement()->MaxFlySpeed += flightSpeedBonus * DeltaTime;
+			GetCharacterMovement()->MaxFlySpeed = FMath::Clamp(GetCharacterMovement()->MaxFlySpeed, 0.0f, flightSpeedLimit);
+		}
+		AddMovementInput(GetActorUpVector(), 0.7f);
+		
+		if (GetCharacterMovement()->IsMovingOnGround() == true)
+		{
+			StopFly();
+		}
+	}
+
+	//Handle Crouch
+	if (isCrouching == true && abs(GetInputAxisValue("MoveForward")) >= 0.2f || abs(GetInputAxisValue("MoveRight")) >= 0.2f)
+	{
+		if (buildUpSpeed < sprintBoostLimit)
+		{
+			buildUpSpeed += buildUpSpeedIncrease * DeltaTime;
+			UE_LOG(LogClass, Log, TEXT("We built up this speed: %f"), buildUpSpeed);
+		}
+		else
+		{
+			//UE_LOG(LogClass, Log, TEXT("We built up this speed: %f"), buildUpSpeed);
+		}
+	}
+	else if (isCrouching == true && abs(GetInputAxisValue("MoveForward")) < 0.2f || abs(GetInputAxisValue("MoveRight")) < 0.2f)
+	{
+		buildUpSpeed = baseSpeed;
+	}
+	//UE_LOG(LogClass, Log, TEXT("MyCharacter's speed is %f"), GetVelocity().Size());
+	PowerChangeEffect();
 }
 
 void ANPJ2018SeniorProjectCharacter::CollectPickups()
 {
 	//UE_LOG(LogClass, Log, TEXT("You have pressed the button"));
 	//Get all overlapping actors and store them in an array
-	TArray<AActor*> CollectedActors;
+	/*TArray<AActor*> CollectedActors;
 	CollectionSphere->GetOverlappingActors(CollectedActors);
 
 	float collectedPower = 0;
@@ -183,7 +304,103 @@ void ANPJ2018SeniorProjectCharacter::CollectPickups()
 	if (collectedPower > 0)
 	{
 		UpdateCharacterPower(collectedPower);
+	}*/
+}
+
+void ANPJ2018SeniorProjectCharacter::Sprint()
+{
+	if (GetCharacterMovement()->IsFalling() == false)
+	{
+		if (isSprinting == false)
+		{
+			isSprinting = true;
+			//GetCharacterMovement()->MinAnalogWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
+
+			//PowerChangeEffect();
+			//UE_LOG(LogClass, Log, TEXT("sprinting is %s"), (isSprinting ? TEXT("true") : TEXT("False")));
+			//UE_LOG(LogClass, Log, TEXT("MyCharacter's sprint speed is %f"), GetVelocity().Size());
+			//UE_LOG(YourLog, Warning, TEXT("MyCharacter's Bool is %s"), (MyCharacter->MyBool ? TEXT("True") : TEXT("False")));
+		}
+		else
+		{
+			isSprinting = false;
+			GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+			GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
+			sprintBoostBonus = sprintBoostBase;
+			//UE_LOG(LogClass, Log, TEXT("MyCharacter's speed is %f"), GetVelocity().Size());
+		}
 	}
+}
+
+void ANPJ2018SeniorProjectCharacter::Fly()
+{
+	if (GetCharacterMovement()->IsFalling() == true)
+	{
+		isFlying = true;
+		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+		flightSpeedBonus = 100;
+		GetCharacterMovement()->MaxFlySpeed = 200;
+		isSprinting = false;
+
+		GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
+		sprintBoostBonus = sprintBoostBase;
+		//AddMovementInput(GetActorUpVector(), 1.0f);
+		//UE_LOG(LogClass, Log, TEXT("Fly Please"));
+	}
+}
+
+void ANPJ2018SeniorProjectCharacter::StopFly()
+{
+	if (isFlying == true && GetCharacterMovement()->IsMovingOnGround() == true)
+	{
+		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		GetCharacterMovement()->AirControl = defaultAirControl;
+		GetCharacterMovement()->GravityScale = 1;
+		isFlying = false;
+		
+	}
+	else if (isFlying == true && GetCharacterMovement()->IsMovingOnGround() == false)
+	{
+		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		GetCharacterMovement()->AirControl = defaultAirControl;
+		GetCharacterMovement()->GravityScale = 1;
+		isFlying = false;
+		GetCharacterMovement()->Launch((GetActorUpVector() * 400) + ((GetActorForwardVector() * GetCharacterMovement()->MaxFlySpeed) * (abs(GetInputAxisValue("MoveForward"))+abs(GetInputAxisValue("MoveRight")))));
+	}
+}
+
+void ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide()
+{
+	//GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true;
+	if (isCrouching == false && GetCharacterMovement()->IsMovingOnGround() == true && isSprinting == false)
+	{
+		isCrouching = true;
+		buildUpSpeed = GetCharacterMovement()->MaxWalkSpeed;
+		GetCharacterMovement()->MaxWalkSpeed = 0;
+	}
+	//Crouch();
+	//UE_LOG(LogClass, Log, TEXT("Crouch Please"));
+}
+
+void ANPJ2018SeniorProjectCharacter::StopCrouch_Slide_Glide()
+{
+	if (isCrouching == true && GetCharacterMovement()->IsMovingOnGround() == true)
+	{
+		isCrouching = false;
+		if (buildUpSpeed > baseSpeed)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = buildUpSpeed;
+			Sprint();
+		}
+		else
+		{
+			GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		}
+	}
+	//UnCrouch();
+	//UE_LOG(LogClass, Log, TEXT("UnCrouch Please"));
 }
 
 float ANPJ2018SeniorProjectCharacter::GetInitialPower()
