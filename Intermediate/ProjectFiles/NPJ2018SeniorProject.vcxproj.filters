@@ -67,12 +67,18 @@
     <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.h">
       <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BaseEnemy.h">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BatteryPickup.cpp">
       <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.cpp">
+      <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BaseEnemy.cpp">
       <Filter>Source\NPJ2018SeniorProject\C++Classes</Filter>
     </ClCompile>
   </ItemGroup>

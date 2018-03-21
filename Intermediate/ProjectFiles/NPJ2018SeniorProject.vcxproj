@@ -415,9 +415,11 @@
     <None Include="..\..\Config\DefaultGame.ini" />
     <None Include="..\..\Config\DefaultInput.ini" />
     <None Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.Build.cs" />
+    <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BaseEnemy.cpp" />
     <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BatteryPickup.cpp" />
     <ClCompile Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.cpp" />
     <ClCompile Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.cpp" />
+    <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BaseEnemy.h" />
     <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\BatteryPickup.h" />
     <ClInclude Include="..\..\Source\NPJ2018SeniorProject\C++Classes\SpawnVolume.h" />
     <ClInclude Include="..\..\Source\NPJ2018SeniorProject\NPJ2018SeniorProject.h" />

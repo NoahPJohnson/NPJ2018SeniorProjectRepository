@@ -20,8 +20,8 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProject_init() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/NPJ2018SeniorProject")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x58B4238F;
-			Guid.B = 0x55447616;
+			Guid.A = 0x244D69E4;
+			Guid.B = 0x658B1A64;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

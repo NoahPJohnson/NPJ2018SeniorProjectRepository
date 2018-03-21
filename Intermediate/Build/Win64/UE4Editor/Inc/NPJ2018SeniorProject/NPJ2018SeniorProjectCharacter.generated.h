@@ -15,6 +15,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define NPJ2018SeniorProject_Source_NPJ2018SeniorProject_NPJ2018SeniorProjectCharacter_h_12_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execCameraLockOn) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->CameraLockOn(); \
+		P_NATIVE_END; \
+	} \
+ \
 	DECLARE_FUNCTION(execStopCrouch_Slide_Glide) \
 	{ \
 		P_FINISH; \
@@ -90,6 +98,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 #define NPJ2018SeniorProject_Source_NPJ2018SeniorProject_NPJ2018SeniorProjectCharacter_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execCameraLockOn) \
+	{ \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		this->CameraLockOn(); \
+		P_NATIVE_END; \
+	} \
  \
 	DECLARE_FUNCTION(execStopCrouch_Slide_Glide) \
 	{ \
@@ -234,6 +250,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANPJ2018SeniorProjectCharacter); \
 	FORCEINLINE static uint32 __PPO__buildUpSpeed() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, buildUpSpeed); } \
 	FORCEINLINE static uint32 __PPO__buildUpSpeedIncrease() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, buildUpSpeedIncrease); } \
 	FORCEINLINE static uint32 __PPO__isGliding() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isGliding); } \
+	FORCEINLINE static uint32 __PPO__isLockingOn() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, isLockingOn); } \
+	FORCEINLINE static uint32 __PPO__nearestEnemyLocation() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, nearestEnemyLocation); } \
+	FORCEINLINE static uint32 __PPO__nearestEnemy() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, nearestEnemy); } \
+	FORCEINLINE static uint32 __PPO__startingCameraLocation() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, startingCameraLocation); } \
+	FORCEINLINE static uint32 __PPO__lockOnCameraLocation() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, lockOnCameraLocation); } \
 	FORCEINLINE static uint32 __PPO__characterPower() { return STRUCT_OFFSET(ANPJ2018SeniorProjectCharacter, characterPower); }
 
 

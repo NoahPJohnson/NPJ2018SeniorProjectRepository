@@ -1,0 +1,1547 @@
+﻿Log file open, 03/19/18 22:48:16
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine without a game
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: Loading recent project file: ../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject
+LogInit: Display: RandInit(-750065197) SRandInit(-750065197).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.910206
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.03.20-02.48.20:618][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.20-02.48.20:618][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.03.20-02.48.21:034][  0]LogInit: Computer: DESKTOP-POOD5P5
+[2018.03.20-02.48.21:034][  0]LogInit: User: Noah
+[2018.03.20-02.48.21:034][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.03.20-02.48.21:035][  0]LogInit: High frequency timer resolution =2.338348 MHz
+[2018.03.20-02.48.21:036][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.03.20-02.48.21:050][  0]LogMemory: Platform Memory Stats for Windows
+[2018.03.20-02.48.21:050][  0]LogMemory: Process Physical Memory: 280.87 MB used, 280.87 MB peak
+[2018.03.20-02.48.21:050][  0]LogMemory: Process Virtual Memory: 274.45 MB used, 274.45 MB peak
+[2018.03.20-02.48.21:050][  0]LogMemory: Physical Memory: 6040.12 MB used,  10268.24 MB free, 16308.36 MB total
+[2018.03.20-02.48.21:050][  0]LogMemory: Virtual Memory: 707.75 MB used,  10268.24 MB free, 134217728.00 MB total
+[2018.03.20-02.48.24:163][  0]LogInit: Using OS detected language (en-US).
+[2018.03.20-02.48.24:163][  0]LogInit: Using OS detected locale (en-US).
+[2018.03.20-02.48.24:640][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.03.20-02.48.35:699][  0]LogD3D11RHI: D3D11 adapters:
+[2018.03.20-02.48.35:737][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.03.20-02.48.35:737][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2018.03.20-02.48.35:757][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.03.20-02.48.35:757][  0]LogD3D11RHI:       0/0/8154 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.03.20-02.48.35:757][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.03.20-02.48.35:780][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.03.20-02.48.35:780][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2018.03.20-02.48.35:781][  0]LogWindows: EnumDisplayDevices:
+[2018.03.20-02.48.35:781][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.03.20-02.48.35:781][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.03.20-02.48.35:781][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.03.20-02.48.35:781][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.03.20-02.48.35:781][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2018.03.20-02.48.35:781][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.03.20-02.48.35:781][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.03.20-02.48.35:781][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2018.03.20-02.48.35:800][  0]LogD3D11RHI: Async texture creation enabled
+[2018.03.20-02.48.36:410][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2018.03.20-02.48.36:544][  0]LogShaderCompilers: Guid format shader working directory is -32 characters bigger than the processId version (../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Intermediate/Shaders/WorkingDirectory/1288/).
+[2018.03.20-02.48.36:544][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Noah/AppData/Local/Temp/UnrealShaderWorkingDir/9C66284944B1BE959911068B0877EA2A/'.
+[2018.03.20-02.48.36:577][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.03.20-02.48.48:111][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.03.20-02.48.48:202][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.03.20-02.48.48:257][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.03.20-02.48.48:309][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.03.20-02.48.48:396][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.03.20-02.48.48:467][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.03.20-02.48.48:535][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.03.20-02.48.48:611][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.03.20-02.48.48:677][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.03.20-02.48.48:753][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.03.20-02.48.48:847][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.03.20-02.48.48:906][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.03.20-02.48.48:963][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.03.20-02.48.49:027][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.03.20-02.48.49:088][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.03.20-02.48.49:221][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.03.20-02.48.49:221][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.03.20-02.48.49:267][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.03.20-02.48.49:430][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.03.20-02.48.49:467][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.03.20-02.48.49:532][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.03.20-02.48.49:590][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.03.20-02.48.49:660][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.03.20-02.48.49:733][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.03.20-02.48.49:733][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.03.20-02.48.51:674][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: Loaded boot cache 1.38s 93MB C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.03.20-02.48.53:050][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.03.20-02.48.53:229][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.03.20-02.48.53:290][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Noah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.03.20-02.48.53:427][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.03.20-02.48.53:520][  0]LogSlate: Using Freetype 2.6.0
+[2018.03.20-02.48.53:677][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.20-02.48.53:691][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.20-02.49.15:277][  0]LogAssetRegistry: FAssetRegistry took 0.0606 seconds to start up
+[2018.03.20-02.49.19:164][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.20-02.49.26:442][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.03.20-02.49.28:192][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.03.20-02.49.28:380][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.03.20-02.49.28:381][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.03.20-02.49.28:381][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.03.20-02.49.28:381][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.03.20-02.49.28:381][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.03.20-02.49.33:424][  0]LogNetVersion: NPJ2018SeniorProject , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 535738706)
+[2018.03.20-02.49.36:391][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.357649 seconds
+[2018.03.20-02.49.36:431][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2018.03.20-02.49.36:431][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2018.03.20-02.49.36:431][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.03.20-02.49.36:576][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.03.20-02.50.16:723][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.03.20-02.50.16:870][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.03.20-02.50.22:388][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.03.20-02.50.24:253][  0]SourceControl: Source control is disabled
+[2018.03.20-02.50.24:253][  0]SourceControl: Source control is disabled
+[2018.03.20-02.50.24:375][  0]SourceControl: Source control is disabled
+[2018.03.20-02.50.24:531][  0]SourceControl: Source control is disabled
+[2018.03.20-02.50.26:546][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.03.20-02.50.26:897][  0]LogOcInput: OculusInput pre-init called
+[2018.03.20-02.50.27:938][  0]LogEngine: Initializing Engine...
+[2018.03.20-02.50.28:015][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.03.20-02.50.29:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.03.20-02.50.29:263][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.03.20-02.50.29:951][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.03.20-02.50.30:167][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-02.50.30:208][  0]LogInit: FAudioDevice initialized.
+[2018.03.20-02.50.30:344][  0]LogDerivedDataCache: Saved boot cache 0.13s 93MB C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.20-02.50.30:482][  0]LogInit: Texture streaming: Enabled
+[2018.03.20-02.50.30:727][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.03.20-02.50.31:667][  0]LogInit: Transaction tracking system initialized
+[2018.03.20-02.50.32:698][  0]BlueprintLog: New page: Editor Load
+[2018.03.20-02.50.35:805][  0]LocalizationService: Localization service is disabled
+[2018.03.20-02.50.37:428][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.03.20-02.50.37:428][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.03.20-02.50.37:429][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2018.03.20-02.50.38:368][  0]LogConsoleResponse: Display: 
+[2018.03.20-02.50.45:064][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/' took 0.06s
+[2018.03.20-02.50.45:064][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.03.20-02.50.45:064][  0]LogCook: Display: Mobile HDR setting 1
+[2018.03.20-02.50.45:120][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.03.20-02.50.51:089][  0]SourceControl: Source control is disabled
+[2018.03.20-02.50.51:208][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/ThirdPersonCPP/Maps/CollectionLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.03.20-02.50.51:398][  0]LightingResults: New page: Lighting Build
+[2018.03.20-02.50.51:691][  0]MapCheck: New page: Map Check
+[2018.03.20-02.50.51:692][  0]LightingResults: New page: Lighting Build
+[2018.03.20-02.51.00:707][  0]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-02.51.01:478][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.03.20-02.51.01:592][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.03.20-02.51.01:673][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 80.993ms to complete.
+[2018.03.20-02.51.01:673][  0]LogFileHelpers: Loading map 'CollectionLevel' took 10.505
+[2018.03.20-02.51.03:646][  0]LogCollectionManager: Loaded 0 collections in 0.019766 seconds
+[2018.03.20-02.51.03:936][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Saved/Collections/' took 0.01s
+[2018.03.20-02.51.03:936][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Developers/Noah/Collections/' took 0.01s
+[2018.03.20-02.51.03:936][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Collections/' took 0.01s
+[2018.03.20-02.51.03:936][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.03.20-02.51.03:998][  0]LogContentBrowser: Native class hierarchy populated in 0.0609 seconds. Added 2392 classes and 503 folders.
+[2018.03.20-02.51.04:161][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0025 seconds. Added 0 classes and 0 folders.
+[2018.03.20-02.51.07:711][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0093 seconds. Added 0 classes and 0 folders.
+[2018.03.20-02.51.07:931][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0092 seconds. Added 1 classes and 2 folders.
+[2018.03.20-02.51.09:183][  0]LogSlate: Took 0.016284 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.20-02.51.09:216][  0]LogSlate: Took 0.019295 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.03.20-02.51.09:311][  0]LogSlate: Took 0.033900 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.03.20-02.51.10:074][  0]LogRenderer: Reallocating scene render targets to support 932x456 Format 9 NumSamples 1 (Frame:1).
+[2018.03.20-02.51.10:859][  0]LogSlate: Took 0.026570 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.20-02.51.11:356][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0105 seconds. Added 1 classes and 2 folders.
+[2018.03.20-02.51.11:356][  0]LogLoad: (Engine Initialization) Total time: 187.53 seconds
+[2018.03.20-02.51.11:356][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.03.20-02.51.11:416][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.03.20-02.51.11:416][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.03.20-02.51.11:641][  0]LogContentStreaming: Texture pool size now 400 MB
+[2018.03.20-02.51.11:943][  4]LogAssetRegistry: Asset discovery search completed in 116.7142 seconds
+[2018.03.20-02.51.11:946][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.03.20-02.51.11:946][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000094 seconds (updated 0 objects)
+[2018.03.20-02.51.16:223][203]LogVSAccessor: Warning: Couldn't access Visual Studio
+[2018.03.20-02.51.16:277][203]Candidate modules for hot reload:
+[2018.03.20-02.51.16:277][203]  NPJ2018SeniorProject
+[2018.03.20-02.51.16:277][203]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 8639 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.20-02.51.16:313][203]Warning: Starting HotReload took  0.1s.
+[2018.03.20-02.56.20:055][ 52]CompilerResultsLog: New page: Compilation - Mar 19, 2018, 6:56:20 PM
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: Performing full C++ include scan (no include cache file)
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-8639.dll
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-8639.lib
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-8639.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-8639.exp
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-8639.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-8639.suppressed.exp
+[2018.03.20-02.56.20:056][ 52]CompilerResultsLog: Total build time: 303.00 seconds (Local executor: 161.29 seconds)
+[2018.03.20-02.56.20:056][ 52]LogMainFrame: MainFrame: Module compiling took 303.833 seconds
+[2018.03.20-02.56.20:167][ 52]LogClass: EProjectPlayState HotReload.
+[2018.03.20-02.56.20:170][ 52]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.20-02.56.20:402][ 52]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.20-02.56.20:557][ 52]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0025 seconds. Added 6 classes and 3 folders.
+[2018.03.20-02.56.20:559][ 52]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.20-02.56.20:667][ 52]LogContentBrowser: Native class hierarchy populated in 0.0164 seconds. Added 2394 classes and 507 folders.
+[2018.03.20-02.56.20:682][ 52]Display: HotReload took 304.5s.
+[2018.03.20-02.56.26:461][321]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-02.56.26:663][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-02.56.26:671][321]PIE: New page: PIE session: CollectionLevel (Mar 19, 2018, 6:56:26 PM)
+[2018.03.20-02.56.26:672][321]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-02.56.26:691][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019020s)
+[2018.03.20-02.56.26:693][321]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-02.56.26:694][321]LogPlayLevel: PIE: World Init took: (0.002607s)
+[2018.03.20-02.56.26:694][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.022598s)
+[2018.03.20-02.56.26:733][321]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-02.56.26:743][321]LogInit: FAudioDevice initialized.
+[2018.03.20-02.56.27:086][321]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-02.56.27:155][321]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.19-22.56.27
+[2018.03.20-02.56.27:194][321]LogWorld: Bringing up level for play took: 0.048182
+[2018.03.20-02.56.27:451][321]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0026 seconds. Added 11 classes and 0 folders.
+[2018.03.20-02.56.27:669][321]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.538
+[2018.03.20-02.56.28:452][359]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.37:502][902]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.38:253][947]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.38:886][985]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.39:469][ 20]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.40:053][ 55]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.40:620][ 89]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.43:319][251]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.45:403][376]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.48:270][548]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.56.57:854][123]LogClass: MyCharacter onGround is False
+[2018.03.20-02.57.09:055][795]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.57.09:738][836]LogClass: Locked on Nearest Enemy
+[2018.03.20-02.57.15:104][ 99]LogSlate: Took 0.000307 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.20-02.58.59:400][916]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Source/NPJ2018SeniorProject/NPJ2018SeniorProjectCharacter.h'
+[2018.03.20-02.58.59:447][916]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Source/NPJ2018SeniorProject/NPJ2018SeniorProjectCharacter.cpp'
+[2018.03.20-03.00.37:568][284]Candidate modules for hot reload:
+[2018.03.20-03.00.37:568][284]  NPJ2018SeniorProject
+[2018.03.20-03.00.37:568][284]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 7328 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.20-03.00.37:654][284]Warning: Starting HotReload took  0.2s.
+[2018.03.20-03.01.13:572][865]CompilerResultsLog: New page: Compilation - Mar 19, 2018, 7:01:13 PM
+[2018.03.20-03.01.13:572][865]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.20-03.01.13:572][865]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.20-03.01.13:573][865]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.20-03.01.13:573][865]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 21.7145446 seconds
+[2018.03.20-03.01.13:573][865]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.20-03.01.13:573][865]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.20-03.01.13:573][865]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-7328.dll
+[2018.03.20-03.01.13:573][865]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-7328.lib
+[2018.03.20-03.01.13:573][865]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7328.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7328.suppressed.exp
+[2018.03.20-03.01.13:573][865]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7328.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7328.exp
+[2018.03.20-03.01.13:574][865]CompilerResultsLog: Total build time: 35.46 seconds (Local executor: 4.81 seconds)
+[2018.03.20-03.01.13:574][865]LogMainFrame: MainFrame: Module compiling took 36.009 seconds
+[2018.03.20-03.01.13:708][865]LogClass: EProjectPlayState HotReload.
+[2018.03.20-03.01.13:712][865]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.20-03.01.13:782][865]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.20-03.01.13:883][865]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0027 seconds. Added 6 classes and 3 folders.
+[2018.03.20-03.01.13:885][865]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.20-03.01.13:933][865]LogContentBrowser: Native class hierarchy populated in 0.0127 seconds. Added 2394 classes and 507 folders.
+[2018.03.20-03.01.13:933][865]Display: HotReload took 36.4s.
+[2018.03.20-03.01.16:294][964]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-03.01.16:324][964]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-03.01.16:324][964]PIE: New page: PIE session: CollectionLevel (Mar 19, 2018, 7:01:16 PM)
+[2018.03.20-03.01.16:324][964]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-03.01.16:328][964]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003833s)
+[2018.03.20-03.01.16:330][964]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-03.01.16:330][964]LogPlayLevel: PIE: World Init took: (0.001493s)
+[2018.03.20-03.01.16:330][964]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.005985s)
+[2018.03.20-03.01.16:356][964]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-03.01.16:363][964]LogInit: FAudioDevice initialized.
+[2018.03.20-03.01.16:398][964]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-03.01.16:401][964]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.19-23.01.16
+[2018.03.20-03.01.16:402][964]LogWorld: Bringing up level for play took: 0.002685
+[2018.03.20-03.01.16:405][964]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.726
+[2018.03.20-03.01.17:688][ 40]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.01.18:888][112]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.01.19:538][151]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.01.21:254][254]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.02.59:183][136]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-03.02.59:212][136]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-03.02.59:212][136]PIE: New page: PIE session: CollectionLevel (Mar 19, 2018, 7:02:59 PM)
+[2018.03.20-03.02.59:212][136]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-03.02.59:217][136]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004554s)
+[2018.03.20-03.02.59:218][136]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-03.02.59:218][136]LogPlayLevel: PIE: World Init took: (0.001333s)
+[2018.03.20-03.02.59:219][136]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.006490s)
+[2018.03.20-03.02.59:234][136]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-03.02.59:244][136]LogInit: FAudioDevice initialized.
+[2018.03.20-03.02.59:281][136]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-03.02.59:284][136]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.19-23.02.59
+[2018.03.20-03.02.59:285][136]LogWorld: Bringing up level for play took: 0.002487
+[2018.03.20-03.02.59:288][136]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.157
+[2018.03.20-03.03.00:827][228]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.01:627][276]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.02:360][320]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.02:843][349]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.03:293][376]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.03:760][404]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.04:477][447]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.05:210][491]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.05:777][525]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.06:394][562]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.07:027][600]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.07:543][631]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.07:927][654]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.08:327][678]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.08:844][709]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.09:460][746]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.10:044][781]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.10:713][821]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.11:213][851]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.11:713][881]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.12:330][918]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.13:180][969]LogClass: Locked on Nearest Enemy
+[2018.03.20-03.03.13:930][ 14]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.37.59:123][542]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2018.03.20-21.52.13:367][473]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-21.52.13:398][473]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-21.52.13:398][473]PIE: New page: PIE session: CollectionLevel (Mar 20, 2018, 1:52:13 PM)
+[2018.03.20-21.52.13:399][473]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-21.52.13:403][473]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004346s)
+[2018.03.20-21.52.13:404][473]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-21.52.13:404][473]LogPlayLevel: PIE: World Init took: (0.001073s)
+[2018.03.20-21.52.13:404][473]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.005834s)
+[2018.03.20-21.52.13:421][473]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-21.52.13:428][473]LogInit: FAudioDevice initialized.
+[2018.03.20-21.52.13:461][473]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-21.52.13:464][473]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.20-17.52.13
+[2018.03.20-21.52.13:464][473]LogWorld: Bringing up level for play took: 0.002263
+[2018.03.20-21.52.13:467][473]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.886
+[2018.03.20-21.52.21:717][964]LogClass: MyCharacter onGround is False
+[2018.03.20-21.52.50:487][688]LogClass: MyCharacter onGround is False
+[2018.03.20-21.52.53:121][846]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.52.54:220][912]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.09:205][811]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.14:608][135]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.24:358][720]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.25:158][768]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.27:092][884]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.27:442][905]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.28:359][960]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.30:042][ 61]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.35:276][375]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.37:326][498]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.46:159][ 28]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.46:826][ 68]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.47:593][114]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.48:077][143]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.48:460][166]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.48:860][190]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.49:243][213]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.49:876][251]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.50:243][273]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.50:643][297]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.50:993][318]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.51:360][340]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.51:776][365]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.52:193][390]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.52:360][400]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.52:476][407]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.52:777][425]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.52:876][431]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.52:976][437]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.53:160][448]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.53:277][455]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.53:377][461]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.53:510][469]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.53:676][479]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.53:726][482]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.53:910][493]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.54:076][503]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.54:143][507]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.54:343][519]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.54:477][527]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.54:560][532]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.54:760][544]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.54:826][548]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.53.54:960][556]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.55:177][569]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.56:743][663]LogClass: MyCharacter onGround is False
+[2018.03.20-21.53.59:997][858]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.04:097][104]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.12:264][594]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.17:069][882]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.21:587][153]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.28:759][583]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.41:877][367]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.46:594][650]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.48:144][743]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.50:694][896]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.55:244][169]LogClass: MyCharacter onGround is False
+[2018.03.20-21.54.58:146][343]LogClass: MyCharacter onGround is False
+[2018.03.20-21.55.06:147][823]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.07:797][922]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.09:263][ 10]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.10:147][ 63]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.10:663][ 94]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.11:714][157]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.15:969][412]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.25:287][971]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.30:104][260]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.30:787][301]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.31:503][344]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.55.35:247][567]LogClass: Crouch Please
+[2018.03.20-21.55.36:914][667]LogClass: Locked on Nearest Enemy
+[2018.03.20-21.59.12:989][572]Candidate modules for hot reload:
+[2018.03.20-21.59.12:989][572]  NPJ2018SeniorProject
+[2018.03.20-21.59.12:989][572]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 9189 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.20-21.59.13:068][572]Warning: Starting HotReload took  0.2s.
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: New page: Compilation - Mar 20, 2018, 2:01:05 PM
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.20-22.01.05:303][273]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 17.7066065 seconds
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-9189.dll
+[2018.03.20-22.01.05:303][273]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-9189.lib
+[2018.03.20-22.01.05:303][273]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-9189.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-9189.exp
+[2018.03.20-22.01.05:304][273]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-9189.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-9189.suppressed.exp
+[2018.03.20-22.01.05:304][273]CompilerResultsLog: Total build time: 111.56 seconds (Local executor: 7.86 seconds)
+[2018.03.20-22.01.05:304][273]LogMainFrame: MainFrame: Module compiling took 112.319 seconds
+[2018.03.20-22.01.05:407][273]LogClass: EProjectPlayState HotReload.
+[2018.03.20-22.01.05:410][273]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.20-22.01.05:484][273]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.20-22.01.05:601][273]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0042 seconds. Added 6 classes and 3 folders.
+[2018.03.20-22.01.05:603][273]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.20-22.01.05:653][273]LogContentBrowser: Native class hierarchy populated in 0.0155 seconds. Added 2394 classes and 507 folders.
+[2018.03.20-22.01.05:653][273]Display: HotReload took 112.7s.
+[2018.03.20-22.01.07:902][381]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-22.01.07:926][381]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-22.01.07:926][381]PIE: New page: PIE session: CollectionLevel (Mar 20, 2018, 2:01:07 PM)
+[2018.03.20-22.01.07:926][381]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-22.01.07:930][381]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003416s)
+[2018.03.20-22.01.07:930][381]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-22.01.07:931][381]LogPlayLevel: PIE: World Init took: (0.000964s)
+[2018.03.20-22.01.07:931][381]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.004817s)
+[2018.03.20-22.01.07:946][381]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-22.01.07:954][381]LogInit: FAudioDevice initialized.
+[2018.03.20-22.01.07:986][381]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-22.01.07:989][381]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.20-18.01.07
+[2018.03.20-22.01.07:990][381]LogWorld: Bringing up level for play took: 0.002696
+[2018.03.20-22.01.07:993][381]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.588
+[2018.03.20-22.01.09:684][482]LogClass: Locked on Nearest Enemy
+[2018.03.20-22.02.36:668][537]Candidate modules for hot reload:
+[2018.03.20-22.02.36:668][537]  NPJ2018SeniorProject
+[2018.03.20-22.02.36:669][537]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 4687 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.20-22.02.36:747][537]Warning: Starting HotReload took  0.1s.
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: New page: Compilation - Mar 20, 2018, 2:02:57 PM
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.20-22.02.57:895][716]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 9.5913781 seconds
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-4687.dll
+[2018.03.20-22.02.57:895][716]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-4687.lib
+[2018.03.20-22.02.57:895][716]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4687.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4687.suppressed.exp
+[2018.03.20-22.02.57:896][716]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4687.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4687.exp
+[2018.03.20-22.02.57:896][716]CompilerResultsLog: Total build time: 20.68 seconds (Local executor: 4.46 seconds)
+[2018.03.20-22.02.57:896][716]LogMainFrame: MainFrame: Module compiling took 21.236 seconds
+[2018.03.20-22.02.57:996][716]LogClass: EProjectPlayState HotReload.
+[2018.03.20-22.02.57:999][716]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.20-22.02.58:069][716]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.20-22.02.58:173][716]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0038 seconds. Added 6 classes and 3 folders.
+[2018.03.20-22.02.58:175][716]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.20-22.02.58:211][716]LogContentBrowser: Native class hierarchy populated in 0.0111 seconds. Added 2394 classes and 507 folders.
+[2018.03.20-22.02.58:211][716]Display: HotReload took 21.6s.
+[2018.03.20-22.03.01:046][746]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-22.03.01:077][746]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-22.03.01:077][746]PIE: New page: PIE session: CollectionLevel (Mar 20, 2018, 2:03:01 PM)
+[2018.03.20-22.03.01:078][746]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-22.03.01:083][746]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005339s)
+[2018.03.20-22.03.01:085][746]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-22.03.01:085][746]LogPlayLevel: PIE: World Init took: (0.002157s)
+[2018.03.20-22.03.01:085][746]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.007905s)
+[2018.03.20-22.03.01:100][746]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-22.03.01:108][746]LogInit: FAudioDevice initialized.
+[2018.03.20-22.03.01:143][746]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-22.03.01:146][746]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.20-18.03.01
+[2018.03.20-22.03.01:147][746]LogWorld: Bringing up level for play took: 0.002352
+[2018.03.20-22.03.01:150][746]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.568
+[2018.03.20-22.03.02:404][821]LogClass: Locked on Nearest Enemy
+[2018.03.20-22.03.06:560][ 51]LogSlate: Took 0.023425 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.03.20-22.03.09:767][212]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-22.03.09:794][212]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-22.03.09:795][212]PIE: New page: PIE session: CollectionLevel (Mar 20, 2018, 2:03:09 PM)
+[2018.03.20-22.03.09:795][212]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-22.03.09:799][212]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003561s)
+[2018.03.20-22.03.09:800][212]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-22.03.09:800][212]LogPlayLevel: PIE: World Init took: (0.000981s)
+[2018.03.20-22.03.09:800][212]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.005219s)
+[2018.03.20-22.03.09:816][212]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-22.03.09:822][212]LogInit: FAudioDevice initialized.
+[2018.03.20-22.03.09:858][212]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-22.03.09:861][212]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.20-18.03.09
+[2018.03.20-22.03.09:862][212]LogWorld: Bringing up level for play took: 0.002762
+[2018.03.20-22.03.09:866][212]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.716
+[2018.03.20-22.03.10:922][275]LogClass: Locked on Nearest Enemy
+[2018.03.20-22.03.11:889][333]LogClass: We are too close: 496.138000
+[2018.03.20-22.03.11:905][334]LogClass: We are too close: 488.314362
+[2018.03.20-22.03.11:922][335]LogClass: We are too close: 480.498199
+[2018.03.20-22.03.11:939][336]LogClass: We are too close: 472.689514
+[2018.03.20-22.03.11:955][337]LogClass: We are too close: 464.760834
+[2018.03.20-22.03.11:972][338]LogClass: We are too close: 456.841034
+[2018.03.20-22.03.11:989][339]LogClass: We are too close: 448.930786
+[2018.03.20-22.03.12:005][340]LogClass: We are too close: 440.902100
+[2018.03.20-22.03.12:022][341]LogClass: We are too close: 432.756165
+[2018.03.20-22.03.12:039][342]LogClass: We are too close: 424.622253
+[2018.03.20-22.03.12:055][343]LogClass: We are too close: 416.500916
+[2018.03.20-22.03.12:072][344]LogClass: We are too close: 408.392975
+[2018.03.20-22.03.12:089][345]LogClass: We are too close: 400.299133
+[2018.03.20-22.03.12:105][346]LogClass: We are too close: 392.220276
+[2018.03.20-22.03.12:122][347]LogClass: We are too close: 384.157349
+[2018.03.20-22.03.12:139][348]LogClass: We are too close: 376.111389
+[2018.03.20-22.03.12:155][349]LogClass: We are too close: 368.083496
+[2018.03.20-22.03.12:172][350]LogClass: We are too close: 360.409943
+[2018.03.20-22.03.12:189][351]LogClass: We are too close: 353.257660
+[2018.03.20-22.03.12:205][352]LogClass: We are too close: 347.667419
+[2018.03.20-22.03.12:222][353]LogClass: We are too close: 343.713867
+[2018.03.20-22.03.12:239][354]LogClass: We are too close: 341.353394
+[2018.03.20-22.03.12:256][355]LogClass: We are too close: 340.158508
+[2018.03.20-22.03.12:273][356]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:289][357]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:306][358]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:323][359]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:340][360]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:356][361]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:372][362]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:389][363]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:406][364]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:422][365]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:439][366]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:455][367]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:472][368]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:489][369]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:505][370]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:522][371]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:539][372]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:555][373]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:572][374]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:589][375]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:605][376]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:622][377]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:639][378]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:655][379]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:672][380]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:689][381]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:705][382]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:722][383]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:739][384]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:755][385]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:772][386]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:789][387]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:805][388]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:822][389]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:838][390]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:856][391]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:872][392]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:889][393]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:905][394]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:922][395]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:939][396]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:956][397]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:972][398]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.12:989][399]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:006][400]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:022][401]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:039][402]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:055][403]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:072][404]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:089][405]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:106][406]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:122][407]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:139][408]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:155][409]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:172][410]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:189][411]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:206][412]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:222][413]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:239][414]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:256][415]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:272][416]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:289][417]LogClass: We are too close: 339.817322
+[2018.03.20-22.03.13:306][418]LogClass: We are too close: 339.780121
+[2018.03.20-22.03.13:322][419]LogClass: We are too close: 339.558838
+[2018.03.20-22.03.13:339][420]LogClass: We are too close: 339.075287
+[2018.03.20-22.03.13:356][421]LogClass: We are too close: 338.256165
+[2018.03.20-22.03.13:372][422]LogClass: We are too close: 337.078247
+[2018.03.20-22.03.13:389][423]LogClass: We are too close: 335.525482
+[2018.03.20-22.03.13:406][424]LogClass: We are too close: 333.584442
+[2018.03.20-22.03.13:422][425]LogClass: We are too close: 331.246613
+[2018.03.20-22.03.13:439][426]LogClass: We are too close: 328.513275
+[2018.03.20-22.03.13:456][427]LogClass: We are too close: 325.378815
+[2018.03.20-22.03.13:472][428]LogClass: We are too close: 321.845062
+[2018.03.20-22.03.13:489][429]LogClass: We are too close: 317.910492
+[2018.03.20-22.03.13:506][430]LogClass: We are too close: 313.584595
+[2018.03.20-22.03.13:522][431]LogClass: We are too close: 308.867035
+[2018.03.20-22.03.13:539][432]LogClass: We are too close: 303.758820
+[2018.03.20-22.03.13:556][433]LogClass: We are too close: 298.280212
+[2018.03.20-22.03.13:572][434]LogClass: We are too close: 292.639954
+[2018.03.20-22.03.13:590][435]LogClass: We are too close: 286.938507
+[2018.03.20-22.03.13:606][436]LogClass: We are too close: 281.846130
+[2018.03.20-22.03.13:622][437]LogClass: We are too close: 277.777496
+[2018.03.20-22.03.13:639][438]LogClass: We are too close: 274.929382
+[2018.03.20-22.03.13:656][439]LogClass: We are too close: 273.182526
+[2018.03.20-22.03.13:673][440]LogClass: We are too close: 272.446899
+[2018.03.20-22.03.13:689][441]LogClass: We are too close: 272.654419
+[2018.03.20-22.03.13:707][442]LogClass: We are too close: 273.898773
+[2018.03.20-22.03.13:723][443]LogClass: We are too close: 276.277496
+[2018.03.20-22.03.13:740][444]LogClass: We are too close: 278.931641
+[2018.03.20-22.03.13:757][445]LogClass: We are too close: 280.790741
+[2018.03.20-22.03.13:773][446]LogClass: We are too close: 281.967590
+[2018.03.20-22.03.13:789][447]LogClass: We are too close: 282.613922
+[2018.03.20-22.03.13:806][448]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:823][449]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:839][450]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:856][451]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:873][452]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:889][453]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:906][454]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:922][455]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:939][456]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:956][457]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:972][458]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.13:989][459]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:006][460]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:023][461]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:040][462]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:057][463]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:074][464]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:091][465]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:109][466]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:126][467]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:143][468]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:160][469]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:178][470]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:195][471]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:212][472]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:228][473]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:245][474]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:261][475]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:278][476]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:295][477]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:312][478]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:328][479]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:345][480]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:362][481]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:379][482]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:395][483]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:412][484]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:428][485]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:445][486]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:462][487]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:479][488]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:495][489]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:511][490]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:528][491]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:545][492]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:562][493]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:578][494]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:595][495]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:611][496]LogClass: We are too close: 282.858582
+[2018.03.20-22.03.14:628][497]LogClass: We are too close: 282.838104
+[2018.03.20-22.03.14:645][498]LogClass: We are too close: 282.637054
+[2018.03.20-22.03.14:662][499]LogClass: We are too close: 282.064911
+[2018.03.20-22.03.14:678][500]LogClass: We are too close: 281.016144
+[2018.03.20-22.03.14:695][501]LogClass: We are too close: 279.447815
+[2018.03.20-22.03.14:712][502]LogClass: We are too close: 277.361694
+[2018.03.20-22.03.14:728][503]LogClass: We are too close: 274.760162
+[2018.03.20-22.03.14:745][504]LogClass: We are too close: 271.646271
+[2018.03.20-22.03.14:762][505]LogClass: We are too close: 268.024048
+[2018.03.20-22.03.14:778][506]LogClass: We are too close: 263.898254
+[2018.03.20-22.03.14:795][507]LogClass: We are too close: 259.273834
+[2018.03.20-22.03.14:811][508]LogClass: We are too close: 254.159683
+[2018.03.20-22.03.14:828][509]LogClass: We are too close: 248.563858
+[2018.03.20-22.03.14:845][510]LogClass: We are too close: 242.497040
+[2018.03.20-22.03.14:861][511]LogClass: We are too close: 235.972397
+[2018.03.20-22.03.14:878][512]LogClass: We are too close: 229.006195
+[2018.03.20-22.03.14:895][513]LogClass: We are too close: 221.617920
+[2018.03.20-22.03.14:912][514]LogClass: We are too close: 213.831985
+[2018.03.20-22.03.14:928][515]LogClass: We are too close: 205.678864
+[2018.03.20-22.03.14:945][516]LogClass: We are too close: 197.398911
+[2018.03.20-22.03.14:962][517]LogClass: We are too close: 189.285172
+[2018.03.20-22.03.14:978][518]LogClass: We are too close: 181.359940
+[2018.03.20-22.03.14:995][519]LogClass: We are too close: 173.649048
+[2018.03.20-22.03.15:011][520]LogClass: We are too close: 166.182327
+[2018.03.20-22.03.15:028][521]LogClass: We are too close: 159.243866
+[2018.03.20-22.03.15:045][522]LogClass: We are too close: 154.641022
+[2018.03.20-22.03.15:062][523]LogClass: We are too close: 151.363297
+[2018.03.20-22.03.15:079][524]LogClass: We are too close: 149.296173
+[2018.03.20-22.03.15:095][525]LogClass: We are too close: 148.171616
+[2018.03.20-22.03.15:112][526]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:128][527]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:145][528]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:162][529]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:178][530]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:195][531]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:212][532]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:228][533]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:245][534]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:262][535]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:278][536]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:295][537]LogClass: We are too close: 147.720169
+[2018.03.20-22.03.15:312][538]LogClass: We are too close: 147.543869
+[2018.03.20-22.03.15:329][539]LogClass: We are too close: 147.095154
+[2018.03.20-22.03.15:345][540]LogClass: We are too close: 146.304077
+[2018.03.20-22.03.15:362][541]LogClass: We are too close: 145.182022
+[2018.03.20-22.03.15:378][542]LogClass: We are too close: 143.742096
+[2018.03.20-22.03.15:395][543]LogClass: We are too close: 142.002625
+[2018.03.20-22.03.15:412][544]LogClass: We are too close: 139.988037
+[2018.03.20-22.03.15:428][545]LogClass: We are too close: 137.729248
+[2018.03.20-22.03.15:445][546]LogClass: We are too close: 135.265274
+[2018.03.20-22.03.15:462][547]LogClass: We are too close: 132.656631
+[2018.03.20-22.03.15:478][548]LogClass: We are too close: 129.980286
+[2018.03.20-22.03.15:495][549]LogClass: We are too close: 127.326622
+[2018.03.20-22.03.15:511][550]LogClass: We are too close: 124.785751
+[2018.03.20-22.03.15:529][551]LogClass: We are too close: 122.463074
+[2018.03.20-22.03.15:546][552]LogClass: We are too close: 120.487633
+[2018.03.20-22.03.15:562][553]LogClass: We are too close: 119.013000
+[2018.03.20-22.03.15:579][554]LogClass: We are too close: 119.962173
+[2018.03.20-22.03.15:595][555]LogClass: We are too close: 121.290520
+[2018.03.20-22.03.15:611][556]LogClass: We are too close: 123.025818
+[2018.03.20-22.03.15:628][557]LogClass: We are too close: 125.187737
+[2018.03.20-22.03.15:645][558]LogClass: We are too close: 127.784271
+[2018.03.20-22.03.15:662][559]LogClass: We are too close: 130.813431
+[2018.03.20-22.03.15:678][560]LogClass: We are too close: 133.998306
+[2018.03.20-22.03.15:695][561]LogClass: We are too close: 137.059967
+[2018.03.20-22.03.15:712][562]LogClass: We are too close: 139.421417
+[2018.03.20-22.03.15:728][563]LogClass: We are too close: 141.067001
+[2018.03.20-22.03.15:745][564]LogClass: We are too close: 142.014755
+[2018.03.20-22.03.15:762][565]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:779][566]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:795][567]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:812][568]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:829][569]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:845][570]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:862][571]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:879][572]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:895][573]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:912][574]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:928][575]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:945][576]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:962][577]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:979][578]LogClass: We are too close: 142.435745
+[2018.03.20-22.03.15:995][579]LogClass: We are too close: 142.424911
+[2018.03.20-22.03.16:012][580]LogClass: We are too close: 142.393295
+[2018.03.20-22.03.16:028][581]LogClass: We are too close: 142.340927
+[2018.03.20-22.03.16:045][582]LogClass: We are too close: 142.270676
+[2018.03.20-22.03.16:061][583]LogClass: We are too close: 142.270676
+[2018.03.20-22.03.16:078][584]LogClass: We are too close: 142.270676
+[2018.03.20-22.03.16:095][585]LogClass: We are too close: 142.270676
+[2018.03.20-22.03.16:112][586]LogClass: We are too close: 142.368134
+[2018.03.20-22.03.16:129][587]LogClass: We are too close: 142.621689
+[2018.03.20-22.03.16:145][588]LogClass: We are too close: 143.081009
+[2018.03.20-22.03.16:161][589]LogClass: We are too close: 143.767914
+[2018.03.20-22.03.16:178][590]LogClass: We are too close: 144.700516
+[2018.03.20-22.03.16:195][591]LogClass: We are too close: 145.901886
+[2018.03.20-22.03.16:212][592]LogClass: We are too close: 147.399597
+[2018.03.20-22.03.16:228][593]LogClass: We are too close: 149.224823
+[2018.03.20-22.03.16:245][594]LogClass: We are too close: 151.411804
+[2018.03.20-22.03.16:261][595]LogClass: We are too close: 153.996689
+[2018.03.20-22.03.16:278][596]LogClass: We are too close: 157.016586
+[2018.03.20-22.03.16:295][597]LogClass: We are too close: 160.508621
+[2018.03.20-22.03.16:312][598]LogClass: We are too close: 164.508499
+[2018.03.20-22.03.16:329][599]LogClass: We are too close: 169.050171
+[2018.03.20-22.03.16:345][600]LogClass: We are too close: 174.164749
+[2018.03.20-22.03.16:362][601]LogClass: We are too close: 179.879868
+[2018.03.20-22.03.16:379][602]LogClass: We are too close: 186.219406
+[2018.03.20-22.03.16:395][603]LogClass: We are too close: 192.886139
+[2018.03.20-22.03.16:412][604]LogClass: We are too close: 199.501984
+[2018.03.20-22.03.16:428][605]LogClass: We are too close: 206.296692
+[2018.03.20-22.03.16:445][606]LogClass: We are too close: 213.253220
+[2018.03.20-22.03.16:462][607]LogClass: We are too close: 220.356445
+[2018.03.20-22.03.16:478][608]LogClass: We are too close: 227.592194
+[2018.03.20-22.03.16:495][609]LogClass: We are too close: 234.948486
+[2018.03.20-22.03.16:512][610]LogClass: We are too close: 242.414536
+[2018.03.20-22.03.16:528][611]LogClass: We are too close: 249.983002
+[2018.03.20-22.03.16:545][612]LogClass: We are too close: 257.639526
+[2018.03.20-22.03.16:562][613]LogClass: We are too close: 265.379364
+[2018.03.20-22.03.16:578][614]LogClass: We are too close: 272.923859
+[2018.03.20-22.03.16:595][615]LogClass: We are too close: 280.026306
+[2018.03.20-22.03.16:612][616]LogClass: We are too close: 286.434875
+[2018.03.20-22.03.16:628][617]LogClass: We are too close: 292.251251
+[2018.03.20-22.03.16:645][618]LogClass: We are too close: 296.195160
+[2018.03.20-22.03.16:662][619]LogClass: We are too close: 298.682770
+[2018.03.20-22.03.16:678][620]LogClass: We are too close: 299.999847
+[2018.03.20-22.03.16:695][621]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:712][622]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:728][623]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:745][624]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:761][625]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:778][626]LogClass: We are too close: 300.456024
+[2018.03.20-22.03.16:795][627]LogClass: We are too close: 300.284821
+[2018.03.20-22.03.16:811][628]LogClass: We are too close: 299.788666
+[2018.03.20-22.03.16:828][629]LogClass: We are too close: 298.884552
+[2018.03.20-22.03.16:845][630]LogClass: We are too close: 297.537201
+[2018.03.20-22.03.16:861][631]LogClass: We are too close: 295.727936
+[2018.03.20-22.03.16:878][632]LogClass: We are too close: 293.413788
+[2018.03.20-22.03.16:895][633]LogClass: We are too close: 290.598053
+[2018.03.20-22.03.16:911][634]LogClass: We are too close: 287.284760
+[2018.03.20-22.03.16:928][635]LogClass: We are too close: 283.478821
+[2018.03.20-22.03.16:945][636]LogClass: We are too close: 279.186432
+[2018.03.20-22.03.16:961][637]LogClass: We are too close: 274.415039
+[2018.03.20-22.03.16:979][638]LogClass: We are too close: 269.173615
+[2018.03.20-22.03.16:995][639]LogClass: We are too close: 263.472992
+[2018.03.20-22.03.17:012][640]LogClass: We are too close: 257.326202
+[2018.03.20-22.03.17:028][641]LogClass: We are too close: 250.749329
+[2018.03.20-22.03.17:045][642]LogClass: We are too close: 243.761383
+[2018.03.20-22.03.17:062][643]LogClass: We are too close: 236.385681
+[2018.03.20-22.03.17:078][644]LogClass: We are too close: 228.650742
+[2018.03.20-22.03.17:095][645]LogClass: We are too close: 220.591675
+[2018.03.20-22.03.17:112][646]LogClass: We are too close: 212.686615
+[2018.03.20-22.03.17:128][647]LogClass: We are too close: 204.964630
+[2018.03.20-22.03.17:145][648]LogClass: We are too close: 197.447220
+[2018.03.20-22.03.17:162][649]LogClass: We are too close: 190.158676
+[2018.03.20-22.03.17:178][650]LogClass: We are too close: 183.126266
+[2018.03.20-22.03.17:195][651]LogClass: We are too close: 176.380692
+[2018.03.20-22.03.17:212][652]LogClass: We are too close: 169.956116
+[2018.03.20-22.03.17:228][653]LogClass: We are too close: 163.890244
+[2018.03.20-22.03.17:245][654]LogClass: We are too close: 158.224365
+[2018.03.20-22.03.17:262][655]LogClass: We are too close: 153.002930
+[2018.03.20-22.03.17:279][656]LogClass: We are too close: 148.272888
+[2018.03.20-22.03.17:295][657]LogClass: We are too close: 144.082626
+[2018.03.20-22.03.17:312][658]LogClass: We are too close: 140.480484
+[2018.03.20-22.03.17:328][659]LogClass: We are too close: 137.512665
+[2018.03.20-22.03.17:345][660]LogClass: We are too close: 135.220963
+[2018.03.20-22.03.17:362][661]LogClass: We are too close: 133.640137
+[2018.03.20-22.03.17:378][662]LogClass: We are too close: 132.795609
+[2018.03.20-22.03.17:395][663]LogClass: We are too close: 132.701416
+[2018.03.20-22.03.17:412][664]LogClass: We are too close: 133.359161
+[2018.03.20-22.03.17:428][665]LogClass: We are too close: 134.757813
+[2018.03.20-22.03.17:445][666]LogClass: We are too close: 136.874771
+[2018.03.20-22.03.17:462][667]LogClass: We are too close: 139.677338
+[2018.03.20-22.03.17:478][668]LogClass: We are too close: 143.125092
+[2018.03.20-22.03.17:495][669]LogClass: We are too close: 147.172806
+[2018.03.20-22.03.17:512][670]LogClass: We are too close: 151.772461
+[2018.03.20-22.03.17:528][671]LogClass: We are too close: 156.875519
+[2018.03.20-22.03.17:545][672]LogClass: We are too close: 162.434555
+[2018.03.20-22.03.17:562][673]LogClass: We are too close: 168.404404
+[2018.03.20-22.03.17:579][674]LogClass: We are too close: 174.743195
+[2018.03.20-22.03.17:595][675]LogClass: We are too close: 181.461166
+[2018.03.20-22.03.17:612][676]LogClass: We are too close: 188.427109
+[2018.03.20-22.03.17:628][677]LogClass: We are too close: 195.656342
+[2018.03.20-22.03.17:645][678]LogClass: We are too close: 203.120544
+[2018.03.20-22.03.17:661][679]LogClass: We are too close: 210.794952
+[2018.03.20-22.03.17:679][680]LogClass: We are too close: 218.657455
+[2018.03.20-22.03.17:695][681]LogClass: We are too close: 226.688690
+[2018.03.20-22.03.17:712][682]LogClass: We are too close: 234.870911
+[2018.03.20-22.03.17:729][683]LogClass: We are too close: 243.189087
+[2018.03.20-22.03.17:745][684]LogClass: We are too close: 251.629730
+[2018.03.20-22.03.17:762][685]LogClass: We are too close: 260.180939
+[2018.03.20-22.03.17:778][686]LogClass: We are too close: 268.832428
+[2018.03.20-22.03.17:795][687]LogClass: We are too close: 277.574554
+[2018.03.20-22.03.17:812][688]LogClass: We are too close: 286.399048
+[2018.03.20-22.03.17:828][689]LogClass: We are too close: 295.298218
+[2018.03.20-22.03.17:845][690]LogClass: We are too close: 303.747437
+[2018.03.20-22.03.17:862][691]LogClass: We are too close: 309.608276
+[2018.03.20-22.03.17:878][692]LogClass: We are too close: 313.406616
+[2018.03.20-22.03.17:895][693]LogClass: We are too close: 315.682220
+[2018.03.20-22.03.17:912][694]LogClass: We are too close: 316.836548
+[2018.03.20-22.03.17:928][695]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.17:945][696]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.17:962][697]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.17:978][698]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.17:995][699]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:012][700]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:028][701]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:045][702]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:061][703]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:078][704]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:095][705]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:111][706]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:128][707]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:145][708]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:161][709]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:178][710]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:195][711]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:211][712]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:228][713]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:245][714]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:261][715]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:278][716]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:295][717]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:312][718]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:328][719]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:345][720]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:362][721]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:378][722]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:395][723]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:412][724]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:428][725]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:445][726]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:462][727]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:478][728]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:495][729]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:512][730]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:528][731]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:545][732]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:562][733]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:578][734]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:595][735]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:612][736]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:628][737]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:645][738]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:662][739]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:678][740]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:695][741]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:711][742]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:728][743]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:745][744]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:761][745]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:778][746]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:795][747]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:811][748]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:828][749]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:845][750]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:861][751]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:878][752]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:895][753]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:912][754]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:928][755]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:945][756]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:962][757]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:979][758]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.18:995][759]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:012][760]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:029][761]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:045][762]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:062][763]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:078][764]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:095][765]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:112][766]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:128][767]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:145][768]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:162][769]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:178][770]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:195][771]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:212][772]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:228][773]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:245][774]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:262][775]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:278][776]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:295][777]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:312][778]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:328][779]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:345][780]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:362][781]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:378][782]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:395][783]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:412][784]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:428][785]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:445][786]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:462][787]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:478][788]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:495][789]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:512][790]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:528][791]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:545][792]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:561][793]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:578][794]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:595][795]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:611][796]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:628][797]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:645][798]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:662][799]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:679][800]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:695][801]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:712][802]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:728][803]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:745][804]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:762][805]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:778][806]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:795][807]LogClass: We are too close: 317.166779
+[2018.03.20-22.03.19:812][808]LogClass: We are too close: 317.164948
+[2018.03.20-22.03.19:829][809]LogClass: We are too close: 317.016937
+[2018.03.20-22.03.19:845][810]LogClass: We are too close: 316.625122
+[2018.03.20-22.03.19:862][811]LogClass: We are too close: 315.891907
+[2018.03.20-22.03.19:879][812]LogClass: We are too close: 314.763641
+[2018.03.20-22.03.19:895][813]LogClass: We are too close: 313.159485
+[2018.03.20-22.03.19:912][814]LogClass: We are too close: 311.036346
+[2018.03.20-22.03.19:929][815]LogClass: We are too close: 308.380219
+[2018.03.20-22.03.19:945][816]LogClass: We are too close: 305.191406
+[2018.03.20-22.03.19:962][817]LogClass: We are too close: 301.470917
+[2018.03.20-22.03.19:978][818]LogClass: We are too close: 297.245087
+[2018.03.20-22.03.19:995][819]LogClass: We are too close: 292.510895
+[2018.03.20-22.03.20:012][820]LogClass: We are too close: 287.290955
+[2018.03.20-22.03.20:028][821]LogClass: We are too close: 281.610107
+[2018.03.20-22.03.20:045][822]LogClass: We are too close: 275.513580
+[2018.03.20-22.03.20:062][823]LogClass: We are too close: 269.105133
+[2018.03.20-22.03.20:078][824]LogClass: We are too close: 262.477203
+[2018.03.20-22.03.20:095][825]LogClass: We are too close: 255.707352
+[2018.03.20-22.03.20:112][826]LogClass: We are too close: 248.922241
+[2018.03.20-22.03.20:128][827]LogClass: We are too close: 242.208969
+[2018.03.20-22.03.20:145][828]LogClass: We are too close: 235.799683
+[2018.03.20-22.03.20:162][829]LogClass: We are too close: 229.921036
+[2018.03.20-22.03.20:178][830]LogClass: We are too close: 224.859604
+[2018.03.20-22.03.20:195][831]LogClass: We are too close: 220.601807
+[2018.03.20-22.03.20:212][832]LogClass: We are too close: 216.944183
+[2018.03.20-22.03.20:229][833]LogClass: We are too close: 214.322632
+[2018.03.20-22.03.20:245][834]LogClass: We are too close: 212.756760
+[2018.03.20-22.03.20:262][835]LogClass: We are too close: 212.253845
+[2018.03.20-22.03.20:278][836]LogClass: We are too close: 212.826035
+[2018.03.20-22.03.20:295][837]LogClass: We are too close: 214.367294
+[2018.03.20-22.03.20:312][838]LogClass: We are too close: 216.774872
+[2018.03.20-22.03.20:328][839]LogClass: We are too close: 219.938812
+[2018.03.20-22.03.20:345][840]LogClass: We are too close: 223.354462
+[2018.03.20-22.03.20:362][841]LogClass: We are too close: 225.874771
+[2018.03.20-22.03.20:379][842]LogClass: We are too close: 227.572708
+[2018.03.20-22.03.20:395][843]LogClass: We are too close: 228.607315
+[2018.03.20-22.03.20:412][844]LogClass: We are too close: 229.128540
+[2018.03.20-22.03.20:429][845]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:445][846]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:462][847]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:478][848]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:495][849]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:512][850]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:528][851]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:545][852]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:562][853]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:578][854]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:596][855]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:612][856]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:628][857]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:645][858]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:662][859]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:678][860]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:695][861]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:712][862]LogClass: We are too close: 229.262863
+[2018.03.20-22.03.20:728][863]LogClass: We are too close: 229.183258
+[2018.03.20-22.03.20:745][864]LogClass: We are too close: 228.882065
+[2018.03.20-22.03.20:762][865]LogClass: We are too close: 228.191925
+[2018.03.20-22.03.20:778][866]LogClass: We are too close: 227.034302
+[2018.03.20-22.03.20:795][867]LogClass: We are too close: 225.406006
+[2018.03.20-22.03.20:812][868]LogClass: We are too close: 223.315796
+[2018.03.20-22.03.20:828][869]LogClass: We are too close: 220.792282
+[2018.03.20-22.03.20:845][870]LogClass: We are too close: 217.876938
+[2018.03.20-22.03.20:862][871]LogClass: We are too close: 214.601196
+[2018.03.20-22.03.20:878][872]LogClass: We are too close: 211.020081
+[2018.03.20-22.03.20:895][873]LogClass: We are too close: 207.208954
+[2018.03.20-22.03.20:912][874]LogClass: We are too close: 203.311707
+[2018.03.20-22.03.20:928][875]LogClass: We are too close: 199.403915
+[2018.03.20-22.03.20:945][876]LogClass: We are too close: 195.556900
+[2018.03.20-22.03.20:962][877]LogClass: We are too close: 191.828827
+[2018.03.20-22.03.20:978][878]LogClass: We are too close: 188.295944
+[2018.03.20-22.03.20:995][879]LogClass: We are too close: 185.070862
+[2018.03.20-22.03.21:012][880]LogClass: We are too close: 182.320389
+[2018.03.20-22.03.21:028][881]LogClass: We are too close: 180.386658
+[2018.03.20-22.03.21:045][882]LogClass: We are too close: 179.569946
+[2018.03.20-22.03.21:062][883]LogClass: We are too close: 180.201950
+[2018.03.20-22.03.21:079][884]LogClass: We are too close: 182.490112
+[2018.03.20-22.03.21:095][885]LogClass: We are too close: 186.346252
+[2018.03.20-22.03.21:112][886]LogClass: We are too close: 191.533783
+[2018.03.20-22.03.21:129][887]LogClass: We are too close: 197.828064
+[2018.03.20-22.03.21:145][888]LogClass: We are too close: 204.991623
+[2018.03.20-22.03.21:162][889]LogClass: We are too close: 212.830307
+[2018.03.20-22.03.21:179][890]LogClass: We are too close: 221.193924
+[2018.03.20-22.03.21:195][891]LogClass: We are too close: 229.963699
+[2018.03.20-22.03.21:212][892]LogClass: We are too close: 239.046860
+[2018.03.20-22.03.21:229][893]LogClass: We are too close: 248.371567
+[2018.03.20-22.03.21:245][894]LogClass: We are too close: 257.912689
+[2018.03.20-22.03.21:262][895]LogClass: We are too close: 267.641571
+[2018.03.20-22.03.21:279][896]LogClass: We are too close: 277.497406
+[2018.03.20-22.03.21:295][897]LogClass: We are too close: 287.399323
+[2018.03.20-22.03.21:312][898]LogClass: We are too close: 297.163727
+[2018.03.20-22.03.21:329][899]LogClass: We are too close: 306.813293
+[2018.03.20-22.03.21:346][900]LogClass: We are too close: 316.124603
+[2018.03.20-22.03.21:362][901]LogClass: We are too close: 325.029022
+[2018.03.20-22.03.21:379][902]LogClass: We are too close: 333.419006
+[2018.03.20-22.03.21:395][903]LogClass: We are too close: 341.328430
+[2018.03.20-22.03.21:412][904]LogClass: We are too close: 348.640320
+[2018.03.20-22.03.21:429][905]LogClass: We are too close: 355.299042
+[2018.03.20-22.03.21:445][906]LogClass: We are too close: 361.347351
+[2018.03.20-22.03.21:462][907]LogClass: We are too close: 366.845001
+[2018.03.20-22.03.21:478][908]LogClass: We are too close: 371.855713
+[2018.03.20-22.03.21:495][909]LogClass: We are too close: 376.439453
+[2018.03.20-22.03.21:512][910]LogClass: We are too close: 380.926422
+[2018.03.20-22.03.21:528][911]LogClass: We are too close: 385.446503
+[2018.03.20-22.03.21:545][912]LogClass: We are too close: 390.232483
+[2018.03.20-22.03.21:562][913]LogClass: We are too close: 395.387085
+[2018.03.20-22.03.21:578][914]LogClass: We are too close: 400.934692
+[2018.03.20-22.03.21:595][915]LogClass: We are too close: 406.814850
+[2018.03.20-22.03.21:612][916]LogClass: We are too close: 412.951263
+[2018.03.20-22.03.21:628][917]LogClass: We are too close: 419.284821
+[2018.03.20-22.03.21:645][918]LogClass: We are too close: 425.753937
+[2018.03.20-22.03.21:662][919]LogClass: We are too close: 432.406738
+[2018.03.20-22.03.21:678][920]LogClass: We are too close: 439.161438
+[2018.03.20-22.03.21:695][921]LogClass: We are too close: 445.995636
+[2018.03.20-22.03.21:712][922]LogClass: We are too close: 452.873169
+[2018.03.20-22.03.21:728][923]LogClass: We are too close: 459.822144
+[2018.03.20-22.03.21:745][924]LogClass: We are too close: 466.815155
+[2018.03.20-22.03.21:762][925]LogClass: We are too close: 473.835999
+[2018.03.20-22.03.21:779][926]LogClass: We are too close: 480.874725
+[2018.03.20-22.03.21:795][927]LogClass: We are too close: 487.961212
+[2018.03.20-22.03.21:812][928]LogClass: We are too close: 495.067474
+[2018.03.20-22.03.23:296][ 17]LogClass: We are too close: 495.775116
+[2018.03.20-22.03.23:312][ 18]LogClass: We are too close: 486.109650
+[2018.03.20-22.03.23:329][ 19]LogClass: We are too close: 476.445496
+[2018.03.20-22.03.23:346][ 20]LogClass: We are too close: 466.785065
+[2018.03.20-22.03.23:362][ 21]LogClass: We are too close: 457.130676
+[2018.03.20-22.03.23:379][ 22]LogClass: We are too close: 447.484589
+[2018.03.20-22.03.23:396][ 23]LogClass: We are too close: 437.848267
+[2018.03.20-22.03.23:412][ 24]LogClass: We are too close: 428.223724
+[2018.03.20-22.03.23:429][ 25]LogClass: We are too close: 418.612976
+[2018.03.20-22.03.23:445][ 26]LogClass: We are too close: 409.017548
+[2018.03.20-22.03.23:462][ 27]LogClass: We are too close: 399.439209
+[2018.03.20-22.03.23:479][ 28]LogClass: We are too close: 389.879700
+[2018.03.20-22.03.23:495][ 29]LogClass: We are too close: 380.340851
+[2018.03.20-22.03.23:512][ 30]LogClass: We are too close: 370.824554
+[2018.03.20-22.03.23:529][ 31]LogClass: We are too close: 361.328644
+[2018.03.20-22.03.23:545][ 32]LogClass: We are too close: 351.864105
+[2018.03.20-22.03.23:562][ 33]LogClass: We are too close: 342.428802
+[2018.03.20-22.03.23:579][ 34]LogClass: We are too close: 333.025940
+[2018.03.20-22.03.23:596][ 35]LogClass: We are too close: 323.670898
+[2018.03.20-22.03.23:612][ 36]LogClass: We are too close: 314.442535
+[2018.03.20-22.03.23:629][ 37]LogClass: We are too close: 305.440613
+[2018.03.20-22.03.23:646][ 38]LogClass: We are too close: 296.780060
+[2018.03.20-22.03.23:662][ 39]LogClass: We are too close: 288.560760
+[2018.03.20-22.03.23:680][ 40]LogClass: We are too close: 280.715515
+[2018.03.20-22.03.23:696][ 41]LogClass: We are too close: 273.436188
+[2018.03.20-22.03.23:712][ 42]LogClass: We are too close: 266.574341
+[2018.03.20-22.03.23:729][ 43]LogClass: We are too close: 260.372742
+[2018.03.20-22.03.23:745][ 44]LogClass: We are too close: 254.646088
+[2018.03.20-22.03.23:762][ 45]LogClass: We are too close: 249.768768
+[2018.03.20-22.03.23:779][ 46]LogClass: We are too close: 245.477325
+[2018.03.20-22.03.23:796][ 47]LogClass: We are too close: 242.148682
+[2018.03.20-22.03.23:812][ 48]LogClass: We are too close: 239.845856
+[2018.03.20-22.03.23:829][ 49]LogClass: We are too close: 238.533707
+[2018.03.20-22.03.23:846][ 50]LogClass: We are too close: 238.205063
+[2018.03.20-22.03.23:862][ 51]LogClass: We are too close: 238.796326
+[2018.03.20-22.03.23:879][ 52]LogClass: We are too close: 240.263702
+[2018.03.20-22.03.23:896][ 53]LogClass: We are too close: 242.518433
+[2018.03.20-22.03.23:912][ 54]LogClass: We are too close: 245.414185
+[2018.03.20-22.03.23:929][ 55]LogClass: We are too close: 248.828400
+[2018.03.20-22.03.23:946][ 56]LogClass: We are too close: 252.659775
+[2018.03.20-22.03.23:962][ 57]LogClass: We are too close: 256.825409
+[2018.03.20-22.03.23:979][ 58]LogClass: We are too close: 261.257629
+[2018.03.20-22.03.23:996][ 59]LogClass: We are too close: 265.900726
+[2018.03.20-22.03.24:012][ 60]LogClass: We are too close: 270.709381
+[2018.03.20-22.03.24:029][ 61]LogClass: We are too close: 275.646271
+[2018.03.20-22.03.24:046][ 62]LogClass: We are too close: 280.680725
+[2018.03.20-22.03.24:062][ 63]LogClass: We are too close: 285.786713
+[2018.03.20-22.03.24:079][ 64]LogClass: We are too close: 290.943024
+[2018.03.20-22.03.24:096][ 65]LogClass: We are too close: 296.131683
+[2018.03.20-22.03.24:112][ 66]LogClass: We are too close: 301.337616
+[2018.03.20-22.03.24:129][ 67]LogClass: We are too close: 306.547668
+[2018.03.20-22.03.24:145][ 68]LogClass: We are too close: 311.751007
+[2018.03.20-22.03.24:162][ 69]LogClass: We are too close: 316.937927
+[2018.03.20-22.03.24:179][ 70]LogClass: We are too close: 322.100403
+[2018.03.20-22.03.24:195][ 71]LogClass: We are too close: 327.230804
+[2018.03.20-22.03.24:212][ 72]LogClass: We are too close: 332.323029
+[2018.03.20-22.03.24:229][ 73]LogClass: We are too close: 337.371277
+[2018.03.20-22.03.24:246][ 74]LogClass: We are too close: 342.370636
+[2018.03.20-22.03.24:262][ 75]LogClass: We are too close: 347.316650
+[2018.03.20-22.03.24:279][ 76]LogClass: We are too close: 352.205078
+[2018.03.20-22.03.24:295][ 77]LogClass: We are too close: 357.032318
+[2018.03.20-22.03.24:312][ 78]LogClass: We are too close: 361.795044
+[2018.03.20-22.03.24:329][ 79]LogClass: We are too close: 366.489960
+[2018.03.20-22.03.24:345][ 80]LogClass: We are too close: 371.114105
+[2018.03.20-22.03.24:362][ 81]LogClass: We are too close: 375.664856
+[2018.03.20-22.03.24:379][ 82]LogClass: We are too close: 380.139679
+[2018.03.20-22.03.24:395][ 83]LogClass: We are too close: 384.536316
+[2018.03.20-22.03.24:412][ 84]LogClass: We are too close: 388.852448
+[2018.03.20-22.03.24:429][ 85]LogClass: We are too close: 393.085968
+[2018.03.20-22.03.24:446][ 86]LogClass: We are too close: 397.236481
+[2018.03.20-22.03.24:462][ 87]LogClass: We are too close: 401.298798
+[2018.03.20-22.03.24:479][ 88]LogClass: We are too close: 405.272797
+[2018.03.20-22.03.24:496][ 89]LogClass: We are too close: 409.156769
+[2018.03.20-22.03.24:512][ 90]LogClass: We are too close: 412.949127
+[2018.03.20-22.03.24:529][ 91]LogClass: We are too close: 416.648071
+[2018.03.20-22.03.24:546][ 92]LogClass: We are too close: 420.252197
+[2018.03.20-22.03.24:563][ 93]LogClass: We are too close: 423.760132
+[2018.03.20-22.03.24:579][ 94]LogClass: We are too close: 427.170593
+[2018.03.20-22.03.24:596][ 95]LogClass: We are too close: 430.483856
+[2018.03.20-22.03.24:613][ 96]LogClass: We are too close: 433.695129
+[2018.03.20-22.03.24:629][ 97]LogClass: We are too close: 436.804993
+[2018.03.20-22.03.24:646][ 98]LogClass: We are too close: 439.812531
+[2018.03.20-22.03.24:662][ 99]LogClass: We are too close: 442.716370
+[2018.03.20-22.03.24:679][100]LogClass: We are too close: 445.515350
+[2018.03.20-22.03.24:696][101]LogClass: We are too close: 448.208649
+[2018.03.20-22.03.24:712][102]LogClass: We are too close: 450.795319
+[2018.03.20-22.03.24:729][103]LogClass: We are too close: 453.274384
+[2018.03.20-22.03.24:746][104]LogClass: We are too close: 455.644928
+[2018.03.20-22.03.24:762][105]LogClass: We are too close: 457.905975
+[2018.03.20-22.03.24:779][106]LogClass: We are too close: 460.056732
+[2018.03.20-22.03.24:796][107]LogClass: We are too close: 462.096741
+[2018.03.20-22.03.24:812][108]LogClass: We are too close: 464.025116
+[2018.03.20-22.03.24:829][109]LogClass: We are too close: 465.841125
+[2018.03.20-22.03.24:845][110]LogClass: We are too close: 467.544373
+[2018.03.20-22.03.24:862][111]LogClass: We are too close: 469.133972
+[2018.03.20-22.03.24:879][112]LogClass: We are too close: 470.609406
+[2018.03.20-22.03.24:895][113]LogClass: We are too close: 471.970428
+[2018.03.20-22.03.24:912][114]LogClass: We are too close: 473.216461
+[2018.03.20-22.03.24:929][115]LogClass: We are too close: 474.347137
+[2018.03.20-22.03.24:945][116]LogClass: We are too close: 475.361938
+[2018.03.20-22.03.24:962][117]LogClass: We are too close: 476.260712
+[2018.03.20-22.03.24:979][118]LogClass: We are too close: 477.043030
+[2018.03.20-22.03.24:995][119]LogClass: We are too close: 477.708557
+[2018.03.20-22.03.25:012][120]LogClass: We are too close: 478.257050
+[2018.03.20-22.03.25:029][121]LogClass: We are too close: 478.688354
+[2018.03.20-22.03.25:045][122]LogClass: We are too close: 479.002197
+[2018.03.20-22.03.25:062][123]LogClass: We are too close: 479.198700
+[2018.03.20-22.03.25:079][124]LogClass: We are too close: 479.277618
+[2018.03.20-22.03.25:095][125]LogClass: We are too close: 479.239197
+[2018.03.20-22.03.25:112][126]LogClass: We are too close: 479.083313
+[2018.03.20-22.03.25:129][127]LogClass: We are too close: 478.809937
+[2018.03.20-22.03.25:145][128]LogClass: We are too close: 478.418915
+[2018.03.20-22.03.25:162][129]LogClass: We are too close: 477.910980
+[2018.03.20-22.03.25:179][130]LogClass: We are too close: 477.285919
+[2018.03.20-22.03.25:196][131]LogClass: We are too close: 476.544067
+[2018.03.20-22.03.25:212][132]LogClass: We are too close: 475.685699
+[2018.03.20-22.03.25:229][133]LogClass: We are too close: 474.711060
+[2018.03.20-22.03.25:246][134]LogClass: We are too close: 473.620392
+[2018.03.20-22.03.25:262][135]LogClass: We are too close: 472.414001
+[2018.03.20-22.03.25:279][136]LogClass: We are too close: 471.092560
+[2018.03.20-22.03.25:296][137]LogClass: We are too close: 469.656433
+[2018.03.20-22.03.25:312][138]LogClass: We are too close: 468.106049
+[2018.03.20-22.03.25:329][139]LogClass: We are too close: 466.441956
+[2018.03.20-22.03.25:346][140]LogClass: We are too close: 464.664673
+[2018.03.20-22.03.25:362][141]LogClass: We are too close: 462.774902
+[2018.03.20-22.03.25:379][142]LogClass: We are too close: 460.773254
+[2018.03.20-22.03.25:396][143]LogClass: We are too close: 458.660339
+[2018.03.20-22.03.25:412][144]LogClass: We are too close: 456.465759
+[2018.03.20-22.03.25:429][145]LogClass: We are too close: 454.333374
+[2018.03.20-22.03.25:446][146]LogClass: We are too close: 452.428986
+[2018.03.20-22.03.25:462][147]LogClass: We are too close: 450.860382
+[2018.03.20-22.03.25:479][148]LogClass: We are too close: 449.869019
+[2018.03.20-22.03.25:496][149]LogClass: We are too close: 449.277100
+[2018.03.20-22.03.25:512][150]LogClass: We are too close: 449.578857
+[2018.03.20-22.03.25:529][151]LogClass: We are too close: 450.816650
+[2018.03.20-22.03.25:546][152]LogClass: We are too close: 452.945465
+[2018.03.20-22.03.25:562][153]LogClass: We are too close: 455.414978
+[2018.03.20-22.03.25:579][154]LogClass: We are too close: 458.585114
+[2018.03.20-22.03.25:596][155]LogClass: We are too close: 462.404572
+[2018.03.20-22.03.25:612][156]LogClass: We are too close: 466.424683
+[2018.03.20-22.03.25:629][157]LogClass: We are too close: 471.067474
+[2018.03.20-22.03.25:646][158]LogClass: We are too close: 476.236755
+[2018.03.20-22.03.25:662][159]LogClass: We are too close: 481.938446
+[2018.03.20-22.03.25:679][160]LogClass: We are too close: 488.153687
+[2018.03.20-22.03.25:696][161]LogClass: We are too close: 494.764008
+[2018.03.20-22.03.27:446][266]LogClass: We are too close: 499.381104
+[2018.03.20-22.03.27:462][267]LogClass: We are too close: 489.647583
+[2018.03.20-22.03.27:479][268]LogClass: We are too close: 479.901733
+[2018.03.20-22.03.27:496][269]LogClass: We are too close: 470.136078
+[2018.03.20-22.03.27:512][270]LogClass: We are too close: 460.345276
+[2018.03.20-22.03.27:529][271]LogClass: We are too close: 450.526398
+[2018.03.20-22.03.27:546][272]LogClass: We are too close: 440.678558
+[2018.03.20-22.03.27:562][273]LogClass: We are too close: 430.802765
+[2018.03.20-22.03.27:579][274]LogClass: We are too close: 420.901642
+[2018.03.20-22.03.27:596][275]LogClass: We are too close: 410.979279
+[2018.03.20-22.03.27:612][276]LogClass: We are too close: 401.041168
+[2018.03.20-22.03.27:629][277]LogClass: We are too close: 391.094025
+[2018.03.20-22.03.27:646][278]LogClass: We are too close: 381.145996
+[2018.03.20-22.03.27:662][279]LogClass: We are too close: 371.206238
+[2018.03.20-22.03.27:679][280]LogClass: We are too close: 361.285156
+[2018.03.20-22.03.27:696][281]LogClass: We are too close: 351.394409
+[2018.03.20-22.03.27:712][282]LogClass: We are too close: 341.546753
+[2018.03.20-22.03.27:729][283]LogClass: We are too close: 331.757050
+[2018.03.20-22.03.27:746][284]LogClass: We are too close: 322.040955
+[2018.03.20-22.03.27:762][285]LogClass: We are too close: 312.416016
+[2018.03.20-22.03.27:779][286]LogClass: We are too close: 302.901581
+[2018.03.20-22.03.27:796][287]LogClass: We are too close: 293.519043
+[2018.03.20-22.03.27:812][288]LogClass: We are too close: 284.292084
+[2018.03.20-22.03.27:829][289]LogClass: We are too close: 275.246674
+[2018.03.20-22.03.27:846][290]LogClass: We are too close: 266.411591
+[2018.03.20-22.03.27:862][291]LogClass: We are too close: 257.810822
+[2018.03.20-22.03.27:879][292]LogClass: We are too close: 249.276932
+[2018.03.20-22.03.27:896][293]LogClass: We are too close: 240.598999
+[2018.03.20-22.03.27:912][294]LogClass: We are too close: 231.761963
+[2018.03.20-22.03.27:929][295]LogClass: We are too close: 223.146286
+[2018.03.20-22.03.27:946][296]LogClass: We are too close: 214.041763
+[2018.03.20-22.03.27:963][297]LogClass: We are too close: 204.794968
+[2018.03.20-22.03.27:980][298]LogClass: We are too close: 195.473221
+[2018.03.20-22.03.27:996][299]LogClass: We are too close: 186.125397
+[2018.03.20-22.03.28:013][300]LogClass: We are too close: 176.785629
+[2018.03.20-22.03.28:029][301]LogClass: We are too close: 167.720505
+[2018.03.20-22.03.28:046][302]LogClass: We are too close: 158.975250
+[2018.03.20-22.03.28:063][303]LogClass: We are too close: 150.702164
+[2018.03.20-22.03.28:079][304]LogClass: We are too close: 143.243668
+[2018.03.20-22.03.28:096][305]LogClass: We are too close: 138.268677
+[2018.03.20-22.03.28:112][306]LogClass: We are too close: 133.913315
+[2018.03.20-22.03.28:129][307]LogClass: We are too close: 130.304367
+[2018.03.20-22.03.28:146][308]LogClass: We are too close: 127.321404
+[2018.03.20-22.03.28:162][309]LogClass: We are too close: 124.889008
+[2018.03.20-22.03.28:179][310]LogClass: We are too close: 122.961182
+[2018.03.20-22.03.28:196][311]LogClass: We are too close: 121.513428
+[2018.03.20-22.03.28:212][312]LogClass: We are too close: 120.538002
+[2018.03.20-22.03.28:229][313]LogClass: We are too close: 120.040932
+[2018.03.20-22.03.28:246][314]LogClass: We are too close: 120.039238
+[2018.03.20-22.03.28:262][315]LogClass: We are too close: 120.558510
+[2018.03.20-22.03.28:279][316]LogClass: We are too close: 121.630211
+[2018.03.20-22.03.28:296][317]LogClass: We are too close: 123.289009
+[2018.03.20-22.03.28:312][318]LogClass: We are too close: 125.569710
+[2018.03.20-22.03.28:329][319]LogClass: We are too close: 128.537262
+[2018.03.20-22.03.28:346][320]LogClass: We are too close: 132.375381
+[2018.03.20-22.03.28:362][321]LogClass: We are too close: 137.013672
+[2018.03.20-22.03.28:379][322]LogClass: We are too close: 142.217972
+[2018.03.20-22.03.28:396][323]LogClass: We are too close: 147.959000
+[2018.03.20-22.03.28:412][324]LogClass: We are too close: 154.203094
+[2018.03.20-22.03.28:429][325]LogClass: We are too close: 160.934357
+[2018.03.20-22.03.28:446][326]LogClass: We are too close: 167.935135
+[2018.03.20-22.03.28:462][327]LogClass: We are too close: 175.465607
+[2018.03.20-22.03.28:479][328]LogClass: We are too close: 183.429703
+[2018.03.20-22.03.28:496][329]LogClass: We are too close: 191.740433
+[2018.03.20-22.03.28:512][330]LogClass: We are too close: 200.140747
+[2018.03.20-22.03.28:529][331]LogClass: We are too close: 208.851608
+[2018.03.20-22.03.28:545][332]LogClass: We are too close: 217.540894
+[2018.03.20-22.03.28:563][333]LogClass: We are too close: 226.745819
+[2018.03.20-22.03.28:579][334]LogClass: We are too close: 236.329727
+[2018.03.20-22.03.28:596][335]LogClass: We are too close: 246.110092
+[2018.03.20-22.03.28:613][336]LogClass: We are too close: 255.978745
+[2018.03.20-22.03.28:630][337]LogClass: We are too close: 265.867279
+[2018.03.20-22.03.28:646][338]LogClass: We are too close: 275.735107
+[2018.03.20-22.03.28:663][339]LogClass: We are too close: 285.577698
+[2018.03.20-22.03.28:679][340]LogClass: We are too close: 295.392273
+[2018.03.20-22.03.28:696][341]LogClass: We are too close: 305.128662
+[2018.03.20-22.03.28:713][342]LogClass: We are too close: 314.772797
+[2018.03.20-22.03.28:729][343]LogClass: We are too close: 324.299500
+[2018.03.20-22.03.28:746][344]LogClass: We are too close: 333.672211
+[2018.03.20-22.03.28:762][345]LogClass: We are too close: 342.888184
+[2018.03.20-22.03.28:779][346]LogClass: We are too close: 351.903015
+[2018.03.20-22.03.28:796][347]LogClass: We are too close: 360.687927
+[2018.03.20-22.03.28:812][348]LogClass: We are too close: 369.174713
+[2018.03.20-22.03.28:829][349]LogClass: We are too close: 377.400146
+[2018.03.20-22.03.28:846][350]LogClass: We are too close: 385.422211
+[2018.03.20-22.03.28:862][351]LogClass: We are too close: 393.272614
+[2018.03.20-22.03.28:879][352]LogClass: We are too close: 400.797638
+[2018.03.20-22.03.28:896][353]LogClass: We are too close: 407.926575
+[2018.03.20-22.03.28:912][354]LogClass: We are too close: 414.654572
+[2018.03.20-22.03.28:929][355]LogClass: We are too close: 421.105377
+[2018.03.20-22.03.28:946][356]LogClass: We are too close: 427.392303
+[2018.03.20-22.03.28:962][357]LogClass: We are too close: 433.613251
+[2018.03.20-22.03.28:979][358]LogClass: We are too close: 439.849152
+[2018.03.20-22.03.28:996][359]LogClass: We are too close: 446.165405
+[2018.03.20-22.03.29:012][360]LogClass: We are too close: 452.612976
+[2018.03.20-22.03.29:029][361]LogClass: We are too close: 459.219177
+[2018.03.20-22.03.29:046][362]LogClass: We are too close: 465.837891
+[2018.03.20-22.03.29:062][363]LogClass: We are too close: 472.443481
+[2018.03.20-22.03.29:079][364]LogClass: We are too close: 479.006378
+[2018.03.20-22.03.29:096][365]LogClass: We are too close: 485.577545
+[2018.03.20-22.03.29:112][366]LogClass: We are too close: 492.223633
+[2018.03.20-22.03.29:129][367]LogClass: We are too close: 498.956573
+[2018.03.20-22.03.29:512][390]LogClass: We are too close: 499.201416
+[2018.03.20-22.03.29:530][391]LogClass: We are too close: 497.196777
+[2018.03.20-22.03.29:546][392]LogClass: We are too close: 494.595825
+[2018.03.20-22.03.29:563][393]LogClass: We are too close: 491.377960
+[2018.03.20-22.03.29:579][394]LogClass: We are too close: 487.433350
+[2018.03.20-22.03.29:596][395]LogClass: We are too close: 482.660370
+[2018.03.20-22.03.29:613][396]LogClass: We are too close: 477.053223
+[2018.03.20-22.03.29:629][397]LogClass: We are too close: 470.731476
+[2018.03.20-22.03.29:646][398]LogClass: We are too close: 463.806946
+[2018.03.20-22.03.29:663][399]LogClass: We are too close: 456.390106
+[2018.03.20-22.03.29:679][400]LogClass: We are too close: 448.569855
+[2018.03.20-22.03.29:696][401]LogClass: We are too close: 440.416351
+[2018.03.20-22.03.29:713][402]LogClass: We are too close: 431.985260
+[2018.03.20-22.03.29:729][403]LogClass: We are too close: 423.529419
+[2018.03.20-22.03.29:746][404]LogClass: We are too close: 415.316254
+[2018.03.20-22.03.29:763][405]LogClass: We are too close: 407.447784
+[2018.03.20-22.03.29:779][406]LogClass: We are too close: 400.008392
+[2018.03.20-22.03.29:796][407]LogClass: We are too close: 393.446289
+[2018.03.20-22.03.29:812][408]LogClass: We are too close: 387.767700
+[2018.03.20-22.03.29:829][409]LogClass: We are too close: 383.102600
+[2018.03.20-22.03.29:846][410]LogClass: We are too close: 379.329987
+[2018.03.20-22.03.29:862][411]LogClass: We are too close: 376.319489
+[2018.03.20-22.03.29:879][412]LogClass: We are too close: 373.946228
+[2018.03.20-22.03.29:896][413]LogClass: We are too close: 372.097870
+[2018.03.20-22.03.29:912][414]LogClass: We are too close: 370.676727
+[2018.03.20-22.03.29:929][415]LogClass: We are too close: 369.599701
+[2018.03.20-22.03.29:946][416]LogClass: We are too close: 368.797363
+[2018.03.20-22.03.29:963][417]LogClass: We are too close: 368.287811
+[2018.03.20-22.03.29:979][418]LogClass: We are too close: 368.136383
+[2018.03.20-22.03.29:996][419]LogClass: We are too close: 368.350464
+[2018.03.20-22.03.30:012][420]LogClass: We are too close: 369.341675
+[2018.03.20-22.03.30:029][421]LogClass: We are too close: 371.095184
+[2018.03.20-22.03.30:046][422]LogClass: We are too close: 373.591339
+[2018.03.20-22.03.30:062][423]LogClass: We are too close: 376.431305
+[2018.03.20-22.03.30:079][424]LogClass: We are too close: 380.124542
+[2018.03.20-22.03.30:096][425]LogClass: We are too close: 384.674164
+[2018.03.20-22.03.30:112][426]LogClass: We are too close: 389.964050
+[2018.03.20-22.03.30:129][427]LogClass: We are too close: 395.427155
+[2018.03.20-22.03.30:146][428]LogClass: We are too close: 401.536316
+[2018.03.20-22.03.30:163][429]LogClass: We are too close: 408.237579
+[2018.03.20-22.03.30:179][430]LogClass: We are too close: 415.492188
+[2018.03.20-22.03.30:197][431]LogClass: We are too close: 423.322601
+[2018.03.20-22.03.30:213][432]LogClass: We are too close: 431.544495
+[2018.03.20-22.03.30:229][433]LogClass: We are too close: 440.134583
+[2018.03.20-22.03.30:246][434]LogClass: We are too close: 448.975616
+[2018.03.20-22.03.30:263][435]LogClass: We are too close: 457.985474
+[2018.03.20-22.03.30:279][436]LogClass: We are too close: 467.105042
+[2018.03.20-22.03.30:296][437]LogClass: We are too close: 476.291199
+[2018.03.20-22.03.30:313][438]LogClass: We are too close: 485.512482
+[2018.03.20-22.03.30:329][439]LogClass: We are too close: 494.744537
+[2018.03.20-22.07.09:060][376]Candidate modules for hot reload:
+[2018.03.20-22.07.09:060][376]  NPJ2018SeniorProject
+[2018.03.20-22.07.09:060][376]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 1664 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.20-22.07.09:098][376]Warning: Starting HotReload took  0.1s.
+[2018.03.20-22.07.46:119][216]CompilerResultsLog: New page: Compilation - Mar 20, 2018, 2:07:46 PM
+[2018.03.20-22.07.46:120][216]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.20-22.07.46:120][216]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.20-22.07.46:120][216]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.20-22.07.46:121][216]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 21.3460229 seconds
+[2018.03.20-22.07.46:121][216]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.20-22.07.46:122][216]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.20-22.07.46:122][216]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-1664.dll
+[2018.03.20-22.07.46:122][216]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-1664.lib
+[2018.03.20-22.07.46:122][216]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1664.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1664.suppressed.exp
+[2018.03.20-22.07.46:123][216]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1664.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1664.exp
+[2018.03.20-22.07.46:123][216]CompilerResultsLog: Total build time: 36.63 seconds (Local executor: 5.41 seconds)
+[2018.03.20-22.07.46:123][216]LogMainFrame: MainFrame: Module compiling took 37.074 seconds
+[2018.03.20-22.07.46:253][216]LogClass: EProjectPlayState HotReload.
+[2018.03.20-22.07.46:259][216]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.20-22.07.46:333][216]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.20-22.07.46:466][216]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0060 seconds. Added 6 classes and 3 folders.
+[2018.03.20-22.07.46:469][216]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.20-22.07.46:536][216]LogContentBrowser: Native class hierarchy populated in 0.0194 seconds. Added 2394 classes and 507 folders.
+[2018.03.20-22.07.46:536][216]Display: HotReload took 37.5s.
+[2018.03.20-22.07.48:770][321]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.20-22.07.48:795][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.20-22.07.48:796][321]PIE: New page: PIE session: CollectionLevel (Mar 20, 2018, 2:07:48 PM)
+[2018.03.20-22.07.48:796][321]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.20-22.07.48:801][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004425s)
+[2018.03.20-22.07.48:802][321]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.20-22.07.48:802][321]LogPlayLevel: PIE: World Init took: (0.001188s)
+[2018.03.20-22.07.48:802][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.006358s)
+[2018.03.20-22.07.48:818][321]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.20-22.07.48:830][321]LogInit: FAudioDevice initialized.
+[2018.03.20-22.07.48:864][321]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.20-22.07.48:867][321]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.20-18.07.48
+[2018.03.20-22.07.48:868][321]LogWorld: Bringing up level for play took: 0.002396
+[2018.03.20-22.07.48:871][321]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.29
+[2018.03.20-22.07.56:499][424]LogWindows: Error: === Critical error: ===
+[2018.03.20-22.07.56:499][424]LogWindows: Error: 
+[2018.03.20-22.07.56:499][424]LogWindows: Error: Fatal error!
+[2018.03.20-22.07.56:499][424]LogWindows: Error: 
+[2018.03.20-22.07.56:499][424]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0x00000178
+[2018.03.20-22.07.56:499][424]LogWindows: Error: 
+[2018.03.20-22.07.56:499][424]LogWindows: Error: UE4Editor-NPJ2018SeniorProject-1664.dll!ANPJ2018SeniorProjectCharacter::Tick() [c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\npj2018seniorprojectcharacter.cpp:320]
+[2018.03.20-22.07.56:499][424]LogWindows: Error: UE4Editor-Engine.dll!0x000000008963CC79
+[2018.03.20-22.07.56:499][424]LogWindows: Error: UE4Editor-Engine.dll!0x00000000895F3716
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x000000008A61B38B
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x000000008A621E2B
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Core.dll!0x00000000AAE824F5
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Core.dll!0x00000000AAE82ADA
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Core.dll!0x00000000AAEA29CE
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x000000008A63E512
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x000000008A643AA2
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x0000000089F3F944
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-Engine.dll!0x0000000089F4B2C6
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-UnrealEd.dll!0x000000008802C982
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor-UnrealEd.dll!0x00000000888BD646
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor.exe!0x000000007095534A
+[2018.03.20-22.07.56:500][424]LogWindows: Error: UE4Editor.exe!0x0000000070963970
+[2018.03.20-22.07.56:501][424]LogWindows: Error: UE4Editor.exe!0x00000000709639EA
+[2018.03.20-22.07.56:501][424]LogWindows: Error: UE4Editor.exe!0x00000000709702D9
+[2018.03.20-22.07.56:501][424]LogWindows: Error: UE4Editor.exe!0x0000000070971C47
+[2018.03.20-22.07.56:501][424]LogWindows: Error: KERNEL32.DLL!0x00000000D8AC1FE4
+[2018.03.20-22.07.56:501][424]LogWindows: Error: ntdll.dll!0x00000000D90DEFC1
+[2018.03.20-22.07.56:501][424]LogWindows: Error: ntdll.dll!0x00000000D90DEFC1
+[2018.03.20-22.07.56:501][424]LogWindows: Error: 
+[2018.03.20-22.07.56:517][424]LogExit: Executing StaticShutdownAfterError
+[2018.03.20-22.07.56:612][424]LogWindows: FPlatformMisc::RequestExit(1)
+[2018.03.20-22.07.56:612][424]Log file closed, 03/20/18 18:07:56

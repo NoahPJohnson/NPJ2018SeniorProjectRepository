@@ -14,8 +14,9 @@ PRAGMA_DISABLE_OPTIMIZATION
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 // Cross Module References
-	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CameraLockOn();
 	NPJ2018SENIORPROJECT_API UClass* Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly();
 	NPJ2018SENIORPROJECT_API UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_GetCurrentPower();
@@ -28,6 +29,8 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 	NPJ2018SENIORPROJECT_API UClass* Z_Construct_UClass_ANPJ2018SeniorProjectCharacter_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_NPJ2018SeniorProject();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USphereComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -41,6 +44,7 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 	{
 		UClass* Class = ANPJ2018SeniorProjectCharacter::StaticClass();
 		static const TNameNativePtrPair<ANSICHAR> AnsiFuncs[] = {
+			{ "CameraLockOn", (Native)&ANPJ2018SeniorProjectCharacter::execCameraLockOn },
 			{ "CollectPickups", (Native)&ANPJ2018SeniorProjectCharacter::execCollectPickups },
 			{ "Crouch_Slide_Glide", (Native)&ANPJ2018SeniorProjectCharacter::execCrouch_Slide_Glide },
 			{ "Fly", (Native)&ANPJ2018SeniorProjectCharacter::execFly },
@@ -52,6 +56,23 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 			{ "UpdateCharacterPower", (Native)&ANPJ2018SeniorProjectCharacter::execUpdateCharacterPower },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, AnsiFuncs, ARRAY_COUNT(AnsiFuncs));
+	}
+	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CameraLockOn()
+	{
+		UObject* Outer = Z_Construct_UClass_ANPJ2018SeniorProjectCharacter();
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("CameraLockOn"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), nullptr, (EFunctionFlags)0x04080401, 65535);
+			ReturnFunction->Bind();
+			ReturnFunction->StaticLink();
+#if WITH_METADATA
+			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
+			MetaData->SetValue(ReturnFunction, TEXT("Category"), TEXT("CameraControl"));
+			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+#endif
+		}
+		return ReturnFunction;
 	}
 	UFunction* Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups()
 	{
@@ -258,6 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= (EClassFlags)0x20800080u;
 
+				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CameraLockOn());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide());
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly());
@@ -270,6 +292,12 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				OuterClass->LinkChild(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_UpdateCharacterPower());
 
 				UProperty* NewProp_characterPower = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("characterPower"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(characterPower, ANPJ2018SeniorProjectCharacter), 0x0040000000020001);
+				UProperty* NewProp_lockOnCameraLocation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("lockOnCameraLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(lockOnCameraLocation, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, Z_Construct_UScriptStruct_FVector());
+				UProperty* NewProp_startingCameraLocation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("startingCameraLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(startingCameraLocation, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, Z_Construct_UScriptStruct_FVector());
+				UProperty* NewProp_nearestEnemy = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("nearestEnemy"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(nearestEnemy, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, Z_Construct_UClass_AActor_NoRegister());
+				UProperty* NewProp_nearestEnemyLocation = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("nearestEnemyLocation"), RF_Public|RF_Transient|RF_MarkAsNative) UStructProperty(CPP_PROPERTY_BASE(nearestEnemyLocation, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, Z_Construct_UScriptStruct_FVector());
+				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isLockingOn, ANPJ2018SeniorProjectCharacter);
+				UProperty* NewProp_isLockingOn = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isLockingOn"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isLockingOn, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isLockingOn, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
 				CPP_BOOL_PROPERTY_BITMASK_STRUCT(isGliding, ANPJ2018SeniorProjectCharacter);
 				UProperty* NewProp_isGliding = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("isGliding"), RF_Public|RF_Transient|RF_MarkAsNative) UBoolProperty(FObjectInitializer(), EC_CppProperty, CPP_BOOL_PROPERTY_OFFSET(isGliding, ANPJ2018SeniorProjectCharacter), 0x0020080000000005, CPP_BOOL_PROPERTY_BITMASK(isGliding, ANPJ2018SeniorProjectCharacter), sizeof(bool), true);
 				UProperty* NewProp_buildUpSpeedIncrease = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("buildUpSpeedIncrease"), RF_Public|RF_Transient|RF_MarkAsNative) UFloatProperty(CPP_PROPERTY_BASE(buildUpSpeedIncrease, ANPJ2018SeniorProjectCharacter), 0x0020080000000005);
@@ -299,6 +327,7 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				UProperty* NewProp_CollectionSphere = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CollectionSphere"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CollectionSphere, ANPJ2018SeniorProjectCharacter), 0x00400000000a001d, Z_Construct_UClass_USphereComponent_NoRegister());
 				UProperty* NewProp_FollowCamera = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("FollowCamera"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(FollowCamera, ANPJ2018SeniorProjectCharacter), 0x00400000000a001d, Z_Construct_UClass_UCameraComponent_NoRegister());
 				UProperty* NewProp_CameraBoom = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("CameraBoom"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(CameraBoom, ANPJ2018SeniorProjectCharacter), 0x00400000000a001d, Z_Construct_UClass_USpringArmComponent_NoRegister());
+				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CameraLockOn(), "CameraLockOn"); // 2114663753
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_CollectPickups(), "CollectPickups"); // 2624987453
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Crouch_Slide_Glide(), "Crouch_Slide_Glide"); // 8471354
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_ANPJ2018SeniorProjectCharacter_Fly(), "Fly"); // 751838654
@@ -321,6 +350,21 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 				MetaData->SetValue(NewProp_characterPower, TEXT("Category"), TEXT("Power"));
 				MetaData->SetValue(NewProp_characterPower, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 				MetaData->SetValue(NewProp_characterPower, TEXT("ToolTip"), TEXT("Current power level of our character"));
+				MetaData->SetValue(NewProp_lockOnCameraLocation, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_lockOnCameraLocation, TEXT("Category"), TEXT("Camera Control"));
+				MetaData->SetValue(NewProp_lockOnCameraLocation, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_startingCameraLocation, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_startingCameraLocation, TEXT("Category"), TEXT("Camera Control"));
+				MetaData->SetValue(NewProp_startingCameraLocation, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_nearestEnemy, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_nearestEnemy, TEXT("Category"), TEXT("Camera Control"));
+				MetaData->SetValue(NewProp_nearestEnemy, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_nearestEnemyLocation, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_nearestEnemyLocation, TEXT("Category"), TEXT("Camera Control"));
+				MetaData->SetValue(NewProp_nearestEnemyLocation, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
+				MetaData->SetValue(NewProp_isLockingOn, TEXT("BluePrintProtected"), TEXT("TRUE"));
+				MetaData->SetValue(NewProp_isLockingOn, TEXT("Category"), TEXT("Camera Control"));
+				MetaData->SetValue(NewProp_isLockingOn, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
 				MetaData->SetValue(NewProp_isGliding, TEXT("BluePrintProtected"), TEXT("TRUE"));
 				MetaData->SetValue(NewProp_isGliding, TEXT("Category"), TEXT("Special Movement"));
 				MetaData->SetValue(NewProp_isGliding, TEXT("ModuleRelativePath"), TEXT("NPJ2018SeniorProjectCharacter.h"));
@@ -408,7 +452,7 @@ void EmptyLinkFunctionForGeneratedCodeNPJ2018SeniorProjectCharacter() {}
 		check(OuterClass->GetClass());
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANPJ2018SeniorProjectCharacter, 978559170);
+	IMPLEMENT_CLASS(ANPJ2018SeniorProjectCharacter, 1189235400);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ANPJ2018SeniorProjectCharacter(Z_Construct_UClass_ANPJ2018SeniorProjectCharacter, &ANPJ2018SeniorProjectCharacter::StaticClass, TEXT("/Script/NPJ2018SeniorProject"), TEXT("ANPJ2018SeniorProjectCharacter"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ANPJ2018SeniorProjectCharacter);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

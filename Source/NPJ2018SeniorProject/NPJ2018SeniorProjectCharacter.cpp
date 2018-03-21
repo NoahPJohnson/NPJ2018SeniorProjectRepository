@@ -11,8 +11,11 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Kismet/GameplayStatics.h"
+#include "C++Classes/BaseEnemy.h"
 //#include "Vector.h"
-#include <cmath>
+//#include <cmath>
 #include "TimerManager.h"
 
 
@@ -86,6 +89,12 @@ ANPJ2018SeniorProjectCharacter::ANPJ2018SeniorProjectCharacter()
 	isCrouching = false;
 	isSliding = false;
 	buildUpSpeedIncrease = 550.0f;
+
+	//Camera Control stuff
+	isLockingOn = false;
+	nearestEnemyLocation = GetActorForwardVector();
+	startingCameraLocation = FollowCamera->RelativeLocation;
+	lockOnCameraLocation = FVector(130.0f, 110.0f, 40.0f);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -104,6 +113,8 @@ void ANPJ2018SeniorProjectCharacter::SetupPlayerInputComponent(class UInputCompo
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::Sprint);
 	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide);
 	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ANPJ2018SeniorProjectCharacter::StopCrouch_Slide_Glide);
+
+	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &ANPJ2018SeniorProjectCharacter::CameraLockOn);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANPJ2018SeniorProjectCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANPJ2018SeniorProjectCharacter::MoveRight);
@@ -162,7 +173,7 @@ void ANPJ2018SeniorProjectCharacter::MoveForward(float Value)
 
 		// get forward vector
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-		if (isSprinting == true)
+		if (isSprinting == true || isSliding == true)
 		{
 			AddMovementInput(Direction / 20, Value);
 		}
@@ -190,7 +201,7 @@ void ANPJ2018SeniorProjectCharacter::MoveRight(float Value)
 		// get right vector 
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		// add movement in that direction
-		if (isSprinting == true)
+		if (isSprinting == true || isSliding == true)
 		{
 			AddMovementInput(Direction / 20, Value);
 		}
@@ -209,7 +220,7 @@ void ANPJ2018SeniorProjectCharacter::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	//Handle Sprint
-	if (abs(GetInputAxisValue("MoveForward")) < 0.2f && abs(GetInputAxisValue("MoveRight")) < 0.2f && isSprinting == true && isSliding == false)
+	if (FMath::Abs(GetInputAxisValue("MoveForward")) < 0.2f && FMath::Abs(GetInputAxisValue("MoveRight")) < 0.2f && isSprinting == true && isSliding == false)
 	{
 		isSprinting = false;
 		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
@@ -260,17 +271,17 @@ void ANPJ2018SeniorProjectCharacter::Tick(float DeltaTime)
 	//Handle Gliding
 	if (isGliding == true)
 	{
-		if (GetCharacterMovement()->MaxWalkSpeed < flightSpeedLimit)
-		{
-			flightSpeedBonus += flightSpeedBonusAcceleration * DeltaTime;
-			GetCharacterMovement()->MaxWalkSpeed += flightSpeedBonus * DeltaTime;
-			GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxFlySpeed, 0.0f, flightSpeedLimit);
-		}
 		if (GetCharacterMovement()->MaxFlySpeed < flightSpeedLimit)
 		{
 			flightSpeedBonus += flightSpeedBonusAcceleration * DeltaTime;
 			GetCharacterMovement()->MaxFlySpeed += flightSpeedBonus * DeltaTime;
 			GetCharacterMovement()->MaxFlySpeed = FMath::Clamp(GetCharacterMovement()->MaxFlySpeed, 0.0f, flightSpeedLimit);
+		}
+		if (GetCharacterMovement()->MaxWalkSpeed < flightSpeedLimit)
+		{
+			flightSpeedBonus += flightSpeedBonusAcceleration * DeltaTime;
+			GetCharacterMovement()->MaxWalkSpeed += flightSpeedBonus * DeltaTime;
+			GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxWalkSpeed, 0.0f, flightSpeedLimit);
 		}
 
 		if (GetCharacterMovement()->IsMovingOnGround() == true)
@@ -280,7 +291,7 @@ void ANPJ2018SeniorProjectCharacter::Tick(float DeltaTime)
 	}
 
 	//Handle Crouch / Slide
-	if ((isSliding == true || isCrouching == true) && (abs(GetInputAxisValue("MoveForward")) >= 0.2f || abs(GetInputAxisValue("MoveRight")) >= 0.2f))
+	if ((isSliding == true || isCrouching == true) && (FMath::Abs(GetInputAxisValue("MoveForward")) >= 0.2f || FMath::Abs(GetInputAxisValue("MoveRight")) >= 0.2f))
 	{
 		if (buildUpSpeed < sprintBoostLimit)
 		{
@@ -291,10 +302,61 @@ void ANPJ2018SeniorProjectCharacter::Tick(float DeltaTime)
 		{
 			//UE_LOG(LogClass, Log, TEXT("We built up this speed: %f"), buildUpSpeed);
 		}
+		if (isSliding == true && GetCharacterMovement()->BrakingDecelerationWalking < 1500)
+		{
+			GetCharacterMovement()->BrakingDecelerationWalking += 1800.0*DeltaTime;
+		}
 	}
-	else if ((isSliding == true || isCrouching == true) && (abs(GetInputAxisValue("MoveForward")) < 0.2f || abs(GetInputAxisValue("MoveRight")) < 0.2f))
+	else if ((isSliding == true || isCrouching == true) && (FMath::Abs(GetInputAxisValue("MoveForward")) < 0.2f || FMath::Abs(GetInputAxisValue("MoveRight")) < 0.2f))
 	{
 		buildUpSpeed = baseSpeed;
+	}
+
+
+	//Handle Lock On
+	if (isLockingOn == true && nearestEnemy != NULL)
+	{
+		//Look at nearest enemy
+		nearestEnemyLocation = nearestEnemy->GetActorLocation();
+		FRotator targetRotation = UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), nearestEnemyLocation);
+		//FollowCamera->SetWorldRotation(FMath::RInterpTo(GetController()->GetControlRotation(), targetRotation, DeltaTime, 250.0f));
+		FRotator finalRotation;
+		finalRotation = FRotator(FMath::RInterpTo(GetController()->GetControlRotation(), targetRotation, DeltaTime, 100.0f).Pitch, FMath::RInterpTo(GetController()->GetControlRotation(), targetRotation, DeltaTime, 100.0f).Yaw, GetController()->GetControlRotation().Roll);
+		
+		if ((this->GetActorLocation() - nearestEnemyLocation).Size() > 400.0)
+		{
+			finalRotation = FRotator(FMath::Clamp(finalRotation.Pitch, -85.0f, 85.0f), finalRotation.Yaw, finalRotation.Roll);
+			GetController()->SetControlRotation(finalRotation);
+			if ((FollowCamera->RelativeLocation - lockOnCameraLocation).Size() > 2.0f)
+			{
+				FollowCamera->SetRelativeLocation(FMath::VInterpTo(FollowCamera->RelativeLocation, lockOnCameraLocation, DeltaTime, 20.0f));
+			}
+		}
+		else
+		{
+			//UE_LOG(LogClass, Log, TEXT("We are too close: %f"), (this->GetActorLocation() - nearestEnemyLocation).Size());
+			finalRotation = FRotator(FMath::Clamp(finalRotation.Pitch, -25.0f, 25.0f), finalRotation.Yaw, finalRotation.Roll);
+			GetController()->SetControlRotation(finalRotation);
+			FVector dangerZone = (GetActorLocation() - FollowCamera->GetComponentLocation())/2;
+			UE_LOG(LogClass, Log, TEXT("Danger forward: %f"), dangerZone.X);
+			UE_LOG(LogClass, Log, TEXT("Danger horizontal: %f"), dangerZone.Y);
+			UE_LOG(LogClass, Log, TEXT("Danger vertical: %f"), dangerZone.Z);
+			float cameraHorizontalDistance = ((dangerZone - (FollowCamera->GetComponentLocation() - nearestEnemyLocation)).Size()/3)-100;
+			UE_LOG(LogClass, Log, TEXT("NEW DISTANCE: %f"), cameraHorizontalDistance);
+			cameraHorizontalDistance = FMath::Clamp(cameraHorizontalDistance, 5.0f, 160.0f);
+			
+			if ((FollowCamera->RelativeLocation - FVector(80.0f, cameraHorizontalDistance, 20.0f)).Size() > 2.0f)
+			{
+				FollowCamera->SetRelativeLocation(FMath::VInterpTo(FollowCamera->RelativeLocation, FVector(80.0f, cameraHorizontalDistance, 20.0f), DeltaTime, 20.0f));
+			}
+		}
+	}
+	else
+	{
+		if ((FollowCamera->RelativeLocation - startingCameraLocation).Size()>2.0f)
+		{
+			FollowCamera->SetRelativeLocation(FMath::VInterpTo(FollowCamera->RelativeLocation, startingCameraLocation, DeltaTime, 15.0f));
+		}
 	}
 
 	//UE_LOG(LogClass, Log, TEXT("MyCharacter's speed is %f"), GetVelocity().Size());
@@ -386,19 +448,20 @@ void ANPJ2018SeniorProjectCharacter::StopFly()
 {
 	if (isFlying == true)
 	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		GetCharacterMovement()->SetMovementMode(MOVE_Falling);
 		flightSpeedBonus = 100;
 		GetCharacterMovement()->MaxFlySpeed = 200;
 		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
 		GetCharacterMovement()->AirControl = defaultAirControl;
 		//GetCharacterMovement()->GravityScale = 1;
 		isFlying = false;
-		
+		if (GetCharacterMovement()->IsMovingOnGround() == false && isGliding == false)
+		{
+			GetCharacterMovement()->Launch((GetActorUpVector() * 400) + ((GetActorForwardVector() * GetCharacterMovement()->MaxFlySpeed) * (FMath::Abs(GetInputAxisValue("MoveForward")) + FMath::Abs(GetInputAxisValue("MoveRight")))));
+		}
+		UE_LOG(LogClass, Log, TEXT("MyCharacter onGround is %s"), (GetCharacterMovement()->IsMovingOnGround() ? TEXT("True") : TEXT("False")));
 	}
-	if (GetCharacterMovement()->IsMovingOnGround() == false)
-	{
-		GetCharacterMovement()->Launch((GetActorUpVector() * 400) + ((GetActorForwardVector() * GetCharacterMovement()->MaxFlySpeed) * (abs(GetInputAxisValue("MoveForward")) + abs(GetInputAxisValue("MoveRight")))));
-	}
+	
 }
 
 void ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide()
@@ -411,6 +474,7 @@ void ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide()
 		buildUpSpeed = baseSpeed;
 		GetCharacterMovement()->MaxWalkSpeed = 0;
 		GetCharacterMovement()->SetJumpAllowed(false);
+		UE_LOG(LogClass, Log, TEXT("Crouch Please"));
 	}
 	//Crouch();
 	//UE_LOG(LogClass, Log, TEXT("Crouch Please"));
@@ -422,12 +486,13 @@ void ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide()
 		isSprinting = false;
 		GetCharacterMovement()->GroundFriction = 0.0f;
 		GetCharacterMovement()->BrakingFrictionFactor = 0.0f;
-		GetCharacterMovement()->BrakingDecelerationWalking = 700.0;
+		GetCharacterMovement()->BrakingDecelerationWalking = -600.0;
 		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
 		//GetCharacterMovement()->BrakingDecelerationFlying = 10.0f;
 		//UE_LOG(LogClass, Log, TEXT("MyCharacter's Ground Friction is %f"), GetCharacterMovement()->GroundFriction);
 		//GetCharacterMovement()->Launch(GetActorForwardVector()*GetCharacterMovement()->MaxWalkSpeed);
 		buildUpSpeed = baseSpeed;
+		GetCharacterMovement()->MaxWalkSpeed *= 2;
 		GetCharacterMovement()->MaxWalkSpeed = 0;
 		
 	}
@@ -435,23 +500,36 @@ void ANPJ2018SeniorProjectCharacter::Crouch_Slide_Glide()
 	//Glide
 	if (isGliding == false && GetCharacterMovement()->IsMovingOnGround() == false)
 	{
+		//UE_LOG(LogClass, Log, TEXT("Glide Please"));
 		isGliding = true;
 		if (isFlying == true)
 		{
 			StopFly();
 		}
+		
+		float storedVelocity = GetCharacterMovement()->Velocity.Size();
+		StopJumping();
 		GetCharacterMovement()->SetMovementMode(MOVE_Flying);
+		GetCharacterMovement()->MaxFlySpeed = 0;
 		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+		GetCharacterMovement()->SetMovementMode(MOVE_Falling);
+		GetCharacterMovement()->MaxFlySpeed = 200;
+		//StopJumping();
 		//GetCharacterMovement()->bApplyGravityWhileJumping = true;
 		
-
+		
+		//UE_LOG(LogClass, Log, TEXT("MyCharacter jumping is %s"), (IsJumping() ? TEXT("True") : TEXT("False")));
+		//UE_LOG(LogClass, Log, TEXT("MyCharacter jumping 2 is %s"), (IsJumpProvidingForce() ? TEXT("True") : TEXT("False")));
 		GetCharacterMovement()->GravityScale = 0.08f;
 		
 		GetCharacterMovement()->AirControl = 1.0f;
 		flightSpeedBonus = 100;
-		GetCharacterMovement()->MaxFlySpeed = 200;
-		GetCharacterMovement()->MaxWalkSpeed = GetCharacterMovement()->Velocity.Size();
-		GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxFlySpeed, 0.0f, flightSpeedLimit);
+		GetCharacterMovement()->MaxWalkSpeed = storedVelocity;
+		//GetCharacterMovement()->MaxWalkSpeed = storedVelocity;
+		
+		GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxWalkSpeed, 0.0f, flightSpeedLimit);
+		//UE_LOG(LogClass, Log, TEXT("MyCharacter's velocity is %f"), GetCharacterMovement()->MaxWalkSpeed);
+		//GetCharacterMovement()->Launch(GetActorForwardVector() * GetCharacterMovement()->MaxWalkSpeed * (abs(GetInputAxisValue("MoveForward")) + abs(GetInputAxisValue("MoveRight"))));
 		isSprinting = false;
 
 		GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
@@ -487,14 +565,57 @@ void ANPJ2018SeniorProjectCharacter::StopCrouch_Slide_Glide()
 	if (isGliding == true)
 	{
 		isGliding = false;
+		
 		//UE_LOG(LogClass, Log, TEXT("Stop Gliding Please"));
 		GetCharacterMovement()->GravityScale = 1.0f;
 		//GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		
 		GetCharacterMovement()->AirControl = defaultAirControl;
+		if (GetCharacterMovement()->IsMovingOnGround() == true)
+		{
+			GetCharacterMovement()->MaxWalkSpeed = GetCharacterMovement()->MaxFlySpeed;
+			isSprinting = true;
+			Crouch_Slide_Glide();
+		}
+		else
+		{
+			GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
+		}
 	}
 	//UnCrouch();
 	//UE_LOG(LogClass, Log, TEXT("UnCrouch Please"));
+}
+
+void ANPJ2018SeniorProjectCharacter::CameraLockOn()
+{
+	//FVector nearestEnemyLocation = GetActorForwardVector();
+	if (isLockingOn == false)
+	{
+		isLockingOn = true;
+		TArray<AActor*> FoundEnemies;
+		UGameplayStatics::GetAllActorsOfClass(GetWorld(), ABaseEnemy::StaticClass(), FoundEnemies);
+		for (int i = 0; i < FoundEnemies.Num(); i++)
+		{
+			if ((this->GetActorLocation() - FoundEnemies[i]->GetActorLocation()).Size() < 1000)
+			{
+				nearestEnemy = FoundEnemies[i];
+				//nearestEnemyLocation = nearestEnemy->GetActorLocation();
+				UE_LOG(LogClass, Log, TEXT("Locked on Nearest Enemy"));
+				//FollowCamera->SetRelativeLocation(lockOnCameraLocation);
+			}
+		}
+	}
+	else
+	{
+		isLockingOn = false;
+		//FollowCamera->SetRelativeLocation(startingCameraLocation);
+	}
+	
+	//FollowCamera->AddLocalOffset(FVector(100, 100, 0), false);
+	//FollowCamera->bUsePawnControlRotation = false;
+	//FollowCamera->bUseControllerViewRotation = false;
+	//FRotator targetRotation =  UKismetMathLibrary::FindLookAtRotation(FollowCamera->GetComponentLocation(), nearestEnemyLocation);
+	//FMath::RInterpTo(FollowCamera->GetComponentRotation(), targetRotation, DeltaTime, 250.0f);
 }
 
 float ANPJ2018SeniorProjectCharacter::GetInitialPower()
@@ -510,12 +631,12 @@ float ANPJ2018SeniorProjectCharacter::GetCurrentPower()
 //Called whenever power is increased or decreased
 void ANPJ2018SeniorProjectCharacter::UpdateCharacterPower(float powerChange)
 {
-	if (characterPower < (initialPower*1.25))
+	/*if (characterPower < (initialPower*1.25))
 	{
 		characterPower += powerChange;
 		//Part of all character classes
 		//GetCharacterMovement()->MaxWalkSpeed = baseSpeed + speedFactor * characterPower;
 	}
 	//Call visual effect
-	PowerChangeEffect();
+	PowerChangeEffect();*/
 }

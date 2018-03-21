@@ -1,0 +1,1256 @@
+﻿Log file open, 03/18/18 15:50:07
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: NPJ2018SeniorProject
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-1771880665) SRandInit(-1771880665).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.184759
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.03.18-19.50.09:346][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.18-19.50.09:346][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.03.18-19.50.09:918][  0]LogInit: Computer: DESKTOP-POOD5P5
+[2018.03.18-19.50.09:918][  0]LogInit: User: Noah
+[2018.03.18-19.50.09:918][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.03.18-19.50.09:918][  0]LogInit: High frequency timer resolution =2.338349 MHz
+[2018.03.18-19.50.09:919][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2018.03.18-19.50.09:919][  0]LogMemory: Platform Memory Stats for Windows
+[2018.03.18-19.50.09:919][  0]LogMemory: Process Physical Memory: 281.09 MB used, 281.09 MB peak
+[2018.03.18-19.50.09:919][  0]LogMemory: Process Virtual Memory: 282.52 MB used, 282.52 MB peak
+[2018.03.18-19.50.09:919][  0]LogMemory: Physical Memory: 4485.47 MB used,  3630.89 MB free, 8116.36 MB total
+[2018.03.18-19.50.09:919][  0]LogMemory: Virtual Memory: 715.75 MB used,  3630.89 MB free, 134217728.00 MB total
+[2018.03.18-19.50.10:181][  0]LogInit: Using OS detected language (en-US).
+[2018.03.18-19.50.10:181][  0]LogInit: Using OS detected locale (en-US).
+[2018.03.18-19.50.10:354][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2018.03.18-19.50.20:320][  0]LogD3D11RHI: D3D11 adapters:
+[2018.03.18-19.50.20:340][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.03.18-19.50.20:340][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2018.03.18-19.50.20:348][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.03.18-19.50.20:348][  0]LogD3D11RHI:       0/0/4058 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.03.18-19.50.20:348][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.03.18-19.50.20:360][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.03.18-19.50.20:360][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2018.03.18-19.50.20:360][  0]LogWindows: EnumDisplayDevices:
+[2018.03.18-19.50.20:360][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.03.18-19.50.20:361][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.03.18-19.50.20:361][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.03.18-19.50.20:361][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.03.18-19.50.20:361][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2018.03.18-19.50.20:361][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.03.18-19.50.20:361][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.03.18-19.50.20:361][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2018.03.18-19.50.20:370][  0]LogD3D11RHI: Async texture creation enabled
+[2018.03.18-19.50.20:383][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2018.03.18-19.50.20:383][  0]LogShaderCompilers: Guid format shader working directory is -33 characters bigger than the processId version (../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Intermediate/Shaders/WorkingDirectory/14112/).
+[2018.03.18-19.50.20:384][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Noah/AppData/Local/Temp/UnrealShaderWorkingDir/1D090760418848283F83F59CB2A34D76/'.
+[2018.03.18-19.50.20:384][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.03.18-19.50.27:745][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.03.18-19.50.27:800][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.03.18-19.50.27:854][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.03.18-19.50.27:908][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.03.18-19.50.28:001][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.03.18-19.50.28:073][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.03.18-19.50.28:127][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.03.18-19.50.28:182][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.03.18-19.50.28:230][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.03.18-19.50.28:352][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.03.18-19.50.28:486][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.03.18-19.50.28:540][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.03.18-19.50.28:595][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.03.18-19.50.28:663][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.03.18-19.50.28:715][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.03.18-19.50.28:835][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.03.18-19.50.28:835][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.03.18-19.50.28:891][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.03.18-19.50.29:034][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.03.18-19.50.29:108][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.03.18-19.50.29:163][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.03.18-19.50.29:218][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.03.18-19.50.29:271][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.03.18-19.50.29:335][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.03.18-19.50.29:335][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.03.18-19.50.29:951][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.03.18-19.50.30:397][  0]LogDerivedDataCache: Loaded boot cache 0.45s 93MB C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.18-19.50.30:397][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2018.03.18-19.50.30:397][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.03.18-19.50.30:397][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.03.18-19.50.30:398][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.03.18-19.50.30:398][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.03.18-19.50.30:417][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.03.18-19.50.30:429][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Noah/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.03.18-19.50.30:440][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.03.18-19.50.30:440][  0]LogSlate: Using Freetype 2.6.0
+[2018.03.18-19.50.30:481][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.18-19.50.30:481][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.03.18-19.50.49:622][  0]LogAssetRegistry: FAssetRegistry took 0.0327 seconds to start up
+[2018.03.18-19.50.49:751][  0]LogInit: Selected Device Profile: [Windows]
+[2018.03.18-19.50.49:933][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.03.18-19.50.50:317][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.03.18-19.50.50:360][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.03.18-19.50.50:360][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.03.18-19.50.50:360][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.03.18-19.50.50:360][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.03.18-19.50.50:360][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.03.18-19.50.50:784][  0]LogNetVersion: NPJ2018SeniorProject , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 535738706)
+[2018.03.18-19.50.51:149][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 2 prioritized culture(s) in 0.181323 seconds
+[2018.03.18-19.50.51:156][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2018.03.18-19.50.51:156][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2018.03.18-19.50.51:156][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.03.18-19.50.51:309][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.03.18-19.51.27:473][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.03.18-19.51.27:590][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.03.18-19.51.30:253][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.03.18-19.51.31:213][  0]SourceControl: Source control is disabled
+[2018.03.18-19.51.31:213][  0]SourceControl: Source control is disabled
+[2018.03.18-19.51.31:281][  0]SourceControl: Source control is disabled
+[2018.03.18-19.51.31:350][  0]SourceControl: Source control is disabled
+[2018.03.18-19.51.32:988][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.03.18-19.51.33:359][  0]LogOcInput: OculusInput pre-init called
+[2018.03.18-19.51.33:875][  0]LogEngine: Initializing Engine...
+[2018.03.18-19.51.33:877][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.03.18-19.51.34:604][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.03.18-19.51.34:604][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.03.18-19.51.34:809][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.03.18-19.51.34:815][  0]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-19.51.34:834][  0]LogInit: FAudioDevice initialized.
+[2018.03.18-19.51.35:195][  0]LogDerivedDataCache: Saved boot cache 0.36s 93MB C:/Users/Noah/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.03.18-19.51.35:242][  0]LogInit: Texture streaming: Enabled
+[2018.03.18-19.51.35:394][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.03.18-19.51.35:990][  0]LogInit: Transaction tracking system initialized
+[2018.03.18-19.51.36:355][  0]BlueprintLog: New page: Editor Load
+[2018.03.18-19.51.38:285][  0]LocalizationService: Localization service is disabled
+[2018.03.18-19.51.39:412][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.03.18-19.51.39:413][  0]LogLinker: Warning: Can't find file '/Game/ThirdPersonBP/ThirdPersonOverview'
+[2018.03.18-19.51.39:413][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonBP/ThirdPersonOverview.ThirdPersonOverview_C'
+[2018.03.18-19.51.40:160][  0]LogConsoleResponse: Display: 
+[2018.03.18-19.51.41:232][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.03.18-19.51.41:233][  0]LogCook: Display: Mobile HDR setting 1
+[2018.03.18-19.51.41:233][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.03.18-19.51.41:738][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/' took 0.04s
+[2018.03.18-19.51.43:688][  0]SourceControl: Source control is disabled
+[2018.03.18-19.51.43:689][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/ThirdPersonCPP/Maps/CollectionLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.03.18-19.51.43:701][  0]LightingResults: New page: Lighting Build
+[2018.03.18-19.51.43:778][  0]MapCheck: New page: Map Check
+[2018.03.18-19.51.43:778][  0]LightingResults: New page: Lighting Build
+[2018.03.18-19.51.50:418][  0]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-19.51.50:510][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.03.18-19.51.50:537][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.03.18-19.51.50:603][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 64.997ms to complete.
+[2018.03.18-19.51.50:603][  0]LogFileHelpers: Loading map 'CollectionLevel' took 6.914
+[2018.03.18-19.51.51:524][  0]LogCollectionManager: Loaded 0 collections in 0.005843 seconds
+[2018.03.18-19.51.51:667][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Saved/Collections/' took 0.01s
+[2018.03.18-19.51.51:667][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Developers/Noah/Collections/' took 0.01s
+[2018.03.18-19.51.51:667][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Collections/' took 0.01s
+[2018.03.18-19.51.51:667][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.03.18-19.51.51:678][  0]LogContentBrowser: Native class hierarchy populated in 0.0113 seconds. Added 2392 classes and 503 folders.
+[2018.03.18-19.51.51:755][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0023 seconds. Added 0 classes and 0 folders.
+[2018.03.18-19.51.55:038][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0091 seconds. Added 0 classes and 0 folders.
+[2018.03.18-19.51.55:160][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0024 seconds. Added 1 classes and 2 folders.
+[2018.03.18-19.51.55:471][  0]LogSlate: Took 0.000241 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.03.18-19.51.55:474][  0]LogSlate: Took 0.000302 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.03.18-19.51.55:510][  0]LogSlate: Took 0.029252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.03.18-19.51.55:546][  0]LogSlate: Took 0.035050 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2018.03.18-19.51.56:105][  0]LogRenderer: Reallocating scene render targets to support 932x456 Format 9 NumSamples 1 (Frame:1).
+[2018.03.18-19.51.56:670][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0024 seconds. Added 1 classes and 2 folders.
+[2018.03.18-19.51.56:670][  0]LogLoad: (Engine Initialization) Total time: 120.52 seconds
+[2018.03.18-19.51.56:671][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.03.18-19.51.56:671][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.03.18-19.51.56:671][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.03.18-19.51.56:690][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.03.18-19.51.56:711][  0]LogContentStreaming: Texture pool size now 400 MB
+[2018.03.18-19.51.56:752][  1]LogAssetRegistry: Asset discovery search completed in 67.1522 seconds
+[2018.03.18-19.51.56:755][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.03.18-19.51.56:755][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000231 seconds (updated 0 objects)
+[2018.03.18-19.52.01:304][155]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-19.52.01:812][155]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-19.52.01:813][155]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 11:52:01 AM)
+[2018.03.18-19.52.01:813][155]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-19.52.01:816][155]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002425s)
+[2018.03.18-19.52.01:816][155]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-19.52.01:817][155]LogPlayLevel: PIE: World Init took: (0.000788s)
+[2018.03.18-19.52.01:817][155]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.003784s)
+[2018.03.18-19.52.01:829][155]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-19.52.01:836][155]LogInit: FAudioDevice initialized.
+[2018.03.18-19.52.02:025][155]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-19.52.02:037][155]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-15.52.02
+[2018.03.18-19.52.02:038][155]LogWorld: Bringing up level for play took: 0.003940
+[2018.03.18-19.52.02:108][155]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0026 seconds. Added 11 classes and 0 folders.
+[2018.03.18-19.52.02:112][155]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.076
+[2018.03.18-19.52.11:932][726]LogClass: MyCharacter onGround is False
+[2018.03.18-19.52.32:453][943]LogClass: MyCharacter onGround is False
+[2018.03.18-19.52.41:805][494]LogClass: MyCharacter onGround is False
+[2018.03.18-19.53.08:193][ 45]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-19.53.17:264][413]LogSlate: Took 0.029843 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.18-19.53.21:408][555]LogSlate: Took 0.000329 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.03.18-19.54.00:789][ 22]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.10:144][ 23]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.10:376][ 24]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.10:708][ 25]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.11:040][ 26]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.11:379][ 27]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.11:713][ 28]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.12:046][ 29]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.12:373][ 30]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.12:712][ 31]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.13:042][ 32]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.13:379][ 33]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.13:709][ 34]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2018.03.18-19.54.31:018][ 35]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Source/NPJ2018SeniorProject/NPJ2018SeniorProjectCharacter.h'
+[2018.03.18-19.54.31:186][ 35]LogVSAccessor: Warning: Couldn't goto line number '0' in 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Source/NPJ2018SeniorProject/NPJ2018SeniorProjectCharacter.cpp'
+[2018.03.18-20.10.01:733][860]Candidate modules for hot reload:
+[2018.03.18-20.10.01:733][860]  NPJ2018SeniorProject
+[2018.03.18-20.10.01:733][860]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 4090 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.10.01:803][860]Warning: Starting HotReload took  0.5s.
+[2018.03.18-20.18.33:036][183]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:18:33 PM
+[2018.03.18-20.18.33:036][183]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.18.33:036][183]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.18.33:037][183]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.18.33:037][183]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 38.2563843 seconds
+[2018.03.18-20.18.33:037][183]CompilerResultsLog: Performing 6 actions (4 in parallel)
+[2018.03.18-20.18.33:037][183]CompilerResultsLog: NPJ2018SeniorProject.init.gen.cpp
+[2018.03.18-20.18.33:037][183]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.18.33:038][183]CompilerResultsLog: NPJ2018SeniorProjectCharacter.gen.cpp
+[2018.03.18-20.18.33:038][183]CompilerResultsLog: NPJ2018SeniorProjectGameMode.cpp
+[2018.03.18-20.18.33:038][183]CompilerResultsLog: [5/6] Link UE4Editor-NPJ2018SeniorProject-4090.dll
+[2018.03.18-20.18.33:038][183]CompilerResultsLog: [6/6] Link UE4Editor-NPJ2018SeniorProject-4090.lib
+[2018.03.18-20.18.33:038][183]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4090.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4090.exp
+[2018.03.18-20.18.33:038][183]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4090.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4090.suppressed.exp
+[2018.03.18-20.18.33:039][183]CompilerResultsLog: Total build time: 506.20 seconds (Local executor: 284.39 seconds)
+[2018.03.18-20.18.33:039][183]LogMainFrame: MainFrame: Module compiling took 511.431 seconds
+[2018.03.18-20.18.39:462][183]LogClass: Could not find existing class NPJ2018SeniorProjectCharacter in package /Script/NPJ2018SeniorProject for HotReload, assuming new class
+[2018.03.18-20.18.39:463][183]LogClass: Function CameraLockOn is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function CollectPickups is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function Crouch_Slide_Glide is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function Fly is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function GetCurrentPower is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function GetInitialPower is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function Sprint is new.
+[2018.03.18-20.18.39:463][183]LogClass: Function StopCrouch_Slide_Glide is new.
+[2018.03.18-20.18.39:464][183]LogClass: Function StopFly is new.
+[2018.03.18-20.18.39:464][183]LogClass: Function UpdateCharacterPower is new.
+[2018.03.18-20.18.39:467][183]LogClass: EProjectPlayState HotReload.
+[2018.03.18-20.18.39:508][183]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-20.18.40:064][183]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-20.18.40:194][183]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0046 seconds. Added 6 classes and 3 folders.
+[2018.03.18-20.18.40:215][183]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2018.03.18-20.18.40:314][183]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-20.18.40:376][183]Display: HotReload took 519.0s.
+[2018.03.18-20.18.44:892][342]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.18.44:943][342]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.18.44:944][342]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:18:44 PM)
+[2018.03.18-20.18.44:945][342]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.18.44:954][342]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008497s)
+[2018.03.18-20.18.44:957][342]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.18.44:958][342]LogPlayLevel: PIE: World Init took: (0.002353s)
+[2018.03.18-20.18.44:958][342]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.012651s)
+[2018.03.18-20.18.44:986][342]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.18.44:994][342]LogInit: FAudioDevice initialized.
+[2018.03.18-20.18.45:075][342]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.18.45:079][342]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.18.45
+[2018.03.18-20.18.45:080][342]LogWorld: Bringing up level for play took: 0.002995
+[2018.03.18-20.18.45:083][342]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.894
+[2018.03.18-20.18.46:550][425]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.48:393][533]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.49:652][604]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.50:957][676]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.51:290][695]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.51:510][707]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.18.51:699][717]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.02:272][202]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.19.02:306][202]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.19.02:306][202]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:19:02 PM)
+[2018.03.18-20.19.02:306][202]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.19.02:312][202]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004978s)
+[2018.03.18-20.19.02:313][202]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.19.02:314][202]LogPlayLevel: PIE: World Init took: (0.001880s)
+[2018.03.18-20.19.02:314][202]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.007715s)
+[2018.03.18-20.19.02:333][202]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.19.02:343][202]LogInit: FAudioDevice initialized.
+[2018.03.18-20.19.02:379][202]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.19.02:381][202]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.19.02
+[2018.03.18-20.19.02:382][202]LogWorld: Bringing up level for play took: 0.002267
+[2018.03.18-20.19.02:386][202]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.197
+[2018.03.18-20.19.03:491][261]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.03:804][277]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.04:007][288]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.04:602][320]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.07:617][467]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.19.07:656][467]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.19.07:656][467]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:19:07 PM)
+[2018.03.18-20.19.07:656][467]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.19.07:663][467]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005808s)
+[2018.03.18-20.19.07:664][467]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.19.07:664][467]LogPlayLevel: PIE: World Init took: (0.001203s)
+[2018.03.18-20.19.07:665][467]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.008277s)
+[2018.03.18-20.19.07:686][467]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.19.07:697][467]LogInit: FAudioDevice initialized.
+[2018.03.18-20.19.07:733][467]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.19.07:736][467]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.19.07
+[2018.03.18-20.19.07:737][467]LogWorld: Bringing up level for play took: 0.002254
+[2018.03.18-20.19.07:740][467]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.449
+[2018.03.18-20.19.12:777][756]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.13:217][782]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.13:518][800]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.13:787][816]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.14:021][830]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.14:205][841]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.14:452][854]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.14:639][865]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.14:873][879]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.15:082][891]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.15:433][912]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.15:634][924]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.15:882][939]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.16:066][950]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.16:313][964]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.16:591][980]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.17:599][ 37]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.18:154][ 70]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.19.18:475][ 89]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.28.04:304][862]Candidate modules for hot reload:
+[2018.03.18-20.28.04:304][862]  NPJ2018SeniorProject
+[2018.03.18-20.28.04:305][862]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 639 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.28.04:366][862]Warning: Starting HotReload took  0.1s.
+[2018.03.18-20.31.08:152][269]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:31:08 PM
+[2018.03.18-20.31.08:154][269]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.31.08:155][269]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.31.08:155][269]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.31.08:155][269]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 26.225137 seconds
+[2018.03.18-20.31.08:156][269]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-20.31.08:156][269]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.31.08:156][269]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-639.dll
+[2018.03.18-20.31.08:156][269]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-639.lib
+[2018.03.18-20.31.08:157][269]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-639.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-639.exp
+[2018.03.18-20.31.08:157][269]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-639.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-639.suppressed.exp
+[2018.03.18-20.31.08:158][269]CompilerResultsLog: Total build time: 182.46 seconds (Local executor: 16.70 seconds)
+[2018.03.18-20.31.08:158][269]LogMainFrame: MainFrame: Module compiling took 183.857 seconds
+[2018.03.18-20.31.08:334][269]LogClass: EProjectPlayState HotReload.
+[2018.03.18-20.31.08:338][269]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-20.31.08:419][269]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-20.31.08:536][269]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0033 seconds. Added 6 classes and 3 folders.
+[2018.03.18-20.31.08:540][269]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-20.31.08:599][269]LogContentBrowser: Native class hierarchy populated in 0.0224 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-20.31.08:600][269]Display: HotReload took 184.4s.
+[2018.03.18-20.31.15:396][474]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.31.15:434][474]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.31.15:434][474]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:31:15 PM)
+[2018.03.18-20.31.15:434][474]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.31.15:442][474]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007682s)
+[2018.03.18-20.31.15:444][474]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.31.15:444][474]LogPlayLevel: PIE: World Init took: (0.001693s)
+[2018.03.18-20.31.15:445][474]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.010120s)
+[2018.03.18-20.31.15:466][474]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.31.15:481][474]LogInit: FAudioDevice initialized.
+[2018.03.18-20.31.15:517][474]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.31.15:522][474]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.31.15
+[2018.03.18-20.31.15:522][474]LogWorld: Bringing up level for play took: 0.003854
+[2018.03.18-20.31.15:526][474]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.663
+[2018.03.18-20.31.16:906][555]LogClass: Nearest enemy is 2632.755127
+[2018.03.18-20.31.31:470][406]LogClass: MyCharacter onGround is False
+[2018.03.18-20.31.36:715][718]LogClass: MyCharacter onGround is False
+[2018.03.18-20.32.03:179][281]LogClass: MyCharacter onGround is False
+[2018.03.18-20.38.08:450][397]Candidate modules for hot reload:
+[2018.03.18-20.38.08:451][397]  NPJ2018SeniorProject
+[2018.03.18-20.38.08:451][397]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 23 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.38.08:492][397]Warning: Starting HotReload took  0.1s.
+[2018.03.18-20.39.06:668][964]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:39:06 PM
+[2018.03.18-20.39.06:673][964]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.39.06:673][964]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.39.06:674][964]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.39.06:676][964]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 20.2533561 seconds
+[2018.03.18-20.39.06:676][964]CompilerResultsLog: Performing 6 actions (4 in parallel)
+[2018.03.18-20.39.06:676][964]CompilerResultsLog: NPJ2018SeniorProject.init.gen.cpp
+[2018.03.18-20.39.06:676][964]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.39.06:677][964]CompilerResultsLog: NPJ2018SeniorProjectGameMode.cpp
+[2018.03.18-20.39.06:677][964]CompilerResultsLog: NPJ2018SeniorProjectCharacter.gen.cpp
+[2018.03.18-20.39.06:677][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C2143: syntax error: missing ';' before '*'
+[2018.03.18-20.39.06:679][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2018.03.18-20.39.06:679][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C2238: unexpected token(s) preceding ';'
+[2018.03.18-20.39.06:680][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(12) : error C2039: 'nearestEnemy': is not a member of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:681][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(10) : note: see declaration of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:682][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C2143: syntax error: missing ';' before '*'
+[2018.03.18-20.39.06:683][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2018.03.18-20.39.06:684][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(179) : error C2238: unexpected token(s) preceding ';'
+[2018.03.18-20.39.06:685][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(12) : error C2039: 'nearestEnemy': is not a member of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:686][964]CompilerResultsLog: Error: c:\users\noah\documents\github\ue4project\npj2018seniorproject\source\npj2018seniorproject\NPJ2018SeniorProjectCharacter.h(10) : note: see declaration of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:686][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(179) : error C2143: syntax error: missing ';' before '*'
+[2018.03.18-20.39.06:687][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(179) : error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+[2018.03.18-20.39.06:688][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(179) : error C2238: unexpected token(s) preceding ';'
+[2018.03.18-20.39.06:689][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(12) : error C2039: 'nearestEnemy': is not a member of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:689][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(10) : note: see declaration of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:690][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Inc\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.gen.cpp(295) : error C2039: 'nearestEnemy': is not a member of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:691][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.h(10) : note: see declaration of 'ANPJ2018SeniorProjectCharacter'
+[2018.03.18-20.39.06:692][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Inc\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.gen.cpp(295) : error C2664: 'UObjectProperty::UObjectProperty(const UObjectProperty &)': cannot convert argument 1 from 'FObjectInitializer' to 'ECppProperty'
+[2018.03.18-20.39.06:693][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Inc\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.gen.cpp(295) : note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+[2018.03.18-20.39.06:694][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.cpp(317) : error C2065: 'nearestEnemy': undeclared identifier
+[2018.03.18-20.39.06:695][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.cpp(317) : error C2227: left of '->GetActorLocation' must point to class/struct/union/generic type
+[2018.03.18-20.39.06:697][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.cpp(317) : note: type is 'unknown-type'
+[2018.03.18-20.39.06:698][964]CompilerResultsLog: Error: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Source\NPJ2018SeniorProject\NPJ2018SeniorProjectCharacter.cpp(563) : error C2065: 'nearestEnemy': undeclared identifier
+[2018.03.18-20.39.06:699][964]CompilerResultsLog: ERROR: UBT ERROR: Failed to produce item: C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Binaries\Win64\UE4Editor-NPJ2018SeniorProject-23.dll
+[2018.03.18-20.39.06:699][964]CompilerResultsLog: Total build time: 57.56 seconds (Local executor: 0.00 seconds)
+[2018.03.18-20.39.06:700][964]LogMainFrame: MainFrame: Module compiling took 58.268 seconds
+[2018.03.18-20.39.06:701][964]Warning: HotReload failed, recompile failed
+[2018.03.18-20.40.23:756][504]Candidate modules for hot reload:
+[2018.03.18-20.40.23:757][504]  NPJ2018SeniorProject
+[2018.03.18-20.40.23:757][504]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 3068 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.40.23:843][504]Warning: Starting HotReload took  0.1s.
+[2018.03.18-20.42.52:154][884]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:42:52 PM
+[2018.03.18-20.42.52:155][884]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.42.52:155][884]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.42.52:155][884]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.42.52:156][884]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 22.668493 seconds
+[2018.03.18-20.42.52:156][884]CompilerResultsLog: Performing 5 actions (4 in parallel)
+[2018.03.18-20.42.52:156][884]CompilerResultsLog: NPJ2018SeniorProjectGameMode.cpp
+[2018.03.18-20.42.52:157][884]CompilerResultsLog: NPJ2018SeniorProjectCharacter.gen.cpp
+[2018.03.18-20.42.52:157][884]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.42.52:157][884]CompilerResultsLog: [4/5] Link UE4Editor-NPJ2018SeniorProject-3068.dll
+[2018.03.18-20.42.52:157][884]CompilerResultsLog: [5/5] Link UE4Editor-NPJ2018SeniorProject-3068.lib
+[2018.03.18-20.42.52:157][884]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3068.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3068.exp
+[2018.03.18-20.42.52:158][884]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3068.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3068.suppressed.exp
+[2018.03.18-20.42.52:158][884]CompilerResultsLog: Total build time: 147.53 seconds (Local executor: 58.14 seconds)
+[2018.03.18-20.42.52:158][884]LogMainFrame: MainFrame: Module compiling took 148.423 seconds
+[2018.03.18-20.42.54:747][884]LogClass: Could not find existing class NPJ2018SeniorProjectCharacter in package /Script/NPJ2018SeniorProject for HotReload, assuming new class
+[2018.03.18-20.42.54:747][884]LogClass: Function CameraLockOn is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function CollectPickups is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function Crouch_Slide_Glide is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function Fly is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function GetCurrentPower is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function GetInitialPower is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function Sprint is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function StopCrouch_Slide_Glide is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function StopFly is new.
+[2018.03.18-20.42.54:748][884]LogClass: Function UpdateCharacterPower is new.
+[2018.03.18-20.42.54:750][884]LogClass: EProjectPlayState HotReload.
+[2018.03.18-20.42.54:759][884]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-20.42.54:844][884]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-20.42.54:936][884]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0031 seconds. Added 6 classes and 3 folders.
+[2018.03.18-20.42.54:940][884]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2018.03.18-20.42.54:975][884]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-20.42.54:975][884]Display: HotReload took 151.3s.
+[2018.03.18-20.42.59:253][ 17]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.42.59:289][ 17]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.42.59:289][ 17]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:42:59 PM)
+[2018.03.18-20.42.59:289][ 17]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.42.59:295][ 17]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005414s)
+[2018.03.18-20.42.59:297][ 17]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.42.59:298][ 17]LogPlayLevel: PIE: World Init took: (0.002228s)
+[2018.03.18-20.42.59:298][ 17]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.008625s)
+[2018.03.18-20.42.59:321][ 17]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.42.59:332][ 17]LogInit: FAudioDevice initialized.
+[2018.03.18-20.42.59:375][ 17]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.42.59:379][ 17]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.42.59
+[2018.03.18-20.42.59:380][ 17]LogWorld: Bringing up level for play took: 0.003390
+[2018.03.18-20.42.59:384][ 17]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.805
+[2018.03.18-20.43.01:033][111]LogClass: Locked on Nearest Enemy
+[2018.03.18-20.43.19:999][235]LogClass: MyCharacter onGround is False
+[2018.03.18-20.43.26:165][597]LogClass: MyCharacter onGround is False
+[2018.03.18-20.45.38:143][ 15]Candidate modules for hot reload:
+[2018.03.18-20.45.38:143][ 15]  NPJ2018SeniorProject
+[2018.03.18-20.45.38:144][ 15]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 4944 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.45.38:224][ 15]Warning: Starting HotReload took  0.1s.
+[2018.03.18-20.50.08:914][147]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:50:08 PM
+[2018.03.18-20.50.08:915][147]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.50.08:915][147]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.50.08:915][147]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.50.08:916][147]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 28.6056461 seconds
+[2018.03.18-20.50.08:916][147]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-20.50.08:916][147]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.50.08:917][147]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-4944.dll
+[2018.03.18-20.50.08:917][147]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-4944.lib
+[2018.03.18-20.50.08:917][147]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4944.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4944.exp
+[2018.03.18-20.50.08:918][147]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4944.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-4944.suppressed.exp
+[2018.03.18-20.50.08:919][147]CompilerResultsLog: Total build time: 269.02 seconds (Local executor: 96.35 seconds)
+[2018.03.18-20.50.08:919][147]LogMainFrame: MainFrame: Module compiling took 270.782 seconds
+[2018.03.18-20.50.09:062][147]LogClass: EProjectPlayState HotReload.
+[2018.03.18-20.50.09:066][147]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-20.50.09:146][147]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-20.50.09:256][147]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0028 seconds. Added 6 classes and 3 folders.
+[2018.03.18-20.50.09:259][147]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-20.50.09:297][147]LogContentBrowser: Native class hierarchy populated in 0.0126 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-20.50.09:297][147]Display: HotReload took 271.2s.
+[2018.03.18-20.50.13:394][274]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.50.13:435][274]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.50.13:436][274]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:50:13 PM)
+[2018.03.18-20.50.13:436][274]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.50.13:445][274]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008422s)
+[2018.03.18-20.50.13:447][274]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.50.13:448][274]LogPlayLevel: PIE: World Init took: (0.002266s)
+[2018.03.18-20.50.13:448][274]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.011796s)
+[2018.03.18-20.50.13:472][274]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.50.13:485][274]LogInit: FAudioDevice initialized.
+[2018.03.18-20.50.13:520][274]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.50.13:523][274]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.50.13
+[2018.03.18-20.50.13:524][274]LogWorld: Bringing up level for play took: 0.002884
+[2018.03.18-20.50.13:527][274]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.661
+[2018.03.18-20.50.15:058][360]LogClass: Locked on Nearest Enemy
+[2018.03.18-20.50.18:779][578]LogClass: Locked on Nearest Enemy
+[2018.03.18-20.50.35:053][535]LogClass: Locked on Nearest Enemy
+[2018.03.18-20.55.44:003][781]Candidate modules for hot reload:
+[2018.03.18-20.55.44:003][781]  NPJ2018SeniorProject
+[2018.03.18-20.55.44:003][781]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 1727 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-20.55.44:112][781]Warning: Starting HotReload took  0.1s.
+[2018.03.18-20.58.47:776][758]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 12:58:47 PM
+[2018.03.18-20.58.47:777][758]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-20.58.47:777][758]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-20.58.47:777][758]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 18.1040413 seconds
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: Performing 6 actions (4 in parallel)
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: NPJ2018SeniorProjectCharacter.gen.cpp
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: NPJ2018SeniorProjectGameMode.cpp
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: NPJ2018SeniorProject.init.gen.cpp
+[2018.03.18-20.58.47:778][758]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-20.58.47:779][758]CompilerResultsLog: [5/6] Link UE4Editor-NPJ2018SeniorProject-1727.dll
+[2018.03.18-20.58.47:779][758]CompilerResultsLog: [6/6] Link UE4Editor-NPJ2018SeniorProject-1727.lib
+[2018.03.18-20.58.47:779][758]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1727.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1727.exp
+[2018.03.18-20.58.47:779][758]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1727.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1727.suppressed.exp
+[2018.03.18-20.58.47:780][758]CompilerResultsLog: Total build time: 182.87 seconds (Local executor: 153.08 seconds)
+[2018.03.18-20.58.47:780][758]LogMainFrame: MainFrame: Module compiling took 183.796 seconds
+[2018.03.18-20.58.49:454][758]LogClass: Could not find existing class NPJ2018SeniorProjectCharacter in package /Script/NPJ2018SeniorProject for HotReload, assuming new class
+[2018.03.18-20.58.49:455][758]LogClass: Function CameraLockOn is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function CollectPickups is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function Crouch_Slide_Glide is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function Fly is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function GetCurrentPower is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function GetInitialPower is new.
+[2018.03.18-20.58.49:455][758]LogClass: Function Sprint is new.
+[2018.03.18-20.58.49:456][758]LogClass: Function StopCrouch_Slide_Glide is new.
+[2018.03.18-20.58.49:456][758]LogClass: Function StopFly is new.
+[2018.03.18-20.58.49:456][758]LogClass: Function UpdateCharacterPower is new.
+[2018.03.18-20.58.49:458][758]LogClass: EProjectPlayState HotReload.
+[2018.03.18-20.58.49:467][758]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-20.58.49:539][758]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-20.58.49:657][758]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0042 seconds. Added 6 classes and 3 folders.
+[2018.03.18-20.58.49:660][758]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2018.03.18-20.58.49:706][758]LogContentBrowser: Native class hierarchy populated in 0.0150 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-20.58.49:706][758]Display: HotReload took 185.7s.
+[2018.03.18-20.59.24:137][763]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-20.59.24:177][763]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-20.59.24:178][763]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 12:59:24 PM)
+[2018.03.18-20.59.24:179][763]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-20.59.24:186][763]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006805s)
+[2018.03.18-20.59.24:188][763]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-20.59.24:189][763]LogPlayLevel: PIE: World Init took: (0.002094s)
+[2018.03.18-20.59.24:189][763]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.010320s)
+[2018.03.18-20.59.24:215][763]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-20.59.24:232][763]LogInit: FAudioDevice initialized.
+[2018.03.18-20.59.24:292][763]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-20.59.24:296][763]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-16.59.24
+[2018.03.18-20.59.24:297][763]LogWorld: Bringing up level for play took: 0.003863
+[2018.03.18-20.59.24:300][763]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.112
+[2018.03.18-20.59.25:755][846]LogClass: Locked on Nearest Enemy
+[2018.03.18-20.59.40:900][734]LogClass: MyCharacter onGround is False
+[2018.03.18-21.00.32:453][362]Candidate modules for hot reload:
+[2018.03.18-21.00.32:453][362]  NPJ2018SeniorProject
+[2018.03.18-21.00.32:453][362]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 7980 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.00.32:543][362]Warning: Starting HotReload took  0.2s.
+[2018.03.18-21.04.51:054][ 53]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:04:51 PM
+[2018.03.18-21.04.51:055][ 53]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.04.51:055][ 53]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.04.51:055][ 53]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.04.51:056][ 53]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 26.0287908 seconds
+[2018.03.18-21.04.51:056][ 53]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-21.04.51:057][ 53]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.04.51:057][ 53]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-7980.dll
+[2018.03.18-21.04.51:057][ 53]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-7980.lib
+[2018.03.18-21.04.51:057][ 53]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7980.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7980.exp
+[2018.03.18-21.04.51:058][ 53]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7980.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-7980.suppressed.exp
+[2018.03.18-21.04.51:059][ 53]CompilerResultsLog: Total build time: 256.89 seconds (Local executor: 118.46 seconds)
+[2018.03.18-21.04.51:059][ 53]LogMainFrame: MainFrame: Module compiling took 258.610 seconds
+[2018.03.18-21.04.51:206][ 53]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.04.51:210][ 53]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.04.51:287][ 53]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.04.51:393][ 53]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0031 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.04.51:396][ 53]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.04.51:449][ 53]LogContentBrowser: Native class hierarchy populated in 0.0114 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.04.51:449][ 53]Display: HotReload took 259.1s.
+[2018.03.18-21.04.56:662][212]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.04.56:698][212]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.04.56:699][212]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:04:56 PM)
+[2018.03.18-21.04.56:699][212]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.04.56:708][212]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008555s)
+[2018.03.18-21.04.56:711][212]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.04.56:712][212]LogPlayLevel: PIE: World Init took: (0.003049s)
+[2018.03.18-21.04.56:712][212]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.013093s)
+[2018.03.18-21.04.56:733][212]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.04.56:743][212]LogInit: FAudioDevice initialized.
+[2018.03.18-21.04.56:779][212]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.04.56:783][212]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.04.56
+[2018.03.18-21.04.56:784][212]LogWorld: Bringing up level for play took: 0.003011
+[2018.03.18-21.04.56:787][212]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.598
+[2018.03.18-21.04.57:973][278]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.09.56:676][766]Candidate modules for hot reload:
+[2018.03.18-21.09.56:676][766]  NPJ2018SeniorProject
+[2018.03.18-21.09.56:677][766]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 6977 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.09.56:732][766]Warning: Starting HotReload took  0.1s.
+[2018.03.18-21.10.48:509][359]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:10:48 PM
+[2018.03.18-21.10.48:511][359]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.10.48:511][359]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.10.48:511][359]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.10.48:512][359]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 24.728913 seconds
+[2018.03.18-21.10.48:512][359]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-21.10.48:512][359]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.10.48:513][359]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-6977.dll
+[2018.03.18-21.10.48:513][359]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-6977.lib
+[2018.03.18-21.10.48:513][359]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-6977.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-6977.exp
+[2018.03.18-21.10.48:515][359]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-6977.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-6977.suppressed.exp
+[2018.03.18-21.10.48:516][359]CompilerResultsLog: Total build time: 51.02 seconds (Local executor: 13.61 seconds)
+[2018.03.18-21.10.48:516][359]LogMainFrame: MainFrame: Module compiling took 51.858 seconds
+[2018.03.18-21.10.48:649][359]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.10.48:653][359]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.10.48:731][359]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.10.48:849][359]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0061 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.10.48:853][359]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.10.48:913][359]LogContentBrowser: Native class hierarchy populated in 0.0157 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.10.48:913][359]Display: HotReload took 52.3s.
+[2018.03.18-21.10.56:572][592]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.10.56:607][592]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.10.56:608][592]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:10:56 PM)
+[2018.03.18-21.10.56:608][592]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.10.56:613][592]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004322s)
+[2018.03.18-21.10.56:614][592]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.10.56:615][592]LogPlayLevel: PIE: World Init took: (0.001725s)
+[2018.03.18-21.10.56:615][592]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.006844s)
+[2018.03.18-21.10.56:641][592]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.10.56:651][592]LogInit: FAudioDevice initialized.
+[2018.03.18-21.10.56:688][592]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.10.56:691][592]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.10.56
+[2018.03.18-21.10.56:692][592]LogWorld: Bringing up level for play took: 0.002933
+[2018.03.18-21.10.56:695][592]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.506
+[2018.03.18-21.11.02:855][952]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.11.11:505][465]LogClass: MyCharacter onGround is False
+[2018.03.18-21.11.19:969][962]LogClass: MyCharacter onGround is False
+[2018.03.18-21.11.46:841][214]Candidate modules for hot reload:
+[2018.03.18-21.11.46:842][214]  NPJ2018SeniorProject
+[2018.03.18-21.11.46:842][214]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 2463 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.11.46:924][214]Warning: Starting HotReload took  0.1s.
+[2018.03.18-21.14.10:929][247]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:14:10 PM
+[2018.03.18-21.14.10:930][247]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.14.10:930][247]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.14.10:930][247]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.14.10:931][247]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 22.1106203 seconds
+[2018.03.18-21.14.10:931][247]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-21.14.10:931][247]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.14.10:932][247]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-2463.dll
+[2018.03.18-21.14.10:932][247]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-2463.lib
+[2018.03.18-21.14.10:932][247]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2463.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2463.exp
+[2018.03.18-21.14.10:933][247]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2463.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2463.suppressed.exp
+[2018.03.18-21.14.10:934][247]CompilerResultsLog: Total build time: 143.40 seconds (Local executor: 80.48 seconds)
+[2018.03.18-21.14.10:934][247]LogMainFrame: MainFrame: Module compiling took 144.112 seconds
+[2018.03.18-21.14.11:092][247]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.14.11:096][247]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.14.11:172][247]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.14.11:320][247]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0048 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.14.11:325][247]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.14.11:369][247]LogContentBrowser: Native class hierarchy populated in 0.0175 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.14.11:370][247]Display: HotReload took 144.6s.
+[2018.03.18-21.14.21:450][534]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.14.21:484][534]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.14.21:485][534]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:14:21 PM)
+[2018.03.18-21.14.21:486][534]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.14.21:491][534]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005267s)
+[2018.03.18-21.14.21:493][534]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.14.21:494][534]LogPlayLevel: PIE: World Init took: (0.002595s)
+[2018.03.18-21.14.21:495][534]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.009141s)
+[2018.03.18-21.14.21:515][534]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.14.21:532][534]LogInit: FAudioDevice initialized.
+[2018.03.18-21.14.21:575][534]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.14.21:582][534]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.14.21
+[2018.03.18-21.14.21:583][534]LogWorld: Bringing up level for play took: 0.005369
+[2018.03.18-21.14.21:588][534]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.6
+[2018.03.18-21.14.22:451][584]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.14.26:804][837]LogClass: MyCharacter onGround is False
+[2018.03.18-21.14.46:358][975]LogClass: MyCharacter onGround is False
+[2018.03.18-21.14.57:848][647]LogClass: MyCharacter onGround is False
+[2018.03.18-21.15.12:692][509]LogClass: MyCharacter onGround is False
+[2018.03.18-21.15.34:540][758]LogClass: MyCharacter onGround is False
+[2018.03.18-21.15.50:104][673]LogClass: MyCharacter onGround is False
+[2018.03.18-21.16.00:852][299]LogClass: MyCharacter onGround is False
+[2018.03.18-21.16.06:746][638]LogClass: MyCharacter onGround is False
+[2018.03.18-21.16.21:008][463]LogClass: MyCharacter onGround is False
+[2018.03.18-21.16.28:742][909]LogClass: Crouch Please
+[2018.03.18-21.16.53:391][345]LogClass: MyCharacter onGround is False
+[2018.03.18-21.16.57:466][580]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.00:186][743]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.07:492][162]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.18:878][818]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.25:013][178]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.30:372][491]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.51:581][728]LogClass: MyCharacter onGround is False
+[2018.03.18-21.17.56:393][ 10]LogClass: MyCharacter onGround is False
+[2018.03.18-21.27.47:870][197]Candidate modules for hot reload:
+[2018.03.18-21.27.47:870][197]  NPJ2018SeniorProject
+[2018.03.18-21.27.47:871][197]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 2947 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.27.47:921][197]Warning: Starting HotReload took  0.1s.
+[2018.03.18-21.31.45:428][438]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:31:45 PM
+[2018.03.18-21.31.45:428][438]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.31.45:428][438]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.31.45:429][438]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.31.45:429][438]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 24.4947409 seconds
+[2018.03.18-21.31.45:429][438]CompilerResultsLog: Performing 6 actions (4 in parallel)
+[2018.03.18-21.31.45:429][438]CompilerResultsLog: NPJ2018SeniorProjectCharacter.gen.cpp
+[2018.03.18-21.31.45:430][438]CompilerResultsLog: NPJ2018SeniorProject.init.gen.cpp
+[2018.03.18-21.31.45:430][438]CompilerResultsLog: NPJ2018SeniorProjectGameMode.cpp
+[2018.03.18-21.31.45:430][438]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.31.45:430][438]CompilerResultsLog: [5/6] Link UE4Editor-NPJ2018SeniorProject-2947.dll
+[2018.03.18-21.31.45:430][438]CompilerResultsLog: [6/6] Link UE4Editor-NPJ2018SeniorProject-2947.lib
+[2018.03.18-21.31.45:431][438]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2947.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2947.exp
+[2018.03.18-21.31.45:431][438]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2947.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-2947.suppressed.exp
+[2018.03.18-21.31.45:432][438]CompilerResultsLog: Total build time: 236.64 seconds (Local executor: 170.32 seconds)
+[2018.03.18-21.31.45:432][438]LogMainFrame: MainFrame: Module compiling took 237.575 seconds
+[2018.03.18-21.31.47:211][438]LogClass: Could not find existing class NPJ2018SeniorProjectCharacter in package /Script/NPJ2018SeniorProject for HotReload, assuming new class
+[2018.03.18-21.31.47:212][438]LogClass: Function CameraLockOn is new.
+[2018.03.18-21.31.47:212][438]LogClass: Function CollectPickups is new.
+[2018.03.18-21.31.47:212][438]LogClass: Function Crouch_Slide_Glide is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function Fly is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function GetCurrentPower is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function GetInitialPower is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function Sprint is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function StopCrouch_Slide_Glide is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function StopFly is new.
+[2018.03.18-21.31.47:213][438]LogClass: Function UpdateCharacterPower is new.
+[2018.03.18-21.31.47:216][438]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.31.47:227][438]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.31.47:304][438]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.31.47:422][438]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0029 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.31.47:425][438]Display: HotReload successful (7 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.31.47:467][438]LogContentBrowser: Native class hierarchy populated in 0.0159 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.31.47:468][438]Display: HotReload took 239.6s.
+[2018.03.18-21.31.50:251][525]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.31.50:286][525]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.31.50:287][525]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:31:50 PM)
+[2018.03.18-21.31.50:287][525]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.31.50:293][525]LogPlayLevel: PIE: StaticDuplicateObject took: (0.005842s)
+[2018.03.18-21.31.50:296][525]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.31.50:297][525]LogPlayLevel: PIE: World Init took: (0.002787s)
+[2018.03.18-21.31.50:297][525]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.010234s)
+[2018.03.18-21.31.50:319][525]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.31.50:332][525]LogInit: FAudioDevice initialized.
+[2018.03.18-21.31.50:383][525]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.31.50:387][525]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.31.50
+[2018.03.18-21.31.50:388][525]LogWorld: Bringing up level for play took: 0.003848
+[2018.03.18-21.31.50:393][525]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.204
+[2018.03.18-21.31.53:807][721]LogClass: MyCharacter onGround is False
+[2018.03.18-21.31.56:709][889]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.32.00:676][121]LogClass: MyCharacter onGround is False
+[2018.03.18-21.32.04:362][332]LogClass: MyCharacter onGround is False
+[2018.03.18-21.32.07:046][486]LogClass: MyCharacter onGround is False
+[2018.03.18-21.32.17:339][ 86]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.32.48:626][557]Candidate modules for hot reload:
+[2018.03.18-21.32.48:626][557]  NPJ2018SeniorProject
+[2018.03.18-21.32.48:626][557]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 1074 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.32.48:695][557]Warning: Starting HotReload took  0.1s.
+[2018.03.18-21.36.18:358][684]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:36:18 PM
+[2018.03.18-21.36.18:359][684]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.36.18:359][684]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.36.18:359][684]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.36.18:360][684]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 26.4451542 seconds
+[2018.03.18-21.36.18:361][684]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-21.36.18:361][684]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.36.18:361][684]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-1074.dll
+[2018.03.18-21.36.18:361][684]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-1074.lib
+[2018.03.18-21.36.18:361][684]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1074.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1074.suppressed.exp
+[2018.03.18-21.36.18:362][684]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1074.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-1074.exp
+[2018.03.18-21.36.18:363][684]CompilerResultsLog: Total build time: 207.76 seconds (Local executor: 125.39 seconds)
+[2018.03.18-21.36.18:364][684]LogMainFrame: MainFrame: Module compiling took 209.741 seconds
+[2018.03.18-21.36.18:524][684]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.36.18:528][684]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.36.18:618][684]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.36.18:748][684]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0035 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.36.18:750][684]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.36.18:806][684]LogContentBrowser: Native class hierarchy populated in 0.0151 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.36.18:806][684]Display: HotReload took 210.3s.
+[2018.03.18-21.36.21:494][763]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.36.21:537][763]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.36.21:537][763]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:36:21 PM)
+[2018.03.18-21.36.21:537][763]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.36.21:544][763]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006810s)
+[2018.03.18-21.36.21:546][763]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.36.21:547][763]LogPlayLevel: PIE: World Init took: (0.002127s)
+[2018.03.18-21.36.21:547][763]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.009972s)
+[2018.03.18-21.36.21:570][763]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.36.21:582][763]LogInit: FAudioDevice initialized.
+[2018.03.18-21.36.21:623][763]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.36.21:627][763]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.36.21
+[2018.03.18-21.36.21:628][763]LogWorld: Bringing up level for play took: 0.003852
+[2018.03.18-21.36.21:633][763]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel -0.556
+[2018.03.18-21.36.28:040][113]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.36.34:716][493]LogClass: MyCharacter onGround is False
+[2018.03.18-21.36.43:566][997]LogClass: MyCharacter onGround is False
+[2018.03.18-21.36.49:562][340]LogClass: MyCharacter onGround is False
+[2018.03.18-21.36.52:361][497]LogClass: Crouch Please
+[2018.03.18-21.36.59:961][935]LogClass: MyCharacter onGround is False
+[2018.03.18-21.37.04:417][192]LogClass: MyCharacter onGround is False
+[2018.03.18-21.37.07:190][352]LogClass: MyCharacter onGround is False
+[2018.03.18-21.37.27:873][553]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.38.18:062][227]Candidate modules for hot reload:
+[2018.03.18-21.38.18:062][227]  NPJ2018SeniorProject
+[2018.03.18-21.38.18:063][227]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/DotNET/UnrealBuildTool.exe NPJ2018SeniorProject -ModuleWithSuffix NPJ2018SeniorProject 3691 Win64 Development -editorrecompile -canskiplink "C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/NPJ2018SeniorProject.uproject" ]
+[2018.03.18-21.38.18:089][227]Warning: Starting HotReload took  0.1s.
+[2018.03.18-21.40.55:237][879]CompilerResultsLog: New page: Compilation - Mar 18, 2018, 1:40:55 PM
+[2018.03.18-21.40.55:238][879]CompilerResultsLog: Compiling game modules for hot reload
+[2018.03.18-21.40.55:238][879]CompilerResultsLog: Parsing headers for NPJ2018SeniorProjectEditor
+[2018.03.18-21.40.55:238][879]CompilerResultsLog:   Running UnrealHeaderTool "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\NPJ2018SeniorProject.uproject" "C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\NPJ2018SeniorProjectEditor\Development\NPJ2018SeniorProjectEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -installed
+[2018.03.18-21.40.55:239][879]CompilerResultsLog: Reflection code generated for NPJ2018SeniorProjectEditor in 30.1860107 seconds
+[2018.03.18-21.40.55:240][879]CompilerResultsLog: Performing 3 actions (4 in parallel)
+[2018.03.18-21.40.55:240][879]CompilerResultsLog: NPJ2018SeniorProjectCharacter.cpp
+[2018.03.18-21.40.55:240][879]CompilerResultsLog: [2/3] Link UE4Editor-NPJ2018SeniorProject-3691.dll
+[2018.03.18-21.40.55:240][879]CompilerResultsLog: [3/3] Link UE4Editor-NPJ2018SeniorProject-3691.lib
+[2018.03.18-21.40.55:241][879]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3691.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3691.exp
+[2018.03.18-21.40.55:242][879]CompilerResultsLog:    Creating library C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3691.suppressed.lib and object C:\Users\Noah\Documents\GitHub\UE4Project\NPJ2018SeniorProject\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-NPJ2018SeniorProject-3691.suppressed.exp
+[2018.03.18-21.40.55:243][879]CompilerResultsLog: Total build time: 156.33 seconds (Local executor: 92.35 seconds)
+[2018.03.18-21.40.55:243][879]LogMainFrame: MainFrame: Module compiling took 157.194 seconds
+[2018.03.18-21.40.55:386][879]LogClass: EProjectPlayState HotReload.
+[2018.03.18-21.40.55:391][879]LogHotReload: Re-instancing NPJ2018SeniorProjectCharacter after hot-reload.
+[2018.03.18-21.40.55:510][879]LogHotReload: Re-instancing SpawnVolume after hot-reload.
+[2018.03.18-21.40.55:662][879]LogContentBrowser: Native class hierarchy updated for 'NPJ2018SeniorProject' in 0.0050 seconds. Added 6 classes and 3 folders.
+[2018.03.18-21.40.55:665][879]Display: HotReload successful (17 functions remapped  0 scriptstructs remapped)
+[2018.03.18-21.40.55:713][879]LogContentBrowser: Native class hierarchy populated in 0.0181 seconds. Added 2394 classes and 507 folders.
+[2018.03.18-21.40.55:714][879]Display: HotReload took 157.7s.
+[2018.03.18-21.40.58:501][962]LogTemp: Repeating last play command: Selected Viewport
+[2018.03.18-21.40.58:538][962]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.03.18-21.40.58:539][962]PIE: New page: PIE session: CollectionLevel (Mar 18, 2018, 1:40:58 PM)
+[2018.03.18-21.40.58:539][962]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel
+[2018.03.18-21.40.58:548][962]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008991s)
+[2018.03.18-21.40.58:550][962]LogAIModule: Creating AISystem for world CollectionLevel
+[2018.03.18-21.40.58:551][962]LogPlayLevel: PIE: World Init took: (0.002057s)
+[2018.03.18-21.40.58:551][962]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/CollectionLevel.CollectionLevel to /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel (0.012073s)
+[2018.03.18-21.40.58:576][962]LogInit: XAudio2 using 'Speakers (High Definition Audio Device)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.03.18-21.40.58:588][962]LogInit: FAudioDevice initialized.
+[2018.03.18-21.40.58:624][962]LogLoad: Game class is 'GameModeBP_C'
+[2018.03.18-21.40.58:627][962]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel.CollectionLevel up for play (max tick rate 60) at 2018.03.18-17.40.58
+[2018.03.18-21.40.58:628][962]LogWorld: Bringing up level for play took: 0.003207
+[2018.03.18-21.40.58:633][962]PIE: Play in editor start time for /Game/ThirdPersonCPP/Maps/UEDPIE_0_CollectionLevel 0.444
+[2018.03.18-21.40.59:846][ 28]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.11:770][718]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.13:674][826]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.15:504][934]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.17:710][ 61]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.20:167][200]LogClass: MyCharacter onGround is False
+[2018.03.18-21.41.20:255][204]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.21:710][283]LogClass: MyCharacter onGround is False
+[2018.03.18-21.41.26:427][555]LogClass: MyCharacter onGround is False
+[2018.03.18-21.41.30:355][776]LogClass: MyCharacter onGround is False
+[2018.03.18-21.41.33:501][954]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.37:761][196]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.41.44:543][591]LogClass: MyCharacter onGround is False
+[2018.03.18-21.42.44:862][ 94]LogClass: MyCharacter onGround is False
+[2018.03.18-21.42.49:031][333]LogClass: MyCharacter onGround is False
+[2018.03.18-21.42.58:159][865]LogClass: MyCharacter onGround is False
+[2018.03.18-21.43.22:734][284]LogClass: MyCharacter onGround is False
+[2018.03.18-21.43.39:880][274]LogClass: MyCharacter onGround is False
+[2018.03.18-21.43.41:703][375]LogClass: MyCharacter onGround is False
+[2018.03.18-21.43.41:703][375]LogClass: Locked on Nearest Enemy
+[2018.03.18-21.43.57:076][261]LogClass: MyCharacter onGround is False
+[2018.03.18-21.44.02:539][579]LogClass: MyCharacter onGround is False
+[2018.03.18-21.45.09:986][490]LogClass: MyCharacter onGround is False
+[2018.03.18-21.45.33:300][849]LogClass: MyCharacter onGround is False
+[2018.03.18-21.45.50:013][817]LogClass: Crouch Please
+[2018.03.18-21.46.14:782][260]LogClass: MyCharacter onGround is False
+[2018.03.18-21.46.18:457][474]LogClass: MyCharacter onGround is False
+[2018.03.18-21.46.35:948][483]LogClass: Crouch Please
+[2018.03.18-21.46.38:591][639]LogClass: MyCharacter onGround is False
+[2018.03.18-21.46.47:705][165]LogClass: MyCharacter onGround is False
+[2018.03.18-21.46.58:676][799]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.02:315][  9]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.05:623][203]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.08:402][362]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.12:857][620]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.16:399][829]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.19:399][  1]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.22:642][193]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.25:289][343]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.31:855][729]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.35:212][920]LogClass: MyCharacter onGround is False
+[2018.03.18-21.47.39:954][196]LogClass: MyCharacter onGround is False
+[2018.03.18-21.48.20:350][432]Cmd: QUIT_EDITOR
+[2018.03.18-21.48.22:450][432]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.03.18-21.48.22:707][432]LogExit: Preparing to exit.
+[2018.03.18-21.48.24:275][432]LogDirectoryWatcher: A directory notification for 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/' was aborted.
+[2018.03.18-21.48.25:041][432]LogExit: Editor shut down
+[2018.03.18-21.48.25:124][432]LogExit: Transaction tracking system shut down
+[2018.03.18-21.48.25:459][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.03.18-21.48.25:459][432]LogDirectoryWatcher: A directory notification for '../../../../../../Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/' was aborted.
+[2018.03.18-21.48.25:459][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.03.18-21.48.25:459][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2018.03.18-21.48.25:459][432]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2018.03.18-21.48.27:311][432]LogExit: Object subsystem successfully closed.
+[2018.03.18-21.48.27:621][432]LogD3D11RHI: Shutdown
+[2018.03.18-21.48.27:628][432]LogD3D11RHI: CleanupD3DDevice
+[2018.03.18-21.48.27:863][432]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.03.18-21.48.28:819][432]LogModuleManager: Shutting down and abandoning module NPJ2018SeniorProject (545)
+[2018.03.18-21.48.28:819][432]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (534)
+[2018.03.18-21.48.28:820][432]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (532)
+[2018.03.18-21.48.28:820][432]LogModuleManager: Shutting down and abandoning module SceneOutliner (530)
+[2018.03.18-21.48.28:828][432]LogModuleManager: Shutting down and abandoning module AddContentDialog (528)
+[2018.03.18-21.48.28:839][432]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.17/FeaturePacks/' was aborted.
+[2018.03.18-21.48.28:888][432]LogModuleManager: Shutting down and abandoning module WidgetCarousel (527)
+[2018.03.18-21.48.28:888][432]LogModuleManager: Shutting down and abandoning module EditorWidgets (524)
+[2018.03.18-21.48.28:888][432]LogModuleManager: Shutting down and abandoning module CollectionManager (522)
+[2018.03.18-21.48.28:898][432]LogDirectoryWatcher: A directory notification for 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Collections/' was aborted.
+[2018.03.18-21.48.28:898][432]LogDirectoryWatcher: A directory notification for 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Content/Developers/Noah/Collections/' was aborted.
+[2018.03.18-21.48.28:898][432]LogDirectoryWatcher: A directory notification for 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Saved/Collections/' was aborted.
+[2018.03.18-21.48.28:898][432]LogModuleManager: Shutting down and abandoning module StatsViewer (520)
+[2018.03.18-21.48.28:912][432]LogModuleManager: Shutting down and abandoning module FoliageEdit (518)
+[2018.03.18-21.48.28:912][432]LogModuleManager: Shutting down and abandoning module LandscapeEditor (516)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module MeshPaintMode (514)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (512)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module ActorPickerMode (510)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module GeometryMode (508)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module TextureAlignMode (506)
+[2018.03.18-21.48.28:940][432]LogModuleManager: Shutting down and abandoning module BspMode (504)
+[2018.03.18-21.48.28:948][432]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (502)
+[2018.03.18-21.48.28:948][432]LogModuleManager: Shutting down and abandoning module HardwareSurvey (500)
+[2018.03.18-21.48.28:948][432]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (498)
+[2018.03.18-21.48.28:951][432]LogModuleManager: Shutting down and abandoning module AutomationWorker (496)
+[2018.03.18-21.48.28:965][432]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (494)
+[2018.03.18-21.48.28:982][432]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (492)
+[2018.03.18-21.48.29:015][432]LogModuleManager: Shutting down and abandoning module PlacementMode (491)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (488)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (486)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (484)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (482)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (480)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module Media (479)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (476)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module CharacterAI (474)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module AudioCapture (472)
+[2018.03.18-21.48.29:016][432]LogModuleManager: Shutting down and abandoning module SequenceRecorder (471)
+[2018.03.18-21.48.29:030][432]LogModuleManager: Shutting down and abandoning module SmartSnapping (468)
+[2018.03.18-21.48.29:030][432]LogModuleManager: Shutting down and abandoning module SessionServices (466)
+[2018.03.18-21.48.29:030][432]LogModuleManager: Shutting down and abandoning module ViewportSnapping (464)
+[2018.03.18-21.48.29:030][432]LogModuleManager: Shutting down and abandoning module ViewportInteraction (462)
+[2018.03.18-21.48.29:031][432]LogModuleManager: Shutting down and abandoning module ClothPainter (460)
+[2018.03.18-21.48.29:059][432]LogModuleManager: Shutting down and abandoning module LogVisualizer (458)
+[2018.03.18-21.48.29:079][432]LogModuleManager: Shutting down and abandoning module IntroTutorials (456)
+[2018.03.18-21.48.29:116][432]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (455)
+[2018.03.18-21.48.29:128][432]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (452)
+[2018.03.18-21.48.29:139][432]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (450)
+[2018.03.18-21.48.29:139][432]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (448)
+[2018.03.18-21.48.29:140][432]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (447)
+[2018.03.18-21.48.29:461][432]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (444)
+[2018.03.18-21.48.29:461][432]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (442)
+[2018.03.18-21.48.29:461][432]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (440)
+[2018.03.18-21.48.29:461][432]LogModuleManager: Shutting down and abandoning module InputBindingEditor (438)
+[2018.03.18-21.48.29:483][432]LogModuleManager: Shutting down and abandoning module MergeActors (436)
+[2018.03.18-21.48.29:495][432]LogModuleManager: Shutting down and abandoning module SizeMap (434)
+[2018.03.18-21.48.29:496][432]LogModuleManager: Shutting down and abandoning module TreeMap (432)
+[2018.03.18-21.48.29:510][432]LogModuleManager: Shutting down and abandoning module ReferenceViewer (430)
+[2018.03.18-21.48.29:511][432]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (428)
+[2018.03.18-21.48.29:527][432]LogModuleManager: Shutting down and abandoning module LocalizationService (427)
+[2018.03.18-21.48.29:534][432]LogModuleManager: Shutting down and abandoning module HardwareTargeting (424)
+[2018.03.18-21.48.29:535][432]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (422)
+[2018.03.18-21.48.29:542][432]LogModuleManager: Shutting down and abandoning module UndoHistory (420)
+[2018.03.18-21.48.29:542][432]LogModuleManager: Shutting down and abandoning module XmlParser (418)
+[2018.03.18-21.48.29:558][432]LogModuleManager: Shutting down and abandoning module Blutility (416)
+[2018.03.18-21.48.29:558][432]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (414)
+[2018.03.18-21.48.29:558][432]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (413)
+[2018.03.18-21.48.29:559][432]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (410)
+[2018.03.18-21.48.29:559][432]LogModuleManager: Shutting down and abandoning module SettingsEditor (408)
+[2018.03.18-21.48.29:574][432]LogModuleManager: Shutting down and abandoning module ProjectLauncher (406)
+[2018.03.18-21.48.29:588][432]LogModuleManager: Shutting down and abandoning module SessionFrontend (404)
+[2018.03.18-21.48.29:594][432]LogModuleManager: Shutting down and abandoning module ProfilerClient (402)
+[2018.03.18-21.48.29:600][432]LogModuleManager: Shutting down and abandoning module DeviceManager (400)
+[2018.03.18-21.48.29:619][432]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (399)
+[2018.03.18-21.48.29:675][432]LogModuleManager: Shutting down and abandoning module AutomationController (396)
+[2018.03.18-21.48.29:683][432]LogModuleManager: Shutting down and abandoning module AutomationWindow (394)
+[2018.03.18-21.48.29:709][432]LogModuleManager: Shutting down and abandoning module Layers (392)
+[2018.03.18-21.48.29:741][432]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (390)
+[2018.03.18-21.48.29:741][432]LogModuleManager: Shutting down and abandoning module DetailCustomizations (388)
+[2018.03.18-21.48.29:754][432]LogModuleManager: Shutting down and abandoning module PackagesDialog (386)
+[2018.03.18-21.48.29:763][432]LogModuleManager: Shutting down and abandoning module Persona (384)
+[2018.03.18-21.48.29:790][432]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (383)
+[2018.03.18-21.48.29:790][432]LogModuleManager: Shutting down and abandoning module AnimGraph (381)
+[2018.03.18-21.48.29:802][432]LogModuleManager: Shutting down and abandoning module Kismet (378)
+[2018.03.18-21.48.29:805][432]LogModuleManager: Shutting down and abandoning module ClassViewer (376)
+[2018.03.18-21.48.29:805][432]LogModuleManager: Shutting down and abandoning module Toolbox (374)
+[2018.03.18-21.48.29:805][432]LogModuleManager: Shutting down and abandoning module ModuleUI (372)
+[2018.03.18-21.48.29:816][432]LogModuleManager: Shutting down and abandoning module MovieSceneTools (370)
+[2018.03.18-21.48.29:843][432]LogModuleManager: Shutting down and abandoning module OutputLog (368)
+[2018.03.18-21.48.29:844][432]LogModuleManager: Shutting down and abandoning module GammaUI (366)
+[2018.03.18-21.48.29:851][432]LogModuleManager: Shutting down and abandoning module Documentation (364)
+[2018.03.18-21.48.29:851][432]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (362)
+[2018.03.18-21.48.29:851][432]LogModuleManager: Shutting down and abandoning module MovieScene (360)
+[2018.03.18-21.48.29:851][432]LogModuleManager: Shutting down and abandoning module Niagara (358)
+[2018.03.18-21.48.29:851][432]LogModuleManager: Shutting down and abandoning module NiagaraEditor (357)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (354)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module LauncherPlatform (352)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module AnalyticsET (350)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module PortalServices (348)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module PortalRpc (346)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module MessagingRpc (344)
+[2018.03.18-21.48.29:881][432]LogModuleManager: Shutting down and abandoning module AIModule (342)
+[2018.03.18-21.48.29:882][432]LogModuleManager: Shutting down and abandoning module GameplayDebugger (341)
+[2018.03.18-21.48.29:882][432]LogModuleManager: Shutting down and abandoning module AITestSuite (339)
+[2018.03.18-21.48.29:891][432]LogModuleManager: Shutting down and abandoning module ProfilerService (336)
+[2018.03.18-21.48.29:912][432]LogModuleManager: Shutting down and abandoning module TaskGraph (334)
+[2018.03.18-21.48.29:927][432]LogModuleManager: Shutting down and abandoning module SteamVRController (332)
+[2018.03.18-21.48.29:928][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (330)
+[2018.03.18-21.48.29:928][432]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (328)
+[2018.03.18-21.48.29:928][432]LogModuleManager: Shutting down and abandoning module OculusInput (326)
+[2018.03.18-21.48.29:936][432]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (324)
+[2018.03.18-21.48.29:936][432]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (322)
+[2018.03.18-21.48.29:936][432]LogModuleManager: Shutting down and abandoning module CableComponent (320)
+[2018.03.18-21.48.29:942][432]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (318)
+[2018.03.18-21.48.29:942][432]LogModuleManager: Shutting down and abandoning module AndroidPermission (316)
+[2018.03.18-21.48.29:942][432]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (312)
+[2018.03.18-21.48.30:024][432]LogModuleManager: Shutting down and abandoning module HTML5Networking (310)
+[2018.03.18-21.48.30:024][432]LogModuleManager: Shutting down and abandoning module AlembicImporter (308)
+[2018.03.18-21.48.30:039][432]LogModuleManager: Shutting down and abandoning module AlembicLibrary (307)
+[2018.03.18-21.48.30:039][432]LogModuleManager: Shutting down and abandoning module GeometryCache (306)
+[2018.03.18-21.48.30:039][432]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (305)
+[2018.03.18-21.48.30:039][432]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (300)
+[2018.03.18-21.48.30:039][432]LogModuleManager: Shutting down and abandoning module PluginBrowser (298)
+[2018.03.18-21.48.30:068][432]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (296)
+[2018.03.18-21.48.30:081][432]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (294)
+[2018.03.18-21.48.30:081][432]LogModuleManager: Shutting down and abandoning module DesktopPlatform (293)
+[2018.03.18-21.48.30:091][432]LogModuleManager: Shutting down and abandoning module UObjectPlugin (290)
+[2018.03.18-21.48.30:091][432]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (288)
+[2018.03.18-21.48.30:109][432]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (286)
+[2018.03.18-21.48.30:122][432]LogModuleManager: Shutting down and abandoning module GitSourceControl (284)
+[2018.03.18-21.48.30:128][432]LogModuleManager: Shutting down and abandoning module SourceControl (283)
+[2018.03.18-21.48.30:141][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (280)
+[2018.03.18-21.48.30:141][432]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (278)
+[2018.03.18-21.48.30:141][432]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (276)
+[2018.03.18-21.48.30:141][432]LogModuleManager: Shutting down and abandoning module Paper2DEditor (274)
+[2018.03.18-21.48.30:164][432]LogModuleManager: Shutting down and abandoning module MeshPaint (273)
+[2018.03.18-21.48.30:169][432]LogModuleManager: Shutting down and abandoning module LevelEditor (271)
+[2018.03.18-21.48.30:185][432]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (270)
+[2018.03.18-21.48.30:200][432]LogModuleManager: Shutting down and abandoning module MainFrame (268)
+[2018.03.18-21.48.30:200][432]LogModuleManager: Shutting down and abandoning module HotReload (267)
+[2018.03.18-21.48.30:200][432]LogDirectoryWatcher: A directory notification for 'C:/Users/Noah/Documents/GitHub/UE4Project/NPJ2018SeniorProject/Binaries/Win64' was aborted.
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (260)
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (258)
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module PhysXVehicles (256)
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module OculusEditor (254)
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (252)
+[2018.03.18-21.48.30:233][432]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (250)
+[2018.03.18-21.48.30:234][432]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (248)
+[2018.03.18-21.48.30:248][432]LogModuleManager: Shutting down and abandoning module UdpMessaging (246)
+[2018.03.18-21.48.30:348][432]LogModuleManager: Shutting down and abandoning module TcpMessaging (244)
+[2018.03.18-21.48.30:461][432]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
+[2018.03.18-21.48.30:475][432]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
+[2018.03.18-21.48.30:475][432]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
+[2018.03.18-21.48.30:475][432]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
+[2018.03.18-21.48.30:487][432]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
+[2018.03.18-21.48.30:543][432]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
+[2018.03.18-21.48.30:547][432]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
+[2018.03.18-21.48.30:547][432]LogModuleManager: Shutting down and abandoning module Paper2D (228)
+[2018.03.18-21.48.30:560][432]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
+[2018.03.18-21.48.30:567][432]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
+[2018.03.18-21.48.30:579][432]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
+[2018.03.18-21.48.30:579][432]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
+[2018.03.18-21.48.30:590][432]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
+[2018.03.18-21.48.30:598][432]LogModuleManager: Shutting down and abandoning module Overlay (216)
+[2018.03.18-21.48.30:598][432]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
+[2018.03.18-21.48.30:598][432]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
+[2018.03.18-21.48.30:598][432]LogModuleManager: Shutting down and abandoning module VREditor (210)
+[2018.03.18-21.48.30:619][432]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
+[2018.03.18-21.48.30:632][432]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
+[2018.03.18-21.48.30:632][432]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
+[2018.03.18-21.48.30:672][432]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
+[2018.03.18-21.48.30:672][432]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
+[2018.03.18-21.48.30:681][432]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
+[2018.03.18-21.48.30:681][432]LogModuleManager: Shutting down and abandoning module UMG (196)
+[2018.03.18-21.48.30:701][432]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
+[2018.03.18-21.48.30:727][432]LogModuleManager: Shutting down and abandoning module Sequencer (194)
+[2018.03.18-21.48.30:743][432]LogModuleManager: Shutting down and abandoning module MessageLog (191)
+[2018.03.18-21.48.30:743][432]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
+[2018.03.18-21.48.30:771][432]LogModuleManager: Shutting down and abandoning module Slate (184)
+[2018.03.18-21.48.30:771][432]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
+[2018.03.18-21.48.30:784][432]LogModuleManager: Shutting down and abandoning module MRMesh (180)
+[2018.03.18-21.48.30:784][432]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
+[2018.03.18-21.48.30:784][432]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
+[2018.03.18-21.48.30:784][432]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
+[2018.03.18-21.48.30:784][432]LogModuleManager: Shutting down and abandoning module Networking (172)
+[2018.03.18-21.48.30:785][432]LogModuleManager: Shutting down and abandoning module Core (168)
+[2018.03.18-21.48.30:785][432]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2018.03.18-21.48.30:785][432]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
+[2018.03.18-21.48.30:785][432]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
+[2018.03.18-21.48.30:803][432]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
+[2018.03.18-21.48.30:813][432]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
+[2018.03.18-21.48.30:813][432]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
+[2018.03.18-21.48.30:827][432]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
+[2018.03.18-21.48.30:827][432]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
+[2018.03.18-21.48.30:844][432]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
+[2018.03.18-21.48.30:852][432]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
+[2018.03.18-21.48.30:879][432]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2018.03.18-21.48.30:977][432]LogDerivedDataCache: Shutdown
+[2018.03.18-21.48.30:985][432]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2018.03.18-21.48.30:985][432]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2018.03.18-21.48.30:993][432]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2018.03.18-21.48.31:008][432]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2018.03.18-21.48.31:023][432]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2018.03.18-21.48.31:036][432]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2018.03.18-21.48.31:057][432]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2018.03.18-21.48.31:057][432]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2018.03.18-21.48.31:057][432]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2018.03.18-21.48.31:069][432]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2018.03.18-21.48.31:093][432]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2018.03.18-21.48.31:093][432]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2018.03.18-21.48.31:093][432]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2018.03.18-21.48.31:093][432]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2018.03.18-21.48.31:093][432]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2018.03.18-21.48.31:094][432]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2018.03.18-21.48.31:095][432]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2018.03.18-21.48.31:096][432]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2018.03.18-21.48.31:097][432]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2018.03.18-21.48.31:098][432]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
+[2018.03.18-21.48.31:098][432]LogModuleManager: Shutting down and abandoning module SteamVR (54)
+[2018.03.18-21.48.31:098][432]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
+[2018.03.18-21.48.31:107][432]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2018.03.18-21.48.31:107][432]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.03.18-21.48.31:107][432]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.03.18-21.48.31:107][432]LogOnline: Display: Unloading online subsystem: NULL
+[2018.03.18-21.48.31:146][432]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.03.18-21.48.31:159][432]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.03.18-21.48.31:159][432]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.03.18-21.48.31:167][432]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BADB4B5E1-4F0D-691D-6F95-709A31478FBD%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.2-3658906%2B%2B%2BUE4%2BRelease-4.17&UserID=d9ddad6543a4ba61cbd31f9507f10e1e%7Cbfee097a142a4df6984e47c7d8f90503%7Cac1c4141-0f9e-45bc-b1ee-7329e870a9a8&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.03.18-21.48.31:187][432]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.03.18-21.48.31:198][432]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.03.18-21.48.31:209][432]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.03.18-21.48.31:209][432]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.03.18-21.48.31:233][432]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.03.18-21.48.31:245][432]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.03.18-21.48.31:245][432]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.03.18-21.48.31:245][432]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.03.18-21.48.31:278][432]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.03.18-21.48.31:290][432]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.03.18-21.48.31:290][432]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.03.18-21.48.31:302][432]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.03.18-21.48.31:302][432]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.03.18-21.48.31:302][432]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.03.18-21.48.31:302][432]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.03.18-21.48.31:311][432]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.03.18-21.48.31:311][432]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.03.18-21.48.31:316][432]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.03.18-21.48.31:330][432]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.03.18-21.48.31:354][432]LogExit: Exiting.
+[2018.03.18-21.48.31:407][432]Log file closed, 03/18/18 17:48:31

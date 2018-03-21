@@ -100,6 +100,9 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Special Movement")
 	void StopCrouch_Slide_Glide();
 
+	UFUNCTION(BlueprintCallable, Category = "CameraControl")
+	void CameraLockOn();
+
 	/**The starting power level of our character*/
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Power", Meta = (BluePrintProtected = true))
 	float initialPower;
@@ -164,6 +167,22 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	bool isGliding;
 
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Control", Meta = (BluePrintProtected = true))
+	bool isLockingOn;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Control", Meta = (BluePrintProtected = true))
+	FVector nearestEnemyLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Control", Meta = (BluePrintProtected = true))
+	AActor * nearestEnemy;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Control", Meta = (BluePrintProtected = true))
+	FVector startingCameraLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Control", Meta = (BluePrintProtected = true))
+	FVector lockOnCameraLocation;
 
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Power")

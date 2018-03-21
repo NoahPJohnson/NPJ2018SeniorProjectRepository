@@ -41,6 +41,7 @@ public:
 	/**Set a new playing state*/
 	//UFUNCTION
 	void SetCurrentState(EProjectPlayState NewState);
+
 protected:
 	/**Rate at which character loses power*/
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Power", Meta = (BlueprintProtected = "true"))
