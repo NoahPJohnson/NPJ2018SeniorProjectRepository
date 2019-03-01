@@ -17,11 +17,26 @@ void UCollidingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevel
 	}
 
 	// Get (and then clear) the movement vector that we set in ACollidingPawn::Tick
-	FVector DesiredMovementThisFrame = ConsumeInputVector().GetClampedToMaxSize(1.0f) * DeltaTime * 1000.0f;
+	FVector DesiredMovementThisFrame = ConsumeInputVector().GetClampedToMaxSize(1.0f) * DeltaTime * currentSpeed;
 	if (!DesiredMovementThisFrame.IsNearlyZero())
 	{
 		FHitResult Hit;
-		SafeMoveUpdatedComponent(DesiredMovementThisFrame, UpdatedComponent->GetComponentRotation(), true, Hit);
+		if (DesiredMovementThisFrame.X == 0 && DesiredMovementThisFrame.Y == 0 && DesiredMovementThisFrame.Z != 0)
+		{
+			//desiredRotation = FVector(lastDesiredMove).ToOrientationRotator();
+			SafeMoveUpdatedComponent(DesiredMovementThisFrame, /*desiredRotation*/UpdatedComponent->GetComponentRotation(), true, Hit);
+		}
+		else
+		{
+			desiredRotation = FVector(DesiredMovementThisFrame.X, DesiredMovementThisFrame.Y, 0.0).ToOrientationRotator();
+			//lastDesiredMove = FVector(DesiredMovementThisFrame.X, DesiredMovementThisFrame.Y, 0.0);
+			
+			SafeMoveUpdatedComponent(DesiredMovementThisFrame, desiredRotation/*UpdatedComponent->GetComponentRotation()*/, true, Hit);
+		}
+		//UE_LOG(LogClass, Log, TEXT("turn to ROLL = %f"), desiredRotation.Roll);
+		//UE_LOG(LogClass, Log, TEXT("turn to PITCH = %f"), desiredRotation.Pitch);
+		//UE_LOG(LogClass, Log, TEXT("turn to YAW = %f"), desiredRotation.Yaw);
+		
 		//UE_LOG(LogClass, Log, TEXT("There is a vector, execute move."));
 		// If we bumped into something, try to slide along it
 		if (Hit.IsValidBlockingHit())
@@ -31,4 +46,10 @@ void UCollidingPawnMovementComponent::TickComponent(float DeltaTime, enum ELevel
 	}
 	//UE_LOG(LogClass, Log, TEXT("Movement Component is ticking."));
 };
+
+void UCollidingPawnMovementComponent::SetCurrentSpeed(float newSpeed)
+{
+	currentSpeed = newSpeed;
+	UE_LOG(LogClass, Log, TEXT("current speed = %f"), currentSpeed);
+}
 

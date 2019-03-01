@@ -2,6 +2,7 @@
 
 #include "NPJ2018SeniorProjectGameMode.h"
 #include "NPJ2018SeniorProjectCharacter.h"
+#include "PlayerHUD.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/UserWidget.h"
@@ -20,11 +21,16 @@ ANPJ2018SeniorProjectGameMode::ANPJ2018SeniorProjectGameMode()
 
 	decayRate = 0.01f;
 	PrimaryActorTick.bCanEverTick = true;*/
+	DefaultPawnClass = ANPJ2018SeniorProjectCharacter::StaticClass();
+	HUDClass = APlayerHUD::StaticClass();
+	
 }
 
 void ANPJ2018SeniorProjectGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+	UE_LOG(LogClass, Log, TEXT("Game Mode Begin Play."));
+	
 	/*
 	//Find all spawn volume actors
 	TArray<AActor*> FoundActors;
@@ -46,17 +52,17 @@ void ANPJ2018SeniorProjectGameMode::BeginPlay()
 	if (myCharacter)
 	{
 		powerToWin = (myCharacter->GetInitialPower())*1.25f;
-	}
+	}*/
 
-	if (HUDWidgetClass != nullptr)
+	/*if (HUDWidgetClass != nullptr)
 	{
 		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), HUDWidgetClass);
 		if (CurrentWidget != nullptr)
 		{
 			CurrentWidget->AddToViewport();
 		}
-	}
-	*/
+	}*/
+	
 	
 }
 

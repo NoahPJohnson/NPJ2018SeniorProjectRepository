@@ -3,6 +3,8 @@
 #include "TestPlayerPawn.h"
 #include "Camera/CameraComponent.h"
 #include "Components/StaticMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Animation/AnimBlueprint.h"
 #include "Components/CapsuleComponent.h"
 #include "CollidingPawnMovementComponent.h"
 #include "Components/SphereComponent.h"
@@ -11,6 +13,7 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "ConstructorHelpers.h"
+#include "DrawDebugHelpers.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
 #include "C++Classes/BaseEnemy.h"
@@ -31,16 +34,38 @@ ATestPlayerPawn::ATestPlayerPawn()
 
 	//AutoPossessPlayer = EAutoReceiveInput::Player0;
 
-	static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder'"));
+	/*static ConstructorHelpers::FObjectFinder<UStaticMesh>MeshAsset(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cylinder'"));
 	UStaticMesh* MyMesh = MeshAsset.Object;
 	OurVisibleComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("OurVisibleComponent"));
 	OurVisibleComponent->SetupAttachment(RootComponent);
 
-	OurVisibleComponent->SetStaticMesh(MyMesh);
+	OurVisibleComponent->SetStaticMesh(MyMesh);*/
+
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh>MeshAsset(TEXT("SkeletalMesh'/Game/Mannequin/Character/Mesh/SK_Mannequin'"));
+	USkeletalMesh* MyMesh = MeshAsset.Object;
+	OurVisibleComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("OurVisibleComponent"));
+	OurVisibleComponent->SetupAttachment(RootComponent);
+	//USkeletalMeshComponent* characterMesh = GetMesh();
+	OurVisibleComponent->SetSkeletalMesh(MyMesh);
+	OurVisibleComponent->SetRelativeRotation(FRotator(0.0, 270.0, 0.0));
+	OurVisibleComponent->SetRelativeLocation(FVector(0.0, 0.0, -80.0));
+
+	// load the animation blueprint
+	const ConstructorHelpers::FObjectFinder<UAnimBlueprint>AnimObject(TEXT("AnimBlueprint'/Game/Mannequin/Animations/ThirdPerson_AnimBP'"));
+
+	// generated class is important here :)
+	OurVisibleComponent->SetAnimInstanceClass(AnimObject.Object->GeneratedClass);
+
 	APlayerController* Controller = CreateDefaultSubobject<APlayerController>(TEXT("Controller"));
 
 	//Default Movement Speed
-    baseSpeed = 10.0f;
+    baseSpeed = 1000.0f;
+	currentMoveSpeed = baseSpeed;
+	maxSpeed = 2500.0f;
+	currentMomentumDelta = currentMoveSpeed*0.0008f;
+	currentMomentumVector = FVector(0.0, 0.0, 0.0);
+	isReadyToSwitch = false;
+	timeToSwitch = 0.1f;
 
 	// set our turn rates for input
 	BaseTurnRate = 45.f;
@@ -58,7 +83,7 @@ ATestPlayerPawn::ATestPlayerPawn()
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
     CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
-
+	CameraBoom->bHiddenInGame = false;
 												// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
@@ -124,6 +149,7 @@ ATestPlayerPawn::ATestPlayerPawn()
 	MyPawnMovementComponent = CreateDefaultSubobject<UCollidingPawnMovementComponent>(TEXT("CustomPawnMovementComponent"));
 	                        //CreateDefaultSubobject<UCollidingPawnMovementComponent>(TEXT("CustomMovementComponent"));
 	MyPawnMovementComponent->UpdatedComponent = RootComponent;
+	
 
 }
 
@@ -132,6 +158,7 @@ void ATestPlayerPawn::BeginPlay()
 {
 	Super::BeginPlay();
 	isFlying = true;
+	isReadyToSwitch = false;
 	UE_LOG(LogClass, Log, TEXT("The Pawn is here."));
 	//UE_LOG(LogClass, Log, TEXT("The pawn is at X: %f"), GetActorLocation().X);
 	//UE_LOG(LogClass, Log, TEXT("The pawn is at Y: %f"), GetActorLocation().Y);
@@ -142,32 +169,28 @@ void ATestPlayerPawn::BeginPlay()
 void ATestPlayerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//FRotator testRotation = FRotator(-90.0,45.0,0.0);
-	//GetController()->SetControlRotation(testRotation);
+	if (isReadyToSwitch == false)
+	{
+		if (timer < timeToSwitch)
+		{
+			timer += DeltaTime;
+		}
+		else
+		{
+			isReadyToSwitch = true;
+		}
+	}
+
 	//Handle Flight
 	if (isFlying == true)
 	{
-		UE_LOG(LogClass, Log, TEXT("tick CONTROL Roll = %f"), GetController()->GetControlRotation().Roll);
-		UE_LOG(LogClass, Log, TEXT("tick CONTROL Pitch = %f"), GetController()->GetControlRotation().Pitch);
-		UE_LOG(LogClass, Log, TEXT("tick CONTROL Yaw = %f"), GetController()->GetControlRotation().Yaw);
-		/*if (isCrouching == false)
-		{
-			FRotator testRotation = FRotator(-90.0, 45.0, 0.0);
-			GetController()->SetControlRotation(testRotation);
-			isCrouching = true;
-		}*/
-		//UE_LOG(LogClass, Log, TEXT("Flight Speed = %f"), GetCharacterMovement()->MaxFlySpeed);
-		/*if (GetCharacterMovement()->MaxFlySpeed < flightSpeedLimit)
-		{
-			//flightSpeedBonus += flightSpeedBonusAcceleration * DeltaTime;
-			//GetCharacterMovement()->MaxFlySpeed += flightSpeedBonus * DeltaTime;
-			GetCharacterMovement()->MaxFlySpeed = FMath::Clamp(GetCharacterMovement()->MaxFlySpeed, 0.0f, flightSpeedLimit);
-		}*/
 		if (isAscending == true)
 		{
-			//AddMovementInput(GetActorUpVector(), 1.0f);
-			GetMovementComponent()->AddInputVector((GetActorUpVector())* baseSpeed);
-			
+			MoveUp(1.0);
+		}
+		else if (isDescending == true)
+		{
+			MoveDown(1.0);
 		}
 		else
 		{
@@ -176,33 +199,92 @@ void ATestPlayerPawn::Tick(float DeltaTime)
 			{
 				UE_LOG(LogClass, Log, TEXT("Stop flying from Tick()"));
 				//StopFly();
-				SwitchCharacter();
+				if (isReadyToSwitch == true)
+				{
+					isReadyToSwitch = false;
+					SwitchCharacter(true,true);
+					//isCharacterGliding = true;
+					//isReadyToSwitch = true;
+				}
 			}
 			else if (savedVerticalAxis >= 0.2 || savedHorizontalAxis >= 0.2)
 			{
 				UE_LOG(LogClass, Log, TEXT("Reset Saved Values."));
 				savedVerticalAxis = 0;
 				savedHorizontalAxis = 0;
-				/*AController* test = GetController();
-				if (test == nullptr)
-				{
-					UE_LOG(LogClass, Log, TEXT("GetController() returns NULL."));
-				}
-				else
-				{
-					UE_LOG(LogClass, Log, TEXT("test is not null."));
-				}*/
 			}
 		}
-		/*if (GetCharacterMovement()->IsMovingOnGround() == true)
-		{
-			StopFly();
-		}*/
-	}
 
-	//GetMovementComponent()->TickComponent(DeltaTime, LEVELTICK_All, PrimaryActorTick);
-	//AddActorWorldOffset(ConsumeMovementInputVector() * baseSpeed, true);
-	
+
+		if (currentMoveSpeed > baseSpeed)
+		{
+			currentMoveSpeed -= 80 * DeltaTime;
+			currentMoveSpeed = FMath::Clamp(currentMoveSpeed, 1000.0f, 2500.0f);
+			MyPawnMovementComponent->SetCurrentSpeed(currentMoveSpeed);
+		}
+		CalculateMomentumVector(DeltaTime);
+
+		//Handle Check for Floor
+		FHitResult outHit;
+		FVector startVector = (GetActorUpVector()*-100) + GetActorLocation();
+		FVector endVector = (GetActorUpVector()*-60) + startVector;
+		DrawDebugLine(GetWorld(), startVector, endVector, FColor::Green, false, 1, 0, 1);
+		FCollisionQueryParams collisionParameters;
+		if (GetWorld()->LineTraceSingleByChannel(outHit,startVector,endVector,ECC_WorldStatic,collisionParameters))
+		{
+			if (outHit.bBlockingHit == true && isReadyToSwitch == true)
+			{
+				UE_LOG(LogClass, Log, TEXT("Touching Ground."));
+				//UE_LOG(LogClass, Log, TEXT("You are hitting: %s"), *outHit.GetActor()->GetName());
+				//UE_LOG(LogClass, Log, TEXT("Impact Point: %s"), *outHit.ImpactPoint.ToString());
+				//UE_LOG(LogClass, Log, TEXT("Normal Point: %s"), *outHit.ImpactNormal.ToString());
+				isReadyToSwitch = false;
+				SwitchCharacter(false,false);
+				
+				//isCharacterGliding = false;
+				//isReadyToSwitch = true;
+			}
+		}
+		
+
+
+		//Handle Power Consumption
+		if (isFlying == true)
+		{
+			if (startConsumingPower == false)
+			{
+				startConsumingPower = true;
+				if (characterPower > 0)
+				{
+					characterPower -= 50;
+				}
+			}
+			if (characterPower > 0)
+			{
+				characterPower -= 150 * DeltaTime;
+			}
+			else
+			{
+				if (currentHealth > 0)
+				{
+					currentHealth -= 150 * DeltaTime;
+					//UE_LOG(LogClass, Log, TEXT("Losing Health: %f"), currentHealth);
+				}
+			}
+		}
+		else
+		{
+			startConsumingPower = false;
+			if (characterPower < initialPower)
+			{
+				characterPower += 100 * DeltaTime;
+			}
+			else if (currentHealth < initialHealth)
+			{
+				currentHealth += 100 * DeltaTime;
+			}
+		}
+	}	
 }
 
 // Called to bind functionality to input
@@ -217,9 +299,10 @@ void ATestPlayerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAxis("TurnRate", this, &ATestPlayerPawn::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ATestPlayerPawn::LookUpAtRate);
 
-	PlayerInputComponent->BindAction("Jump", IE_Repeat, this, &ATestPlayerPawn::Ascend);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ATestPlayerPawn::Ascend);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ATestPlayerPawn::StopAscend);
-	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ATestPlayerPawn::SwitchCharacter);
+	PlayerInputComponent->BindAction("Crouch", IE_Pressed, this, &ATestPlayerPawn::Descend);
+	PlayerInputComponent->BindAction("Crouch", IE_Released, this, &ATestPlayerPawn::StopDescend);
 
 	PlayerInputComponent->BindAction("LockOn", IE_Pressed, this, &ATestPlayerPawn::CameraLockOn);
 }
@@ -289,6 +372,48 @@ void ATestPlayerPawn::MoveRight(float Value)
 	}
 }
 
+void ATestPlayerPawn::MoveUp(float Value)
+{
+	//AddMovementInput(GetActorUpVector(), 1.0f);
+	const FRotator Rotation = Controller->GetControlRotation();
+	const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+	// get forward vector
+	const FVector Direction = GetActorUpVector();//FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Z);
+	if (isSprinting == true || isSliding == true)
+	{
+		//AddMovementInput(Direction / 20, Value);
+		GetMovementComponent()->AddInputVector((Direction / 20) * 1.0);
+	}
+	else
+	{
+		//AddMovementInput(Direction, Value);
+		GetMovementComponent()->AddInputVector((Direction)* 1.0);
+		//UE_LOG(LogClass, Log, TEXT("Move, please."));
+	}
+}
+
+void ATestPlayerPawn::MoveDown(float Value)
+{
+	//AddMovementInput(-GetActorUpVector(), 1.0f);
+	const FRotator Rotation = Controller->GetControlRotation();
+	const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+	// get forward vector
+	const FVector Direction = GetActorUpVector();
+	if (isSprinting == true || isSliding == true)
+	{
+		//AddMovementInput(Direction / 20, Value);
+		GetMovementComponent()->AddInputVector((Direction / 20) * -1.0);
+	}
+	else
+	{
+		//AddMovementInput(Direction, Value);
+		GetMovementComponent()->AddInputVector((Direction)* -1.0);
+		//UE_LOG(LogClass, Log, TEXT("Move, please."));
+	}
+}
+
 void ATestPlayerPawn::Turn(float AxisValue)
 {
 	FRotator NewRotation = GetActorRotation();
@@ -313,94 +438,182 @@ UPawnMovementComponent* ATestPlayerPawn::GetMovementComponent() const
 	return MyPawnMovementComponent;
 }
 
+void ATestPlayerPawn::CalculateMomentumVector(float DeltaTime)
+{
+	if (isAscending == true)
+	{
+		if (currentMomentumVector.Z < 1.0)
+		{
+			currentMomentumVector += FVector(0.0, 0.0, currentMomentumDelta) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.Z > 0.0)
+		{
+			currentMomentumVector += FVector(0.0, 0.0, -currentMomentumDelta) * DeltaTime;
+		}
+	}
+	if (isDescending == true)
+	{
+		if (currentMomentumVector.Z > -1.0)
+		{
+			currentMomentumVector += FVector(0.0, 0.0, -currentMomentumDelta) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.Z < 0.0)
+		{
+			currentMomentumVector += FVector(0.0, 0.0, currentMomentumDelta) * DeltaTime;
+		}
+	}
+	if (GetInputAxisValue("MoveForward") > 0.0)
+	{
+		if (currentMomentumVector.X < 1.0 && currentMomentumVector.X < GetInputAxisValue("MoveForward"))
+		{
+			currentMomentumVector += FVector(currentMomentumDelta, 0.0, 0.0) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.X > 0.0)
+		{
+			currentMomentumVector += FVector(-currentMomentumDelta, 0.0, 0.0) * DeltaTime;
+		}
+	}
+	if (GetInputAxisValue("MoveForward") < 0)
+	{
+		if (currentMomentumVector.X > -1.0 &&  currentMomentumVector.X > GetInputAxisValue("MoveForward"))
+		{
+			currentMomentumVector += FVector(-currentMomentumDelta, 0.0, 0.0) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.X < 0.0)
+		{
+			currentMomentumVector += FVector(currentMomentumDelta, 0.0, 0.0) * DeltaTime;
+		}
+	}
+	if (GetInputAxisValue("MoveRight") > 0)
+	{
+		if (currentMomentumVector.Y < 1.0 && currentMomentumVector.Y < GetInputAxisValue("MoveRight"))
+		{
+			currentMomentumVector += FVector(0.0, currentMomentumDelta, 0.0) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.Y > 0.0)
+		{
+			currentMomentumVector += FVector(0.0, -currentMomentumDelta, 0.0) * DeltaTime;
+		}
+	}
+	if (GetInputAxisValue("MoveRight") < 0)
+	{
+		if (currentMomentumVector.Y > -1.0 && currentMomentumVector.Y > GetInputAxisValue("MoveRight"))
+		{
+			currentMomentumVector += FVector(0.0, -currentMomentumDelta, 0.0) * DeltaTime;
+		}
+	}
+	else
+	{
+		if (currentMomentumVector.Y < 0.0)
+		{
+			currentMomentumVector += FVector(0.0, currentMomentumDelta, 0.0) * DeltaTime;
+		}
+	}
+
+	currentMomentumVector.X = FMath::Clamp(currentMomentumVector.X, -1.0f, 1.0f);
+	currentMomentumVector.Y = FMath::Clamp(currentMomentumVector.Y, -1.0f, 1.0f);
+	currentMomentumVector.Z = FMath::Clamp(currentMomentumVector.Z, -1.0f, 1.0f);
+}
+
 void ATestPlayerPawn::Sprint()
 {
-	/*if (GetCharacterMovement()->IsFalling() == false)
-	{
-		if (isSprinting == false)
-		{
-			isSprinting = true;
-			//GetCharacterMovement()->MinAnalogWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
 
-			//PowerChangeEffect();
-			//UE_LOG(LogClass, Log, TEXT("sprinting is %s"), (isSprinting ? TEXT("true") : TEXT("False")));
-			//UE_LOG(LogClass, Log, TEXT("MyCharacter's sprint speed is %f"), GetVelocity().Size());
-			//UE_LOG(YourLog, Warning, TEXT("MyCharacter's Bool is %s"), (MyCharacter->MyBool ? TEXT("True") : TEXT("False")));
-		}
-		else
-		{
-			isSprinting = false;
-			GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
-			GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
-			sprintBoostBonus = sprintBoostBase;
-			//UE_LOG(LogClass, Log, TEXT("MyCharacter's speed is %f"), GetVelocity().Size());
-		}
-	}*/
 }
 
 void ATestPlayerPawn::Jump()
 {
-	/*if (isJumping == false)
-	{
-		isJumping = true;
-		CollisionCapsule->AddImpulse(FVector(0, 0, 1.0) * jumpForce, NAME_None, true);
-	}*/
+
 }
 
-void ATestPlayerPawn::SwitchCharacter()
+void ATestPlayerPawn::SwitchCharacter(bool glideValue, bool skidValue)
 {
 	APlayerController* controller = Cast<APlayerController>(GetController());
 	if (controller != NULL)
 	{
 		UE_LOG(LogClass, Log, TEXT("Discovered Player Controller"));
+		FRotator camRotation = CameraBoom->GetSocketRotation(USpringArmComponent::SocketName);
+		//UE_LOG(LogClass, Log, TEXT("camRotation Roll = %f"), camRotation.Roll);
+		//UE_LOG(LogClass, Log, TEXT("camRotation Pitch = %f"), camRotation.Pitch);
+		//UE_LOG(LogClass, Log, TEXT("camRotation Yaw = %f"), camRotation.Yaw);
+		//UE_LOG(LogClass, Log, TEXT("Velocity X = %f"), GetVelocity().X);
+		//UE_LOG(LogClass, Log, TEXT("Velocity Y = %f"), GetVelocity().Y);
+		//UE_LOG(LogClass, Log, TEXT("Velocity Z = %f"), GetVelocity().Z);
+		//UE_LOG(LogClass, Log, TEXT("Forward X = %f"), GetActorForwardVector().X);
+		//UE_LOG(LogClass, Log, TEXT("Forward Y = %f"), GetActorForwardVector().Y);
+		//UE_LOG(LogClass, Log, TEXT("Forward Z = %f"), GetActorForwardVector().Z);
 		controller->UnPossess();
 		Destroy();
 		//ANPJ2018SeniorProjectCharacter* characterToSpawn = Cast<ANPJ2018SeniorProjectCharacter>(GetWorld()->SpawnActor(characterToSpawn->StaticClass()));
 		ANPJ2018SeniorProjectCharacter* characterToSpawn = GetWorld()->SpawnActor<ANPJ2018SeniorProjectCharacter>(characterToSpawn->StaticClass(), GetActorLocation(), GetActorRotation());
 		controller->Possess(characterToSpawn);
+
+		characterToSpawn->SetCameraPosition(camRotation);
+		characterToSpawn->SetGlide(glideValue);
+		//UE_LOG(LogClass, Log, TEXT("Current momentum X = %f"), currentMomentumVector.X);
+		//UE_LOG(LogClass, Log, TEXT("Current momentum Y = %f"), currentMomentumVector.Y);
+		//UE_LOG(LogClass, Log, TEXT("Current momentum Z = %f"), currentMomentumVector.Z);
+		//currentMomentumVector.X *= -1;
+		FVector launchVector = GetActorForwardVector() + FVector(0.0,0.0,currentMomentumVector.Z);
+		float launchForce = FVector(currentMomentumVector.X, currentMomentumVector.Y, 0.0).Size() * currentMoveSpeed;
+		
+		UE_LOG(LogClass, Log, TEXT("Launch force = %f"), launchForce);
+		launchVector = FVector(launchVector.X * launchForce, launchVector.Y * launchForce, launchVector.Z * currentMoveSpeed);
+		UE_LOG(LogClass, Log, TEXT("LAUNCH X = %f"), launchVector.X);
+		UE_LOG(LogClass, Log, TEXT("LAUNCH Y = %f"), launchVector.Y);
+		UE_LOG(LogClass, Log, TEXT("LAUNCH Z = %f"), launchVector.Z);
+		characterToSpawn->UpdateHealth(currentHealth);
+		characterToSpawn->UpdatePower(characterPower);
+		characterToSpawn->MomentumLaunch(launchVector);
+		characterToSpawn->SetSkid(skidValue);
 	}
 }
 
-void ATestPlayerPawn::SetSavedAxis(float vValue, float hValue)
+void ATestPlayerPawn::SetSavedAxis(float vValue, float hValue, bool aValue, bool dValue)
 {
 	savedVerticalAxis = vValue;
 	savedHorizontalAxis = hValue;
-	isAscending = true;
+	isAscending = aValue;
+	isDescending = dValue;
 }
 
-void ATestPlayerPawn::SetCameraPosition(FVector newPosition, FRotator newRotation)
+void ATestPlayerPawn::SetCameraPosition(FRotator newRotation)
 {
-	//CameraBoom->SetRelativeLocation(newPosition, true);
-	//CameraBoom->bUsePawnControlRotation = false;
-	//CameraBoom->bInheritPitch = false;
-	//CameraBoom->bInheritRoll = false;
-	//CameraBoom->bInheritYaw = false;
-
-	UE_LOG(LogClass, Log, TEXT("new Rotation Roll = %f"), newRotation.Roll);
-	UE_LOG(LogClass, Log, TEXT("new Rotation Pitch = %f"), newRotation.Pitch);
-	UE_LOG(LogClass, Log, TEXT("new Rotation Yaw = %f"), newRotation.Yaw);
-	//CameraBoom->SetRelativeRotation(newRotation, true);
-	/*AController* test = GetController();
-	if (test == nullptr)
-	{
-		UE_LOG(LogClass, Log, TEXT("GetController() returns NULL."));
-	}
-	else
-    { 
-		UE_LOG(LogClass, Log, TEXT("test is not null."));
-	}*/
-	//FRotator test2 = GetControlRotation();
-	//CameraBoom->bUsePawnControlRotation = true;
+	//UE_LOG(LogClass, Log, TEXT("new Rotation Roll = %f"), newRotation.Roll);
+	//UE_LOG(LogClass, Log, TEXT("new Rotation Pitch = %f"), newRotation.Pitch);
+	//UE_LOG(LogClass, Log, TEXT("new Rotation Yaw = %f"), newRotation.Yaw);
 	GetController()->SetControlRotation(newRotation);
-	UE_LOG(LogClass, Log, TEXT("CONTROL Roll = %f"), GetController()->GetControlRotation().Roll);
-	UE_LOG(LogClass, Log, TEXT("CONTROL Pitch = %f"), GetController()->GetControlRotation().Pitch);
-	UE_LOG(LogClass, Log, TEXT("CONTROL Yaw = %f"), GetController()->GetControlRotation().Yaw);
 	
-	//GetController()->SetControlRotation(newRotation);
-	//CameraBoom->bUsePawnControlRotation = true;
-	//CameraBoom->bInheritPitch = true;
-	//CameraBoom->bInheritRoll = true;
-	//CameraBoom->bInheritYaw = true;
+	//UE_LOG(LogClass, Log, TEXT("CONTROL Roll = %f"), GetController()->GetControlRotation().Roll);
+	//UE_LOG(LogClass, Log, TEXT("CONTROL Pitch = %f"), GetController()->GetControlRotation().Pitch);
+	//UE_LOG(LogClass, Log, TEXT("CONTROL Yaw = %f"), GetController()->GetControlRotation().Yaw);
+	//UE_LOG(LogClass, Log, TEXT("socket Roll = %f"), CameraBoom->GetSocketRotation(USpringArmComponent::SocketName).Roll);
+	//UE_LOG(LogClass, Log, TEXT("socket Pitch = %f"), CameraBoom->GetSocketRotation(USpringArmComponent::SocketName).Pitch);
+	//UE_LOG(LogClass, Log, TEXT("socket Yaw = %f"), CameraBoom->GetSocketRotation(USpringArmComponent::SocketName).Yaw);
+}
+
+void ATestPlayerPawn::SetBoostedSpeed(float newSpeed)
+{
+	currentMoveSpeed = newSpeed;
+	currentMoveSpeed = FMath::Clamp(currentMoveSpeed, baseSpeed, maxSpeed);
+	currentMomentumDelta = currentMoveSpeed*0.0008f;
+	//GetMovementComponent()->SetCurrentSpeed(currentMoveSpeed);
+	MyPawnMovementComponent->SetCurrentSpeed(currentMoveSpeed);
+	//isReadyToSwitch = true;
 }
 
 
@@ -417,194 +630,44 @@ void ATestPlayerPawn::StopAscend()
 	if (isAscending == true)
 	{
 		isAscending = false;
-		if (FMath::Abs(GetInputAxisValue("MoveForward")) < 0.2f && FMath::Abs(GetInputAxisValue("MoveRight")) < 0.2f)
-		{
-			StopFly();
-		}
+	}
+}
+
+void ATestPlayerPawn::Descend()
+{
+	if (isDescending == false)
+	{
+		isDescending = true;
+	}
+}
+
+void ATestPlayerPawn::StopDescend()
+{
+	if (isDescending == true)
+	{
+		isDescending = false;
 	}
 }
 
 void ATestPlayerPawn::Fly()
 {
-	/*if (GetCharacterMovement()->IsFalling() == true)
-	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-		if (isGliding == true)
-		{
-			isGliding = false;
-			//StopCrouch_Slide_Glide();
-		}
-		isFlying = true;
-		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-		//UMyCharacterMovementComponent* CustomMovement = CreateDefaultSubobject<UMyCharacterMovementComponent>(ACharacter::CharacterMovementComponentName);
-		UMyCharacterMovementComponent* CustomMovement = Cast<UMyCharacterMovementComponent>(GetMovementComponent());
-		//UMyCharacterMovementComponent* CustomMovement = new UMyCharacterMovementComponent;
 
-		if (CustomMovement)
-		{
-			CustomMovement->SetMovementMode(MOVE_Custom);
-			UE_LOG(LogClass, Log, TEXT("Custom Movement Exists."));
-		}
-		else
-		{
-			UE_LOG(LogClass, Log, TEXT("Custom Movement Doesn't Exist."));
-		}
-		//GetCharacterMovement()->AirControl = defaultAirControl;
-		//GetCharacterMovement()->BrakingDecelerationFlying = 10000;
-		//GetCharacterMovement()->bCheatFlying = true;
-		//GetCharacterMovement()->bOrientRotationToMovement = false;
-		//GetCharacterMovement()->bUseControllerDesiredRotation = true;
-		isSprinting = false;
-
-		//GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
-		sprintBoostBonus = sprintBoostBase;
-		//AddMovementInput(GetActorUpVector(), 1.0f);
-		//UE_LOG(LogClass, Log, TEXT("Fly Please"));
-
-	}*/
 }
 
 void ATestPlayerPawn::StopFly()
 {
-	/*if (isFlying == true)
-	{
-		GetCharacterMovement()->SetMovementMode(MOVE_Falling);
-		flightSpeedBonus = 100;
-		GetCharacterMovement()->MaxFlySpeed = flightSpeedNormal;
-		GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
-		GetCharacterMovement()->AirControl = defaultAirControl;
-		//GetCharacterMovement()->GravityScale = 1;
-		isFlying = false;
-		if (GetCharacterMovement()->IsMovingOnGround() == false && isGliding == false)
-		{
-			
-			isGliding = true;
-		}
-		//UE_LOG(LogClass, Log, TEXT("MyCharacter onGround is %s"), (GetCharacterMovement()->IsMovingOnGround() ? TEXT("True") : TEXT("False")));
-	}*/
+
 
 }
 
 void ATestPlayerPawn::Crouch_Slide_Glide()
 {
-	//GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true;
-	//Crouch
-	/*if (isCrouching == false && GetCharacterMovement()->IsMovingOnGround() == true && isSprinting == false)
-	{
-		isCrouching = true;
-		buildUpSpeed = baseSpeed;
-		GetCharacterMovement()->MaxWalkSpeed = 0;
-		GetCharacterMovement()->SetJumpAllowed(false);
-		//UE_LOG(LogClass, Log, TEXT("Crouch Please"));
-	}
-	//Crouch();
-	//UE_LOG(LogClass, Log, TEXT("Crouch Please"));
 
-	//Slide
-	if (isSliding == false && GetCharacterMovement()->IsMovingOnGround() == true && isSprinting == true)
-	{
-		isSliding = true;
-		isSprinting = false;
-		GetCharacterMovement()->GroundFriction = 0.0f;
-		GetCharacterMovement()->BrakingFrictionFactor = 0.0f;
-		GetCharacterMovement()->BrakingDecelerationWalking = -600.0;
-		//GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-		//GetCharacterMovement()->BrakingDecelerationFlying = 10.0f;
-		//UE_LOG(LogClass, Log, TEXT("MyCharacter's Ground Friction is %f"), GetCharacterMovement()->GroundFriction);
-		//GetCharacterMovement()->Launch(GetActorForwardVector()*GetCharacterMovement()->MaxWalkSpeed);
-		buildUpSpeed = baseSpeed;
-		GetCharacterMovement()->MaxWalkSpeed *= 2;
-		GetCharacterMovement()->MaxWalkSpeed = 0;
-
-	}*/
-
-	//Glide
-	/*if (isGliding == false && GetCharacterMovement()->IsMovingOnGround() == false)
-	{
-	//UE_LOG(LogClass, Log, TEXT("Glide Please"));
-	isGliding = true;
-	if (isFlying == true)
-	{
-	StopFly();
-	}
-
-	float storedVelocity = GetCharacterMovement()->Velocity.Size();
-	StopJumping();
-	GetCharacterMovement()->SetMovementMode(MOVE_Flying);
-	GetCharacterMovement()->MaxFlySpeed = 0;
-	GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-	GetCharacterMovement()->SetMovementMode(MOVE_Falling);
-	GetCharacterMovement()->MaxFlySpeed = flightSpeedNormal;
-	//StopJumping();
-	//GetCharacterMovement()->bApplyGravityWhileJumping = true;
-
-
-	//UE_LOG(LogClass, Log, TEXT("MyCharacter jumping is %s"), (IsJumping() ? TEXT("True") : TEXT("False")));
-	//UE_LOG(LogClass, Log, TEXT("MyCharacter jumping 2 is %s"), (IsJumpProvidingForce() ? TEXT("True") : TEXT("False")));
-	GetCharacterMovement()->GravityScale = 0.08f;
-
-	GetCharacterMovement()->AirControl = 1.0f;
-	flightSpeedBonus = 100;
-	GetCharacterMovement()->MaxWalkSpeed = storedVelocity;
-	//GetCharacterMovement()->MaxWalkSpeed = storedVelocity;
-
-	GetCharacterMovement()->MaxWalkSpeed = FMath::Clamp(GetCharacterMovement()->MaxWalkSpeed, 0.0f, flightSpeedLimit);
-	//UE_LOG(LogClass, Log, TEXT("MyCharacter's velocity is %f"), GetCharacterMovement()->MaxWalkSpeed);
-	//GetCharacterMovement()->Launch(GetActorForwardVector() * GetCharacterMovement()->MaxWalkSpeed * (abs(GetInputAxisValue("MoveForward")) + abs(GetInputAxisValue("MoveRight"))));
-	isSprinting = false;
-
-	GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
-	sprintBoostBonus = sprintBoostBase;
-	}*/
 }
 
 void ATestPlayerPawn::StopCrouch_Slide_Glide()
 {
-	/*if ((isSliding == true || isCrouching == true) && GetCharacterMovement()->IsMovingOnGround() == true)
-	{
-		isCrouching = false;
-		isSliding = false;
-		GetCharacterMovement()->GroundFriction = 8.0f;
-		GetCharacterMovement()->BrakingFrictionFactor = 1.0f;
-		GetCharacterMovement()->BrakingDecelerationWalking = 2048.0;
-		//GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-		//GetCharacterMovement()->BrakingDecelerationFlying = 0.0f;
-		GetCharacterMovement()->MinAnalogWalkSpeed = baseMinSpeed;
-		sprintBoostBonus = sprintBoostBase;
-		GetCharacterMovement()->SetJumpAllowed(true);
-		if (buildUpSpeed > baseSpeed)
-		{
-			GetCharacterMovement()->MaxWalkSpeed = buildUpSpeed;
-			Sprint();
-		}
-		else
-		{
-			GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
-		}
 
-	}*/
-	/*if (isGliding == true)
-	{
-	isGliding = false;
-
-	//UE_LOG(LogClass, Log, TEXT("Stop Gliding Please"));
-	GetCharacterMovement()->GravityScale = 1.0f;
-	//GetCharacterMovement()->SetMovementMode(MOVE_Walking);
-
-	GetCharacterMovement()->AirControl = defaultAirControl;
-	if (GetCharacterMovement()->IsMovingOnGround() == true)
-	{
-	GetCharacterMovement()->MaxWalkSpeed = GetCharacterMovement()->MaxFlySpeed;
-	isSprinting = true;
-	Crouch_Slide_Glide();
-	}
-	else
-	{
-	GetCharacterMovement()->MaxWalkSpeed = baseSpeed;
-	}
-	}*/
-	//UnCrouch();
-	//UE_LOG(LogClass, Log, TEXT("UnCrouch Please"));
 }
 
 void ATestPlayerPawn::CameraLockOn()
@@ -722,6 +785,16 @@ float ATestPlayerPawn::GetInitialPower()
 float ATestPlayerPawn::GetCurrentPower()
 {
 	return characterPower;
+}
+
+void ATestPlayerPawn::UpdatePower(float newPower)
+{
+	characterPower = newPower;
+}
+
+void ATestPlayerPawn::UpdateHealth(float newHealth)
+{
+	currentHealth = newHealth;
 }
 
 //Called whenever power is increased or decreased

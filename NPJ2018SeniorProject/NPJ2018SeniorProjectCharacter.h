@@ -43,6 +43,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+
+	UFUNCTION(BlueprintCallable, Category = "Health/Power")
+	void UpdatePower(float newPower);
+
+	UFUNCTION(BlueprintCallable, Category = "Health/Power")
+	void UpdateHealth(float newHealth);
+
 	/**Accessor for initial power */
 	/**Accessor for initial power */
 	UFUNCTION(BlueprintPure, Category = "Health/Power")
@@ -55,9 +62,31 @@ public:
 	UFUNCTION(BlueprintPure, Category = "Health/Power")
 	float GetCurrentPower();
 
+	UFUNCTION(BlueprintPure, Category = "Special Movement")
+	float GetMaxSpeed() { return maxSpeed; }
+	UFUNCTION(BlueprintPure, Category = "Special Movement")
+	float GetCurrentSpeed();
+
+	UFUNCTION(BlueprintPure, Category = "Special Movement")
+	float GetBuildUpSpeed() { return buildUpSpeed; }
+
 	UFUNCTION(BlueprintCallable, Category = "CameraControl")
 	void CameraLockOn();
 
+	UFUNCTION(BlueprintCallable, Category = "CameraControl")
+	void SetCameraPosition(FRotator newRotation);
+
+	UFUNCTION(BlueprintCallable, Category = "SpecialMovement")
+	void MomentumLaunch(FVector momentumVector);
+
+	UFUNCTION(BlueprintCallable, Category = "SpecialMovement")
+	void SetSkid(bool skid);
+
+	UFUNCTION(BlueprintCallable, Category = "SpecialMovement")
+	void SetGlide(bool glide);
+
+	UFUNCTION(BlueprintCallable, Category = "SpecialMovement")
+	bool GetSlide();
 	//static FName MyCharacterMovementComponentName;
 
 	//class UCharacterMovementComponent* GetCharacterMovement() const override;
@@ -117,9 +146,13 @@ protected:
 	void CollectPickups();
 
 
-	//UFUNCTION(BlueprintCallable, Category = "Health/Power")
-	//void DrainPower();
 	
+
+	UFUNCTION(BlueprintCallable, Category = "Health/Power")
+	void UpdateSpeed();
+	
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	virtual void Jump() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Special Movement")
 	void Sprint();
@@ -129,6 +162,9 @@ protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Special Movement")
 	void StopAscend();
+
+	UFUNCTION(BlueprintCallable, Category = "Special Movement")
+	void Descend();
 
 	UFUNCTION(BlueprintCallable, Category = "Special Movement")
 	void Fly();
@@ -180,6 +216,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	float baseMinSpeed;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float maxSpeed;
+
 	/**Speed when power level = 0 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	float sprintSpeedBonus;
@@ -202,6 +241,9 @@ protected:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	bool isAscending;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isDescending;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	bool isFlying;
@@ -231,7 +273,13 @@ protected:
 	bool isCrouching;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	bool isSkidding;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	bool isSliding;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
+	float slideBoost;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Special Movement", Meta = (BluePrintProtected = true))
 	float buildUpSpeed;
